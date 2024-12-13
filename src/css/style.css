@@ -92,8 +92,8 @@ a {
   padding-top: 41px;
 }
 .container .header .header__container a img {
-  width: 137px;
-  height: 22.94px;
+  width: 216px;
+  height: 33px;
 }
 .container .header .header__container .header__nav {
   display: flex;
@@ -143,13 +143,12 @@ a {
   cursor: pointer;
   font-family: "Hauora";
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 0.03em;
-  letter-spacing: 0.03em;
-  line-height: 16.8px;
-  text-align: left;
-  color: rgb(255, 255, 255);
+  line-height: 16px;
+  text-align: center;
   transition: 0.5s;
+  color: rgb(255, 255, 255);
 }
 .container .header .header__container .header__buttons .header__buttons-enter:hover {
   box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
@@ -216,13 +215,12 @@ a {
   cursor: pointer;
   font-family: "Hauora";
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 0.03em;
-  letter-spacing: 0.03em;
-  line-height: 16.8px;
-  text-align: left;
-  color: rgb(255, 255, 255);
+  line-height: 16px;
+  text-align: center;
   transition: 0.5s;
+  color: rgb(255, 255, 255);
 }
 .container .main .offer .offer__container .offer__buttons .offer__buttons__top .offer__button:nth-child(1):hover {
   box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
@@ -239,13 +237,12 @@ a {
   cursor: pointer;
   font-family: "Hauora";
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 0.03em;
-  letter-spacing: 0.03em;
-  line-height: 16.8px;
-  text-align: left;
-  color: rgb(255, 255, 255);
+  line-height: 16px;
+  text-align: center;
   transition: 0.5s;
+  color: rgb(255, 255, 255);
   margin-left: 30px;
 }
 .container .main .offer .offer__container .offer__buttons .offer__buttons__top .offer__button:nth-child(2):hover {
@@ -263,13 +260,12 @@ a {
   cursor: pointer;
   font-family: "Hauora";
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 0.03em;
-  letter-spacing: 0.03em;
-  line-height: 16.8px;
-  text-align: left;
-  color: rgb(255, 255, 255);
+  line-height: 16px;
+  text-align: center;
   transition: 0.5s;
+  color: rgb(255, 255, 255);
   margin-left: 30px;
 }
 .container .main .offer .offer__container .offer__buttons .offer__buttons__top .offer__button:nth-child(3):hover {
@@ -291,13 +287,12 @@ a {
   cursor: pointer;
   font-family: "Hauora";
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 0.03em;
-  letter-spacing: 0.03em;
-  line-height: 16.8px;
-  text-align: left;
-  color: rgb(255, 255, 255);
+  line-height: 16px;
+  text-align: center;
   transition: 0.5s;
+  color: rgb(255, 255, 255);
 }
 .container .main .offer .offer__container .offer__buttons .offer__buttons__bottom .offer__button:nth-child(1):hover {
   box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
@@ -314,13 +309,12 @@ a {
   cursor: pointer;
   font-family: "Hauora";
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 0.03em;
-  letter-spacing: 0.03em;
-  line-height: 16.8px;
-  text-align: left;
-  color: rgb(255, 255, 255);
+  line-height: 16px;
+  text-align: center;
   transition: 0.5s;
+  color: rgb(255, 255, 255);
   margin-left: 30px;
 }
 .container .main .offer .offer__container .offer__buttons .offer__buttons__bottom .offer__button:nth-child(2):hover {
@@ -332,7 +326,7 @@ a {
   font-size: 40px;
   font-weight: 500;
   letter-spacing: 0.03em;
-  line-height: 40px;
+  line-height: 46px;
   text-align: center;
   color: rgb(240, 246, 252);
 }
@@ -395,7 +389,6 @@ a {
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.03em;
-  letter-spacing: 0.03em;
   line-height: 19.6px;
   text-align: left;
   color: rgb(6, 6, 6);
@@ -404,7 +397,6 @@ a {
   font-family: "Hauora";
   font-size: 14px;
   font-weight: 500;
-  letter-spacing: 0.03em;
   letter-spacing: 0.03em;
   line-height: 19.6px;
   text-align: left;
@@ -415,7 +407,6 @@ a {
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.03em;
-  letter-spacing: 0.03em;
   line-height: 19.6px;
   text-align: left;
   color: rgb(112, 111, 146);
@@ -425,14 +416,15 @@ a {
   border-radius: 0px 10px 10px 0px;
   border: none;
   cursor: pointer;
-  background-color: rgb(7, 4, 51);
+  background-color: rgba(23, 19, 147, 0.4);
   font-family: "Hauora";
   font-size: 14px;
   font-weight: 500;
-  letter-spacing: 0.03em;
-  letter-spacing: 0.03em;
   line-height: 16px;
   text-align: center;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
   color: rgb(255, 255, 255);
 }
 .container .main .offer .offer__container .offer__partners {
@@ -481,14 +473,9 @@ a {
   font-size: 35px;
   font-weight: 500;
   letter-spacing: 0.03em;
-  line-height: 40px;
+  line-height: 47.81px;
   text-align: left;
   color: rgb(255, 255, 255);
-  opacity: 1;
-  transition: all 1s ease 0s;
-}
-.container .main .openspace .openspace__container .openspace__title.appearance {
-  opacity: 1;
 }
 .container .main .openspace .openspace__container .openspace__title span {
   color: rgb(68, 63, 219);
@@ -524,20 +511,9 @@ a {
   line-height: 23.4px;
   text-align: left;
   color: rgb(255, 255, 255);
-  opacity: 1;
-  z-index: 10;
-  transition: 1s ease;
-}
-.container .main .openspace .openspace__container .openspace__content .openspace__code .openspace__code__discription.appearance {
-  opacity: 1;
 }
 .container .main .openspace .openspace__container .openspace__content .openspace__code .openspace__code__discription span {
-  opacity: 1;
-  transition: 1s ease 0.5s;
   color: rgb(112, 111, 146);
-}
-.container .main .openspace .openspace__container .openspace__content .openspace__code .openspace__code__discription span.appearance {
-  opacity: 1;
 }
 .container .main .openspace .openspace__container .openspace__content .openspace__code .openspace__code__big {
   position: relative;
@@ -684,8 +660,13 @@ a {
   opacity: 1;
 }
 .container .main .possibilities .possibilities__container .possibilities__title span {
-  color: rgb(68, 63, 219);
+  font-family: "Hauora";
   font-size: 35px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  line-height: 47.81px;
+  text-align: left;
+  color: rgb(68, 63, 219);
 }
 .container .main .possibilities .possibilities__container .possibilities__content {
   margin-top: 165px;
@@ -704,11 +685,9 @@ a {
   font-family: "Hauora";
   font-size: 18px;
   font-weight: 500;
-  line-height: 18px;
+  letter-spacing: 0.02em;
+  line-height: 23.4px;
   text-align: left;
-  text-underline-position: from-font;
-  -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
   color: rgb(240, 246, 252);
 }
 .container .main .possibilities .possibilities__container .possibilities__content .possibilities__manage .possibilities__manage__discription {
@@ -716,11 +695,9 @@ a {
   font-family: "Hauora";
   font-size: 18px;
   font-weight: 500;
+  letter-spacing: 0.02em;
   line-height: 23.4px;
   text-align: left;
-  text-underline-position: from-font;
-  -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
   color: rgb(120, 119, 146);
 }
 .container .main .possibilities .possibilities__container .possibilities__content .possibilities__analitic {
@@ -737,6 +714,7 @@ a {
   font-size: 18px;
   font-weight: 500;
   line-height: 18px;
+  letter-spacing: 0.02em;
   text-align: left;
   text-underline-position: from-font;
   -webkit-text-decoration-skip-ink: none;
@@ -749,6 +727,7 @@ a {
   font-size: 18px;
   font-weight: 500;
   line-height: 23.4px;
+  letter-spacing: 0.02em;
   text-align: left;
   text-underline-position: from-font;
   -webkit-text-decoration-skip-ink: none;
@@ -769,6 +748,7 @@ a {
   font-size: 18px;
   font-weight: 500;
   line-height: 18px;
+  letter-spacing: 0.02em;
   text-align: left;
   text-underline-position: from-font;
   -webkit-text-decoration-skip-ink: none;
@@ -781,6 +761,7 @@ a {
   font-size: 18px;
   font-weight: 500;
   line-height: 23.4px;
+  letter-spacing: 0.02em;
   text-align: left;
   text-underline-position: from-font;
   -webkit-text-decoration-skip-ink: none;
@@ -820,13 +801,13 @@ a {
   cursor: pointer;
   font-family: "Hauora";
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 0.03em;
-  letter-spacing: 0.03em;
-  line-height: 16.8px;
-  text-align: left;
-  color: rgb(255, 255, 255);
+  line-height: 16px;
+  text-align: center;
   transition: 0.5s;
+  color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
 }
 .container .main .client .client__container .client__buttons .client__button:nth-child(1):hover {
   box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
@@ -844,13 +825,12 @@ a {
   cursor: pointer;
   font-family: "Hauora";
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 0.03em;
-  letter-spacing: 0.03em;
-  line-height: 16.8px;
-  text-align: left;
-  color: rgb(255, 255, 255);
+  line-height: 16px;
+  text-align: center;
   transition: 0.5s;
+  color: rgb(255, 255, 255);
 }
 .container .main .client .client__container .client__buttons .client__button:nth-child(2):hover {
   box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
@@ -868,13 +848,12 @@ a {
   cursor: pointer;
   font-family: "Hauora";
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 0.03em;
-  letter-spacing: 0.03em;
-  line-height: 16.8px;
-  text-align: left;
-  color: rgb(255, 255, 255);
+  line-height: 16px;
+  text-align: center;
   transition: 0.5s;
+  color: rgb(255, 255, 255);
 }
 .container .main .client .client__container .client__buttons .client__button:nth-child(3):hover {
   box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
@@ -883,11 +862,11 @@ a {
   margin-top: 33px;
   font-family: "Hauora";
   font-size: 40px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.03em;
-  line-height: 40px;
+  line-height: 46px;
   text-align: center;
-  color: rgb(255, 255, 255);
+  color: rgb(240, 246, 252);
 }
 .container .main .client .client__container .client__img {
   margin-top: 5px;
@@ -926,13 +905,19 @@ a {
 }
 .container .main .modules .modules__container .modules__title span {
   color: rgb(68, 63, 219);
+  font-family: "Hauora";
   font-size: 35px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  line-height: 47.81px;
+  text-align: left;
 }
 .container .main .modules .modules__container .modules__content {
   margin-top: 165px;
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 31.78%);
+  gap: 24px 30px;
 }
 .container .main .modules .modules__container .modules__content .modules__box:nth-child(n) {
   width: 356px;
@@ -947,6 +932,7 @@ a {
   font-size: 18px;
   font-weight: 500;
   line-height: 18px;
+  letter-spacing: 0.02em;
   text-align: left;
   text-underline-position: from-font;
   -webkit-text-decoration-skip-ink: none;
@@ -959,25 +945,22 @@ a {
   font-size: 18px;
   font-weight: 500;
   line-height: 23.4px;
+  letter-spacing: 0.02em;
   text-align: left;
   text-underline-position: from-font;
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
   color: rgb(120, 119, 146);
 }
-.container .main .modules .modules__container .modules__content .modules__box:nth-child(n+4) {
-  margin-top: 30px;
-}
 .container .main .modules .modules__container .modules__content .modules__more {
-  margin-top: 30px;
   width: 356px;
 }
 .container .main .modules .modules__container .modules__content .modules__more .modules__box__title {
-  margin-top: 278px;
+  margin-top: 280px;
   font-family: "Hauora";
   font-size: 18px;
   font-weight: 500;
-  line-height: 18px;
+  line-height: 23.4px;
   text-align: left;
   text-underline-position: from-font;
   -webkit-text-decoration-skip-ink: none;
@@ -985,7 +968,7 @@ a {
   color: rgb(240, 246, 252);
 }
 .container .main .modules .modules__container .modules__content .modules__more .modules__box-button {
-  margin-top: 90px;
+  margin-top: 62px;
   width: 108px;
   height: 30px;
   display: flex;
@@ -997,13 +980,12 @@ a {
   cursor: pointer;
   font-family: "Hauora";
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 0.03em;
-  letter-spacing: 0.03em;
-  line-height: 16.8px;
-  text-align: left;
-  color: rgb(255, 255, 255);
+  line-height: 16px;
+  text-align: center;
   transition: 0.5s;
+  color: rgb(255, 255, 255);
 }
 .container .main .modules .modules__container .modules__content .modules__more .modules__box-button:hover {
   box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
@@ -1026,7 +1008,7 @@ a {
   font-size: 35px;
   font-weight: 500;
   letter-spacing: 0.03em;
-  line-height: 40px;
+  line-height: 47.81px;
   text-align: left;
   color: rgb(255, 255, 255);
   opacity: 1;
@@ -1198,8 +1180,8 @@ a {
   mix-blend-mode: screen;
 }
 .container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__manage .inplomintation__img img {
-  width: 360px;
-  height: 360px;
+  width: 410px;
+  height: 410px;
 }
 .container .main .characteristic {
   padding-top: 295px;
@@ -1224,23 +1206,22 @@ a {
   line-height: 23.4px;
   text-align: left;
   color: rgb(255, 255, 255);
-  opacity: 1;
-  transition: all 1s ease 0s;
-}
-.container .main .characteristic .characteristic__container .characteristic__title.appearance {
-  opacity: 1;
 }
 .container .main .characteristic .characteristic__container .characteristic__title span {
   color: rgb(68, 63, 219);
+  font-family: "Hauora";
   font-size: 35px;
-  font-weight: 600;
+  font-weight: 500;
+  letter-spacing: 0.03em;
   line-height: 47.81px;
+  text-align: left;
 }
 .container .main .characteristic .characteristic__container .characteristic__content {
   margin-top: 165px;
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 31.78%);
+  gap: 94px 24px;
 }
 .container .main .characteristic .characteristic__container .characteristic__content .characteristic__box:nth-child(n) {
   width: 356px;
@@ -1255,11 +1236,12 @@ a {
   font-family: "Hauora";
   font-size: 18px;
   font-weight: 500;
-  line-height: 18px;
+  line-height: 23.4px;
+  letter-spacing: 0.02em;
   text-align: left;
   text-underline-position: from-font;
   -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
   color: rgb(240, 246, 252);
 }
 .container .main .characteristic .characteristic__container .characteristic__content .characteristic__box:nth-child(n) .characteristic__box__discription {
@@ -1268,14 +1250,12 @@ a {
   font-size: 18px;
   font-weight: 500;
   line-height: 23.4px;
+  letter-spacing: 0.02em;
   text-align: left;
   text-underline-position: from-font;
   -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
   color: rgb(120, 119, 146);
-}
-.container .main .characteristic .characteristic__container .characteristic__content .characteristic__box:nth-child(n+4) {
-  margin-top: 30px;
 }
 .container .main .earn {
   background: linear-gradient(rgb(0, 0, 0), rgb(3, 3, 22));
@@ -1295,29 +1275,22 @@ a {
   flex-direction: column;
 }
 .container .main .earn .earn__container .earn__title {
-  text-align: center;
   font-family: "Hauora";
   font-size: 40px;
-  font-weight: 600;
-  letter-spacing: 0.03rem;
-  line-height: 40px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  line-height: 46px;
   text-align: center;
-  text-underline-position: from-font;
-  -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
   color: rgb(240, 246, 252);
 }
 .container .main .earn .earn__container .earn__discripiton {
   margin-top: 52px;
-  text-align: center;
   font-family: "Hauora";
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 23.4px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  line-height: 20.8px;
   text-align: center;
-  text-underline-position: from-font;
-  -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
   color: rgb(112, 111, 146);
 }
 .container .main .earn .earn__container .earn__search {
@@ -1328,12 +1301,14 @@ a {
   align-items: center;
 }
 .container .main .earn .earn__container .earn__search .earn__invite label {
+  margin-left: 13px;
   width: 483px;
   display: flex;
   justify-content: start;
   font-family: "Hauora";
   font-size: 16px;
   font-weight: 500;
+  letter-spacing: 0.03em;
   line-height: 20.8px;
   text-align: left;
   color: rgb(112, 111, 146);
@@ -1362,7 +1337,6 @@ a {
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.03em;
-  letter-spacing: 0.03em;
   line-height: 19.6px;
   text-align: left;
   color: rgb(6, 6, 6);
@@ -1371,7 +1345,6 @@ a {
   font-family: "Hauora";
   font-size: 14px;
   font-weight: 500;
-  letter-spacing: 0.03em;
   letter-spacing: 0.03em;
   line-height: 19.6px;
   text-align: left;
@@ -1382,7 +1355,6 @@ a {
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.03em;
-  letter-spacing: 0.03em;
   line-height: 19.6px;
   text-align: left;
   color: rgb(112, 111, 146);
@@ -1392,14 +1364,15 @@ a {
   border-radius: 0px 10px 10px 0px;
   border: none;
   cursor: pointer;
-  background-color: rgb(7, 4, 51);
+  background-color: rgba(23, 19, 147, 0.4);
   font-family: "Hauora";
   font-size: 14px;
   font-weight: 500;
-  letter-spacing: 0.03em;
-  letter-spacing: 0.03em;
   line-height: 16px;
   text-align: center;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
   color: rgb(255, 255, 255);
 }
 .container .footer {
@@ -1420,12 +1393,12 @@ a {
 }
 .container .footer .footer__container .footer__top {
   display: flex;
-  align-items: center;
+  align-items: left;
   flex-direction: column;
 }
 .container .footer .footer__container .footer__top .footer__logo {
-  width: 137px;
-  height: 22.94px;
+  width: 140.85px;
+  height: 32.61px;
 }
 .container .footer .footer__container .footer__top .footer__newsletter {
   margin-top: 97.06px;
@@ -1454,6 +1427,7 @@ a {
   justify-content: space-between;
   width: 100%;
   margin-left: 54px;
+  margin-top: 18px;
 }
 .container .footer .footer__container .footer__menu .footer__column {
   display: flex;
