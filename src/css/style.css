@@ -1,0 +1,1479 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+body {
+  background: linear-gradient(180deg, #010049 -34.45%, rgb(0, 0, 0) 100%);
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Hauora";
+  src: url("../../public/fonts/hauora_sans/Hauora.eot");
+  src: url("../../public/fonts/hauora_sans/Hauora.eot?#iefix") format("embedded-opentype"), url("../../public/fonts/hauora_sans/Hauora.woff2") format("woff2"), url("../../public/fonts/hauora_sans/Hauora.woff") format("woff"), url("../../public/fonts/hauora_sans/Hauora.ttf") format("truetype");
+}
+.mob {
+  display: none;
+}
+
+@keyframes morphing {
+  0% {
+    border-radius: 60% 60% 60% 60%/60% 60% 60% 60%;
+  }
+  25% {
+    border-radius: 67% 55% 45% 72%/67% 55% 45% 72%;
+  }
+  50% {
+    border-radius: 45% 72% 67% 55%/45% 72% 67% 55%;
+  }
+  75% {
+    border-radius: 60% 60% 72% 59%/60% 60% 72% 59%;
+  }
+  100% {
+    border-radius: 60% 60% 60% 60%/60% 60% 60% 60%;
+  }
+}
+@keyframes mainTitle {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.effect {
+  scale: 0;
+  opacity: 1;
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(4, 0, 110, 0.1);
+  width: 1000px;
+  height: 1000px;
+  border-radius: 50%;
+  filter: blur(50px);
+  transition: 0.1s ease;
+  pointer-events: none;
+}
+
+.container {
+  display: block;
+  margin: auto;
+  max-width: 2560px;
+}
+.container .header {
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  padding-bottom: 10px;
+  transition: transform 0.3s ease-in-out;
+  position: fixed;
+  z-index: 1000;
+}
+.container .header.hidden {
+  transform: translateY(-100%);
+}
+.container .header.scrolled {
+  background: linear-gradient(180deg, #000000 20.98%, rgba(0, 0, 0, 0) 100%);
+}
+.container .header .header__container {
+  width: 80%;
+  max-width: 1120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 41px;
+}
+.container .header .header__container a img {
+  width: 137px;
+  height: 22.94px;
+}
+.container .header .header__container .header__nav {
+  display: flex;
+  align-items: center;
+}
+.container .header .header__container .header__nav .header__nav-link {
+  padding: 0 10px;
+  margin-left: 10px;
+  font-family: "Hauora";
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
+  line-height: 16.8px;
+  text-align: left;
+  color: rgb(112, 111, 146);
+}
+.container .header .header__container .header__nav .header__nav-link:nth-child(1) {
+  margin-left: 0;
+}
+.container .header .header__container .header__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .header .header__container .header__buttons .header__buttons-search {
+  margin-left: 10px;
+  font-family: "Hauora";
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
+  line-height: 16.8px;
+  text-align: left;
+  color: rgb(112, 111, 146);
+}
+.container .header .header__container .header__buttons .header__buttons-enter {
+  margin-left: 38.5px;
+  width: 117px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgba(23, 19, 147, 0.4);
+  border: 1px solid rgb(23, 19, 147);
+  cursor: pointer;
+  font-family: "Hauora";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
+  line-height: 16.8px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  transition: 0.5s;
+}
+.container .header .header__container .header__buttons .header__buttons-enter:hover {
+  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+}
+.container .header .header__container .header__buttons .header__buttons-menu {
+  display: none;
+}
+.container .main {
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container .main .offer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(6, 6, 40);
+  background-blend-mode: overlay;
+  background-position: center;
+  aspect-ratio: 16/9;
+}
+.container .main .offer .offer__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+.container .main .offer .offer__container {
+  padding-top: 150px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container .main .offer .offer__container .offer__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 64px;
+}
+.container .main .offer .offer__container .offer__buttons .offer__buttons__top {
+  display: flex;
+}
+.container .main .offer .offer__container .offer__buttons .offer__buttons__top .offer__button:nth-child(1) {
+  margin-left: 0;
+  width: 135px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgba(22, 23, 24, 0);
+  border: 1px solid rgb(13, 10, 103);
+  cursor: pointer;
+  font-family: "Hauora";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
+  line-height: 16.8px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  transition: 0.5s;
+}
+.container .main .offer .offer__container .offer__buttons .offer__buttons__top .offer__button:nth-child(1):hover {
+  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+}
+.container .main .offer .offer__container .offer__buttons .offer__buttons__top .offer__button:nth-child(2) {
+  width: 182px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgba(22, 23, 24, 0);
+  border: 1px solid rgb(13, 10, 103);
+  cursor: pointer;
+  font-family: "Hauora";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
+  line-height: 16.8px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  transition: 0.5s;
+  margin-left: 30px;
+}
+.container .main .offer .offer__container .offer__buttons .offer__buttons__top .offer__button:nth-child(2):hover {
+  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+}
+.container .main .offer .offer__container .offer__buttons .offer__buttons__top .offer__button:nth-child(3) {
+  width: 135px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgba(22, 23, 24, 0);
+  border: 1px solid rgb(13, 10, 103);
+  cursor: pointer;
+  font-family: "Hauora";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
+  line-height: 16.8px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  transition: 0.5s;
+  margin-left: 30px;
+}
+.container .main .offer .offer__container .offer__buttons .offer__buttons__top .offer__button:nth-child(3):hover {
+  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+}
+.container .main .offer .offer__container .offer__buttons .offer__buttons__bottom {
+  margin-top: 30px;
+  display: flex;
+}
+.container .main .offer .offer__container .offer__buttons .offer__buttons__bottom .offer__button:nth-child(1) {
+  width: 152px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgba(22, 23, 24, 0);
+  border: 1px solid rgb(13, 10, 103);
+  cursor: pointer;
+  font-family: "Hauora";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
+  line-height: 16.8px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  transition: 0.5s;
+}
+.container .main .offer .offer__container .offer__buttons .offer__buttons__bottom .offer__button:nth-child(1):hover {
+  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+}
+.container .main .offer .offer__container .offer__buttons .offer__buttons__bottom .offer__button:nth-child(2) {
+  width: 121px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgba(22, 23, 24, 0);
+  border: 1px solid rgb(13, 10, 103);
+  cursor: pointer;
+  font-family: "Hauora";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
+  line-height: 16.8px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  transition: 0.5s;
+  margin-left: 30px;
+}
+.container .main .offer .offer__container .offer__buttons .offer__buttons__bottom .offer__button:nth-child(2):hover {
+  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+}
+.container .main .offer .offer__container .offer__title {
+  margin-top: 35px;
+  font-family: "Hauora";
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  line-height: 40px;
+  text-align: center;
+  color: rgb(240, 246, 252);
+}
+.container .main .offer .offer__container .offer__discription {
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 1;
+  animation: mainTitle 2s ease 1s;
+  animation-fill-mode: forwards;
+}
+.container .main .offer .offer__container .offer__discription .offer__info {
+  font-family: "Hauora";
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  line-height: 20.8px;
+  text-align: center;
+  color: rgb(112, 111, 146);
+}
+.container .main .offer .offer__container .offer__discription .offer__slogan {
+  padding-top: 8px;
+  font-family: "Hauora";
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  line-height: 20.8px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.container .main .offer .offer__container .offer__search {
+  padding-top: 114px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .main .offer .offer__container .offer__search .form {
+  display: flex;
+  width: 100%;
+  max-width: 504px;
+  height: 42px;
+  border-radius: 10px;
+  transition: 0.5s;
+  border: 1px solid rgb(3, 16, 180);
+}
+.container .main .offer .offer__container .offer__search .form:hover {
+  box-shadow: 0px 0px 26.39px 0px rgb(3, 16, 180);
+}
+.container .main .offer .offer__container .offer__search .form input {
+  width: 367px;
+  border-radius: 10px 0px 0px 10px;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  outline: none;
+  padding-left: 15px;
+  font-family: "Hauora";
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
+  line-height: 19.6px;
+  text-align: left;
+  color: rgb(6, 6, 6);
+}
+.container .main .offer .offer__container .offer__search .form input::-moz-placeholder {
+  font-family: "Hauora";
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
+  line-height: 19.6px;
+  text-align: left;
+  color: rgb(112, 111, 146);
+}
+.container .main .offer .offer__container .offer__search .form input::placeholder {
+  font-family: "Hauora";
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
+  line-height: 19.6px;
+  text-align: left;
+  color: rgb(112, 111, 146);
+}
+.container .main .offer .offer__container .offer__search .form button {
+  width: 153px;
+  border-radius: 0px 10px 10px 0px;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(7, 4, 51);
+  font-family: "Hauora";
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
+  line-height: 16px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.container .main .offer .offer__container .offer__partners {
+  padding-top: 207px;
+  width: 100%;
+  max-width: 978px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .main .offer .offer__container .offer__partners img:nth-child(1) {
+  width: 94px;
+  height: 40px;
+}
+.container .main .offer .offer__container .offer__partners img:nth-child(2) {
+  width: 100px;
+  height: 40px;
+}
+.container .main .offer .offer__container .offer__partners img:nth-child(3) {
+  width: 136px;
+  height: 36px;
+}
+.container .main .offer .offer__container .offer__partners img:nth-child(4) {
+  width: 56px;
+  height: 38px;
+}
+.container .main .offer .offer__container .offer__partners img:nth-child(5) {
+  width: 91px;
+  height: 40px;
+}
+.container .main .openspace {
+  padding-top: 179px;
+  position: relative;
+  background: linear-gradient(rgb(6, 6, 40), rgb(0, 0, 0));
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .main .openspace .openspace__container {
+  max-width: 1120px;
+  width: 80%;
+}
+.container .main .openspace .openspace__container .openspace__title {
+  font-family: "Hauora";
+  font-size: 35px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  line-height: 40px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  opacity: 1;
+  transition: all 1s ease 0s;
+}
+.container .main .openspace .openspace__container .openspace__title.appearance {
+  opacity: 1;
+}
+.container .main .openspace .openspace__container .openspace__title span {
+  color: rgb(68, 63, 219);
+}
+.container .main .openspace .openspace__container .openspace__content {
+  padding-top: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container .main .openspace .openspace__container .openspace__content .openspace__code {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #060606;
+  width: 100%;
+  height: 600px;
+  border-radius: 20px;
+  border: 1px solid rgb(73, 73, 73);
+  background-size: 1121px 600px;
+}
+.container .main .openspace .openspace__container .openspace__content .openspace__code.show {
+  background-image: url("../../public/images/openspaceBack.png");
+}
+.container .main .openspace .openspace__container .openspace__content .openspace__code .openspace__code__discription {
+  padding: 80px 0 0 95px;
+  font-family: "Hauora";
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 23.4px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  opacity: 1;
+  z-index: 10;
+  transition: 1s ease;
+}
+.container .main .openspace .openspace__container .openspace__content .openspace__code .openspace__code__discription.appearance {
+  opacity: 1;
+}
+.container .main .openspace .openspace__container .openspace__content .openspace__code .openspace__code__discription span {
+  opacity: 1;
+  transition: 1s ease 0.5s;
+  color: rgb(112, 111, 146);
+}
+.container .main .openspace .openspace__container .openspace__content .openspace__code .openspace__code__discription span.appearance {
+  opacity: 1;
+}
+.container .main .openspace .openspace__container .openspace__content .openspace__code .openspace__code__big {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  mix-blend-mode: screen;
+  top: -125px;
+}
+.container .main .openspace .openspace__container .openspace__content .openspace__code .openspace__code__big img {
+  width: 559px;
+  height: 559px;
+}
+.container .main .openspace .openspace__container .openspace__content .openspace__grid {
+  padding-top: 24px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 48.92%);
+  gap: 0 24px;
+}
+.container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__branch {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: rgb(7, 7, 7);
+  border-radius: 20px;
+  border: 1px solid rgb(73, 73, 73);
+  padding-bottom: 1px;
+  height: 666px;
+  padding-bottom: 0;
+}
+.container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__branch p {
+  padding: 88px 0 0 95px;
+  font-family: "Hauora";
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 23.4px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  z-index: 10;
+  opacity: 1;
+}
+.container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__branch p.appearance {
+  opacity: 1;
+}
+.container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__branch p span {
+  opacity: 1;
+  color: rgb(112, 111, 146);
+}
+.container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__branch p span.appearance {
+  opacity: 1;
+}
+.container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__branch p {
+  transition: 1s ease 0s;
+}
+.container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__branch p span {
+  transition: 1s ease 0.1s;
+}
+.container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__branch .openspace__img {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  mix-blend-mode: screen;
+}
+.container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__branch .openspace__img img {
+  width: 410px;
+  height: 410px;
+}
+.container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__manage {
+  height: 666px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: rgb(7, 7, 7);
+  border-radius: 20px;
+  border: 1px solid rgb(73, 73, 73);
+  padding-bottom: 1px;
+  padding-bottom: 0;
+}
+.container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__manage p {
+  padding: 88px 0 0 95px;
+  font-family: "Hauora";
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 23.4px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  z-index: 10;
+  opacity: 1;
+}
+.container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__manage p.appearance {
+  opacity: 1;
+}
+.container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__manage p span {
+  opacity: 1;
+  color: rgb(112, 111, 146);
+}
+.container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__manage p span.appearance {
+  opacity: 1;
+}
+.container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__manage p {
+  transition: 1s ease 0.3s;
+}
+.container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__manage p span {
+  transition: 1s ease 0.4s;
+}
+.container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__manage .openspace__img {
+  margin-top: 49px;
+  display: flex;
+  justify-content: center;
+  mix-blend-mode: screen;
+}
+.container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__manage .openspace__img img {
+  width: 360px;
+  height: 360px;
+}
+.container .main .possibilities {
+  padding-top: 295px;
+  padding-bottom: 174px;
+  position: relative;
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .main .possibilities .possibilities__container {
+  max-width: 1120px;
+  width: 80%;
+}
+.container .main .possibilities .possibilities__container .possibilities__title {
+  font-family: "Hauora";
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  line-height: 23.4px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  opacity: 1;
+  transition: all 1s ease 0s;
+}
+.container .main .possibilities .possibilities__container .possibilities__title.appearance {
+  opacity: 1;
+}
+.container .main .possibilities .possibilities__container .possibilities__title span {
+  color: rgb(68, 63, 219);
+  font-size: 35px;
+}
+.container .main .possibilities .possibilities__container .possibilities__content {
+  margin-top: 165px;
+  width: 100%;
+  display: flex;
+}
+.container .main .possibilities .possibilities__container .possibilities__content .possibilities__manage {
+  width: 356px;
+}
+.container .main .possibilities .possibilities__container .possibilities__content .possibilities__manage .possibilities__manage {
+  width: 248px;
+  height: 248px;
+}
+.container .main .possibilities .possibilities__container .possibilities__content .possibilities__manage .possibilities__manage__title {
+  margin-top: 30px;
+  font-family: "Hauora";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: rgb(240, 246, 252);
+}
+.container .main .possibilities .possibilities__container .possibilities__content .possibilities__manage .possibilities__manage__discription {
+  margin-top: 30px;
+  font-family: "Hauora";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23.4px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: rgb(120, 119, 146);
+}
+.container .main .possibilities .possibilities__container .possibilities__content .possibilities__analitic {
+  width: 356px;
+  margin-left: 24px;
+}
+.container .main .possibilities .possibilities__container .possibilities__content .possibilities__analitic .possibilities__analitic {
+  width: 248px;
+  height: 248px;
+}
+.container .main .possibilities .possibilities__container .possibilities__content .possibilities__analitic .possibilities__analitic__title {
+  margin-top: 30px;
+  font-family: "Hauora";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: rgb(240, 246, 252);
+}
+.container .main .possibilities .possibilities__container .possibilities__content .possibilities__analitic .possibilities__analitic__discription {
+  margin-top: 30px;
+  font-family: "Hauora";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23.4px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: rgb(120, 119, 146);
+}
+.container .main .possibilities .possibilities__container .possibilities__content .possibilities__dev {
+  width: 356px;
+  margin-left: 24px;
+}
+.container .main .possibilities .possibilities__container .possibilities__content .possibilities__dev .possibilities__dev {
+  width: 248px;
+  height: 248px;
+}
+.container .main .possibilities .possibilities__container .possibilities__content .possibilities__dev .possibilities__dev__title {
+  margin-top: 30px;
+  font-family: "Hauora";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: rgb(240, 246, 252);
+}
+.container .main .possibilities .possibilities__container .possibilities__content .possibilities__dev .possibilities__dev__discription {
+  margin-top: 30px;
+  font-family: "Hauora";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23.4px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: rgb(120, 119, 146);
+}
+.container .main .client {
+  padding-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+}
+.container .main .client .client__container {
+  max-width: 1120px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container .main .client .client__container .client__buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.container .main .client .client__container .client__buttons .client__button:nth-child(1) {
+  width: 140px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgba(22, 23, 24, 0);
+  border: 1px solid rgb(13, 10, 103);
+  cursor: pointer;
+  font-family: "Hauora";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
+  line-height: 16.8px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  transition: 0.5s;
+}
+.container .main .client .client__container .client__buttons .client__button:nth-child(1):hover {
+  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+}
+.container .main .client .client__container .client__buttons .client__button:nth-child(2) {
+  margin-left: 30px;
+  width: 236px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgba(22, 23, 24, 0);
+  border: 1px solid rgb(13, 10, 103);
+  cursor: pointer;
+  font-family: "Hauora";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
+  line-height: 16.8px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  transition: 0.5s;
+}
+.container .main .client .client__container .client__buttons .client__button:nth-child(2):hover {
+  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+}
+.container .main .client .client__container .client__buttons .client__button:nth-child(3) {
+  margin-left: 30px;
+  width: 148px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgba(22, 23, 24, 0);
+  border: 1px solid rgb(13, 10, 103);
+  cursor: pointer;
+  font-family: "Hauora";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
+  line-height: 16.8px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  transition: 0.5s;
+}
+.container .main .client .client__container .client__buttons .client__button:nth-child(3):hover {
+  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+}
+.container .main .client .client__container .client__title {
+  margin-top: 33px;
+  font-family: "Hauora";
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  line-height: 40px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.container .main .client .client__container .client__img {
+  margin-top: 5px;
+}
+.container .main .client .client__container .client__img img {
+  width: 410px;
+  height: 408px;
+}
+.container .main .modules {
+  padding-top: 295px;
+  padding-bottom: 174px;
+  position: relative;
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .main .modules .modules__container {
+  max-width: 1120px;
+  width: 80%;
+}
+.container .main .modules .modules__container .modules__title {
+  font-family: "Hauora";
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  line-height: 23.4px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  opacity: 1;
+  transition: all 1s ease 0s;
+}
+.container .main .modules .modules__container .modules__title.appearance {
+  opacity: 1;
+}
+.container .main .modules .modules__container .modules__title span {
+  color: rgb(68, 63, 219);
+  font-size: 35px;
+}
+.container .main .modules .modules__container .modules__content {
+  margin-top: 165px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.container .main .modules .modules__container .modules__content .modules__box:nth-child(n) {
+  width: 356px;
+}
+.container .main .modules .modules__container .modules__content .modules__box:nth-child(n) .modules__box__picture {
+  width: 248px;
+  height: 248px;
+}
+.container .main .modules .modules__container .modules__content .modules__box:nth-child(n) .modules__box__title {
+  margin-top: 30px;
+  font-family: "Hauora";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
+  color: rgb(240, 246, 252);
+}
+.container .main .modules .modules__container .modules__content .modules__box:nth-child(n) .modules__box__discription {
+  margin-top: 30px;
+  font-family: "Hauora";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23.4px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: rgb(120, 119, 146);
+}
+.container .main .modules .modules__container .modules__content .modules__box:nth-child(n+4) {
+  margin-top: 30px;
+}
+.container .main .modules .modules__container .modules__content .modules__more {
+  margin-top: 30px;
+  width: 356px;
+}
+.container .main .modules .modules__container .modules__content .modules__more .modules__box__title {
+  margin-top: 278px;
+  font-family: "Hauora";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
+  color: rgb(240, 246, 252);
+}
+.container .main .modules .modules__container .modules__content .modules__more .modules__box-button {
+  margin-top: 90px;
+  width: 108px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgba(23, 19, 147, 0.4);
+  border: 1px solid rgb(23, 19, 147);
+  cursor: pointer;
+  font-family: "Hauora";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
+  line-height: 16.8px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  transition: 0.5s;
+}
+.container .main .modules .modules__container .modules__content .modules__more .modules__box-button:hover {
+  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+}
+.container .main .inplomintation {
+  padding-top: 179px;
+  position: relative;
+  background: linear-gradient(rgb(0, 0, 0), rgb(8, 7, 50), rgb(1, 1, 8));
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .main .inplomintation .inplomintation__container {
+  max-width: 1120px;
+  width: 80%;
+}
+.container .main .inplomintation .inplomintation__container .inplomintation__title {
+  font-family: "Hauora";
+  font-size: 35px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  line-height: 40px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  opacity: 1;
+  transition: all 1s ease 0s;
+}
+.container .main .inplomintation .inplomintation__container .inplomintation__title.appearance {
+  opacity: 1;
+}
+.container .main .inplomintation .inplomintation__container .inplomintation__title span {
+  color: rgb(68, 63, 219);
+}
+.container .main .inplomintation .inplomintation__container .inplomintation__content {
+  padding-top: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+.container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__code {
+  margin-top: 24px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #060606;
+  width: 100%;
+  height: 600px;
+  border-radius: 20px;
+  border: 1px solid rgb(73, 73, 73);
+  background-size: 1121px 600px;
+}
+.container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__code.show {
+  background-image: url("../../public/images/inplomintationBack.png");
+}
+.container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__code .inplomintation__code__discription {
+  padding: 80px 0 0 95px;
+  font-family: "Hauora";
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 23.4px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  opacity: 1;
+  z-index: 10;
+  transition: 1s ease;
+}
+.container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__code .inplomintation__code__discription.appearance {
+  opacity: 1;
+}
+.container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__code .inplomintation__code__discription span {
+  opacity: 1;
+  transition: 1s ease 0.5s;
+  color: rgb(112, 111, 146);
+}
+.container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__code .inplomintation__code__discription span.appearance {
+  opacity: 1;
+}
+.container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__code .inplomintation__code__big {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  mix-blend-mode: screen;
+  top: -125px;
+}
+.container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__code .inplomintation__code__big img {
+  width: 559px;
+  height: 559px;
+}
+.container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid {
+  padding-top: 24px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 48.92%);
+  gap: 0 24px;
+}
+.container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__branch {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: rgb(7, 7, 7);
+  border-radius: 20px;
+  border: 1px solid rgb(73, 73, 73);
+  padding-bottom: 1px;
+  height: 666px;
+  padding-bottom: 0;
+}
+.container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__branch p {
+  padding: 88px 0 0 95px;
+  font-family: "Hauora";
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 23.4px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  z-index: 10;
+  opacity: 1;
+}
+.container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__branch p.appearance {
+  opacity: 1;
+}
+.container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__branch p span {
+  opacity: 1;
+  color: rgb(112, 111, 146);
+}
+.container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__branch p span.appearance {
+  opacity: 1;
+}
+.container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__branch p {
+  transition: 1s ease 0s;
+}
+.container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__branch p span {
+  transition: 1s ease 0.1s;
+}
+.container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__branch .inplomintation__img {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  mix-blend-mode: screen;
+}
+.container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__branch .inplomintation__img img {
+  width: 410px;
+  height: 410px;
+}
+.container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__manage {
+  height: 666px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: rgb(7, 7, 7);
+  border-radius: 20px;
+  border: 1px solid rgb(73, 73, 73);
+  padding-bottom: 1px;
+  padding-bottom: 0;
+}
+.container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__manage p {
+  padding: 88px 0 0 95px;
+  font-family: "Hauora";
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 23.4px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  z-index: 10;
+  opacity: 1;
+}
+.container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__manage p.appearance {
+  opacity: 1;
+}
+.container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__manage p span {
+  opacity: 1;
+  color: rgb(112, 111, 146);
+}
+.container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__manage p span.appearance {
+  opacity: 1;
+}
+.container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__manage p {
+  transition: 1s ease 0.3s;
+}
+.container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__manage p span {
+  transition: 1s ease 0.4s;
+}
+.container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__manage .inplomintation__img {
+  margin-top: 49px;
+  display: flex;
+  justify-content: center;
+  mix-blend-mode: screen;
+}
+.container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__manage .inplomintation__img img {
+  width: 360px;
+  height: 360px;
+}
+.container .main .characteristic {
+  padding-top: 295px;
+  padding-bottom: 174px;
+  position: relative;
+  background-color: rgb(0, 0, 0);
+  background: linear-gradient(rgb(1, 1, 8), rgb(0, 0, 0));
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .main .characteristic .characteristic__container {
+  max-width: 1120px;
+  width: 80%;
+}
+.container .main .characteristic .characteristic__container .characteristic__title {
+  font-family: "Hauora";
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  line-height: 23.4px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  opacity: 1;
+  transition: all 1s ease 0s;
+}
+.container .main .characteristic .characteristic__container .characteristic__title.appearance {
+  opacity: 1;
+}
+.container .main .characteristic .characteristic__container .characteristic__title span {
+  color: rgb(68, 63, 219);
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 47.81px;
+}
+.container .main .characteristic .characteristic__container .characteristic__content {
+  margin-top: 165px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.container .main .characteristic .characteristic__container .characteristic__content .characteristic__box:nth-child(n) {
+  width: 356px;
+}
+.container .main .characteristic .characteristic__container .characteristic__content .characteristic__box:nth-child(n) .characteristic__box__picture {
+  width: 248px;
+  height: 248px;
+  mix-blend-mode: screen;
+}
+.container .main .characteristic .characteristic__container .characteristic__content .characteristic__box:nth-child(n) .characteristic__box__title {
+  margin-top: 30px;
+  font-family: "Hauora";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: rgb(240, 246, 252);
+}
+.container .main .characteristic .characteristic__container .characteristic__content .characteristic__box:nth-child(n) .characteristic__box__discription {
+  margin-top: 30px;
+  font-family: "Hauora";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23.4px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: rgb(120, 119, 146);
+}
+.container .main .characteristic .characteristic__container .characteristic__content .characteristic__box:nth-child(n+4) {
+  margin-top: 30px;
+}
+.container .main .earn {
+  background: linear-gradient(rgb(0, 0, 0), rgb(3, 3, 22));
+  position: relative;
+  padding-top: 475px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .main .earn .earn__container {
+  max-width: 1120px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container .main .earn .earn__container .earn__title {
+  text-align: center;
+  font-family: "Hauora";
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 0.03rem;
+  line-height: 40px;
+  text-align: center;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: rgb(240, 246, 252);
+}
+.container .main .earn .earn__container .earn__discripiton {
+  margin-top: 52px;
+  text-align: center;
+  font-family: "Hauora";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 23.4px;
+  text-align: center;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: rgb(112, 111, 146);
+}
+.container .main .earn .earn__container .earn__search {
+  padding-top: 104px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .main .earn .earn__container .earn__search .earn__invite label {
+  width: 483px;
+  display: flex;
+  justify-content: start;
+  font-family: "Hauora";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20.8px;
+  text-align: left;
+  color: rgb(112, 111, 146);
+}
+.container .main .earn .earn__container .earn__search .earn__invite .earn__form {
+  margin-top: 9px;
+  display: flex;
+  width: 100%;
+  max-width: 504px;
+  height: 42px;
+  border-radius: 10px;
+  transition: 0.5s;
+  border: 1px solid rgb(3, 16, 180);
+}
+.container .main .earn .earn__container .earn__search .earn__invite .earn__form:hover {
+  box-shadow: 0px 0px 26.39px 0px rgb(3, 16, 180);
+}
+.container .main .earn .earn__container .earn__search .earn__invite .earn__form input {
+  width: 367px;
+  border-radius: 10px 0px 0px 10px;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  outline: none;
+  padding-left: 15px;
+  font-family: "Hauora";
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
+  line-height: 19.6px;
+  text-align: left;
+  color: rgb(6, 6, 6);
+}
+.container .main .earn .earn__container .earn__search .earn__invite .earn__form input::-moz-placeholder {
+  font-family: "Hauora";
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
+  line-height: 19.6px;
+  text-align: left;
+  color: rgb(112, 111, 146);
+}
+.container .main .earn .earn__container .earn__search .earn__invite .earn__form input::placeholder {
+  font-family: "Hauora";
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
+  line-height: 19.6px;
+  text-align: left;
+  color: rgb(112, 111, 146);
+}
+.container .main .earn .earn__container .earn__search .earn__invite .earn__form button {
+  width: 153px;
+  border-radius: 0px 10px 10px 0px;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(7, 4, 51);
+  font-family: "Hauora";
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
+  line-height: 16px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.container .footer {
+  background: linear-gradient(rgb(3, 3, 22), rgb(8, 7, 51));
+  padding-top: 320px;
+  padding-bottom: 109.46px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .footer .footer__container {
+  width: 80%;
+  max-width: 1120px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+.container .footer .footer__container .footer__top {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.container .footer .footer__container .footer__top .footer__logo {
+  width: 137px;
+  height: 22.94px;
+}
+.container .footer .footer__container .footer__top .footer__newsletter {
+  margin-top: 97.06px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 97px;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid rgb(52, 59, 67);
+  background-color: transparent;
+  cursor: pointer;
+  font-family: "Hauora";
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  line-height: 16.8px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+.container .footer .footer__container .footer__top .footer__newsletter:hover {
+  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+}
+.container .footer .footer__container .footer__menu {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 54px;
+}
+.container .footer .footer__container .footer__menu .footer__column {
+  display: flex;
+  flex-direction: column;
+}
+.container .footer .footer__container .footer__menu .footer__column .footer__column__title {
+  font-family: "Hauora";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15.6px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  padding-bottom: 42.54px;
+}
+.container .footer .footer__container .footer__menu .footer__column .footer__column__item {
+  margin-top: 8px;
+  font-family: "Hauora";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15.6px;
+  text-align: left;
+  color: rgb(112, 111, 146);
+}/*# sourceMappingURL=style.css.map */
