@@ -466,6 +466,7 @@ a {
   align-items: center;
 }
 .container .main .openspace .openspace__container {
+  position: relative;
   max-width: 1120px;
   width: 80%;
 }
@@ -635,8 +636,8 @@ a {
 .container .main .openspace .openspace__container::after {
   content: "";
   position: absolute;
-  left: 154px;
   display: flex;
+  left: 30px;
   width: 793px;
   height: 0;
   background-image: url(../../public/images/firstLine.svg);
@@ -657,6 +658,7 @@ a {
   padding-bottom: 330px;
 }
 .container .main .possibilities .possibilities__container {
+  position: relative;
   max-width: 1120px;
   width: 80%;
 }
@@ -1032,6 +1034,7 @@ a {
 .container .main .inplomintation .inplomintation__container {
   max-width: 1120px;
   width: 80%;
+  position: relative;
 }
 .container .main .inplomintation .inplomintation__container .inplomintation__title {
   font-family: "Hauora";
@@ -1217,7 +1220,7 @@ a {
   content: "";
   position: absolute;
   display: flex;
-  left: 158px;
+  left: 32px;
   width: 3px;
   height: 0;
   background-image: url(../../public/images/thirdLine.svg);
@@ -1241,6 +1244,7 @@ a {
 .container .main .characteristic .characteristic__container {
   max-width: 1120px;
   width: 80%;
+  position: relative;
 }
 .container .main .characteristic .characteristic__container .characteristic__title {
   font-family: "Hauora";

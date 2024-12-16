@@ -421,6 +421,7 @@ $width: 80%;
             width: 100%;
             @include center();                 
             .openspace__container {
+                position: relative;
                 max-width: 1120px;
                 width: 80%;
                 .openspace__title {
@@ -536,8 +537,8 @@ $width: 80%;
                 &::after {
                     content: "";
                     position: absolute;
-                    left: 154px;
                     display: flex;
+                    left: 30px;
                     width: 793px;
                     height: 0;
                     background-image: url(../../public/images/firstLine.svg);
@@ -558,6 +559,7 @@ $width: 80%;
             @include center();   
             padding-bottom: 330px;              
             .possibilities__container {
+                position: relative;
                 max-width: 1120px;
                 width: 80%;
                 .possibilities__title {
@@ -863,6 +865,7 @@ $width: 80%;
             .inplomintation__container {
                 max-width: 1120px;
                 width: 80%;
+                position: relative;
                 .inplomintation__title {
                     font-family: "Hauora";
                     font-size: 35px;
@@ -991,7 +994,7 @@ $width: 80%;
                     content: "";
                     position: absolute;                    
                     display: flex;
-                    left: 158px;
+                    left: 32px;
                     width: 3px;
                     height: 0;
                     background-image: url(../../public/images/thirdLine.svg);
@@ -1014,6 +1017,7 @@ $width: 80%;
             .characteristic__container {
                 max-width: 1120px;
                 width: 80%;
+                position: relative;
                 .characteristic__title {
                     font-family: "Hauora";
                     font-size: 18px;
