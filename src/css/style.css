@@ -1280,6 +1280,7 @@ a {
   mix-blend-mode: screen;
 }
 .container .main .characteristic .characteristic__container .characteristic__content .characteristic__box:nth-child(n) .characteristic__box__title {
+  height: 44px;
   margin-top: 30px;
   font-family: "Hauora";
   font-size: 18px;
