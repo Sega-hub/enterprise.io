@@ -21,26 +21,9 @@ a {
   display: none;
 }
 
-@keyframes morphing {
-  0% {
-    border-radius: 60% 60% 60% 60%/60% 60% 60% 60%;
-  }
-  25% {
-    border-radius: 67% 55% 45% 72%/67% 55% 45% 72%;
-  }
-  50% {
-    border-radius: 45% 72% 67% 55%/45% 72% 67% 55%;
-  }
-  75% {
-    border-radius: 60% 60% 72% 59%/60% 60% 72% 59%;
-  }
-  100% {
-    border-radius: 60% 60% 60% 60%/60% 60% 60% 60%;
-  }
-}
 @keyframes mainTitle {
   0% {
-    opacity: 1;
+    opacity: 0;
   }
   100% {
     opacity: 1;
@@ -329,6 +312,9 @@ a {
   line-height: 46px;
   text-align: center;
   color: rgb(240, 246, 252);
+  opacity: 0;
+  animation: mainTitle 2s ease 0.5s;
+  animation-fill-mode: forwards;
 }
 .container .main .offer .offer__container .offer__discription {
   margin-top: 35px;
@@ -336,7 +322,7 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  opacity: 1;
+  opacity: 0;
   animation: mainTitle 2s ease 1s;
   animation-fill-mode: forwards;
 }
@@ -478,9 +464,14 @@ a {
   line-height: 47.81px;
   text-align: left;
   color: rgb(255, 255, 255);
+  opacity: 0;
 }
 .container .main .openspace .openspace__container .openspace__title span {
   color: rgb(68, 63, 219);
+}
+.container .main .openspace .openspace__container .openspace__title.appearance {
+  transition: 1s;
+  opacity: 1;
 }
 .container .main .openspace .openspace__container .openspace__content {
   padding-top: 100px;
@@ -513,9 +504,19 @@ a {
   line-height: 23.4px;
   text-align: left;
   color: rgb(255, 255, 255);
+  opacity: 0;
 }
 .container .main .openspace .openspace__container .openspace__content .openspace__code .openspace__code__discription span {
+  opacity: 0;
   color: rgb(112, 111, 146);
+}
+.container .main .openspace .openspace__container .openspace__content .openspace__code .openspace__code__discription span.appearance {
+  transition: 1s ease 0.5s;
+  opacity: 1;
+}
+.container .main .openspace .openspace__container .openspace__content .openspace__code .openspace__code__discription.appearance {
+  transition: 1s ease;
+  opacity: 1;
 }
 .container .main .openspace .openspace__container .openspace__content .openspace__code .openspace__code__big {
   position: relative;
@@ -523,10 +524,15 @@ a {
   justify-content: center;
   mix-blend-mode: screen;
   top: -125px;
+  opacity: 0;
 }
 .container .main .openspace .openspace__container .openspace__content .openspace__code .openspace__code__big img {
   width: 559px;
   height: 559px;
+}
+.container .main .openspace .openspace__container .openspace__content .openspace__code .openspace__code__big.appearance {
+  opacity: 1;
+  transition: 1s ease 1s;
 }
 .container .main .openspace .openspace__container .openspace__content .openspace__grid {
   padding-top: 24px;
@@ -569,20 +575,33 @@ a {
   opacity: 1;
 }
 .container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__branch p {
+  opacity: 0;
   transition: 1s ease 0s;
 }
 .container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__branch p span {
+  opacity: 0;
   transition: 1s ease 0.1s;
+}
+.container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__branch p span.appearance {
+  opacity: 1;
+}
+.container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__branch p.appearance {
+  opacity: 1;
 }
 .container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__branch .openspace__img {
   margin-top: 24px;
   display: flex;
   justify-content: center;
   mix-blend-mode: screen;
+  opacity: 0;
+  transition: 1s ease 0s;
 }
 .container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__branch .openspace__img img {
   width: 410px;
   height: 410px;
+}
+.container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__branch .openspace__img.appearance {
+  opacity: 1;
 }
 .container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__manage {
   height: 666px;
@@ -618,20 +637,33 @@ a {
   opacity: 1;
 }
 .container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__manage p {
+  opacity: 0;
   transition: 1s ease 0.3s;
 }
 .container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__manage p span {
+  opacity: 0;
   transition: 1s ease 0.4s;
+}
+.container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__manage p span.appearance {
+  opacity: 1;
+}
+.container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__manage p.appearance {
+  opacity: 1;
 }
 .container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__manage .openspace__img {
   margin-top: 49px;
   display: flex;
   justify-content: center;
   mix-blend-mode: screen;
+  opacity: 0;
+  transition: 1s ease 0s;
 }
 .container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__manage .openspace__img img {
   width: 360px;
   height: 360px;
+}
+.container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__manage .openspace__img.appearance {
+  opacity: 1;
 }
 .container .main .openspace .openspace__container::after {
   content: "";
@@ -670,8 +702,8 @@ a {
   line-height: 23.4px;
   text-align: left;
   color: rgb(255, 255, 255);
-  opacity: 1;
-  transition: all 1s ease 0s;
+  opacity: 0;
+  transition: all 1s ease 1s;
 }
 .container .main .possibilities .possibilities__container .possibilities__title.appearance {
   opacity: 1;
@@ -684,6 +716,10 @@ a {
   line-height: 47.81px;
   text-align: left;
   color: rgb(68, 63, 219);
+  transition: all 1s ease 0s;
+}
+.container .main .possibilities .possibilities__container .possibilities__title span.appearance {
+  opacity: 1;
 }
 .container .main .possibilities .possibilities__container .possibilities__content {
   margin-top: 165px;
@@ -696,6 +732,11 @@ a {
 .container .main .possibilities .possibilities__container .possibilities__content .possibilities__manage .possibilities__manage {
   width: 248px;
   height: 248px;
+  opacity: 0;
+  transition: 0.5s ease 0.5s;
+}
+.container .main .possibilities .possibilities__container .possibilities__content .possibilities__manage .possibilities__manage.appearance {
+  opacity: 1;
 }
 .container .main .possibilities .possibilities__container .possibilities__content .possibilities__manage .possibilities__manage__title {
   margin-top: 30px;
@@ -706,6 +747,11 @@ a {
   line-height: 23.4px;
   text-align: left;
   color: rgb(240, 246, 252);
+  opacity: 0;
+  transition: 0.5s ease 0.5s;
+}
+.container .main .possibilities .possibilities__container .possibilities__content .possibilities__manage .possibilities__manage__title.appearance {
+  opacity: 1;
 }
 .container .main .possibilities .possibilities__container .possibilities__content .possibilities__manage .possibilities__manage__discription {
   margin-top: 30px;
@@ -716,6 +762,11 @@ a {
   line-height: 23.4px;
   text-align: left;
   color: rgb(120, 119, 146);
+  opacity: 0;
+  transition: 0.5s ease 0.5s;
+}
+.container .main .possibilities .possibilities__container .possibilities__content .possibilities__manage .possibilities__manage__discription.appearance {
+  opacity: 1;
 }
 .container .main .possibilities .possibilities__container .possibilities__content .possibilities__analitic {
   width: 356px;
@@ -724,6 +775,11 @@ a {
 .container .main .possibilities .possibilities__container .possibilities__content .possibilities__analitic .possibilities__analitic {
   width: 248px;
   height: 248px;
+  opacity: 0;
+  transition: 0.5s ease 1s;
+}
+.container .main .possibilities .possibilities__container .possibilities__content .possibilities__analitic .possibilities__analitic.appearance {
+  opacity: 1;
 }
 .container .main .possibilities .possibilities__container .possibilities__content .possibilities__analitic .possibilities__analitic__title {
   margin-top: 30px;
@@ -737,6 +793,11 @@ a {
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
   color: rgb(240, 246, 252);
+  opacity: 0;
+  transition: 0.5s ease 1s;
+}
+.container .main .possibilities .possibilities__container .possibilities__content .possibilities__analitic .possibilities__analitic__title.appearance {
+  opacity: 1;
 }
 .container .main .possibilities .possibilities__container .possibilities__content .possibilities__analitic .possibilities__analitic__discription {
   margin-top: 30px;
@@ -750,6 +811,11 @@ a {
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
   color: rgb(120, 119, 146);
+  opacity: 0;
+  transition: 0.5s ease 1s;
+}
+.container .main .possibilities .possibilities__container .possibilities__content .possibilities__analitic .possibilities__analitic__discription.appearance {
+  opacity: 1;
 }
 .container .main .possibilities .possibilities__container .possibilities__content .possibilities__dev {
   width: 356px;
@@ -758,6 +824,11 @@ a {
 .container .main .possibilities .possibilities__container .possibilities__content .possibilities__dev .possibilities__dev {
   width: 248px;
   height: 248px;
+  opacity: 0;
+  transition: 0.5s ease 1.5s;
+}
+.container .main .possibilities .possibilities__container .possibilities__content .possibilities__dev .possibilities__dev.appearance {
+  opacity: 1;
 }
 .container .main .possibilities .possibilities__container .possibilities__content .possibilities__dev .possibilities__dev__title {
   margin-top: 30px;
@@ -771,6 +842,11 @@ a {
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
   color: rgb(240, 246, 252);
+  opacity: 0;
+  transition: 0.5s ease 1.5s;
+}
+.container .main .possibilities .possibilities__container .possibilities__content .possibilities__dev .possibilities__dev__title.appearance {
+  opacity: 1;
 }
 .container .main .possibilities .possibilities__container .possibilities__content .possibilities__dev .possibilities__dev__discription {
   margin-top: 30px;
@@ -784,6 +860,11 @@ a {
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
   color: rgb(120, 119, 146);
+  opacity: 0;
+  transition: 0.5s ease 1.5s;
+}
+.container .main .possibilities .possibilities__container .possibilities__content .possibilities__dev .possibilities__dev__discription.appearance {
+  opacity: 1;
 }
 .container .main .possibilities .possibilities__container::after {
   content: "";
@@ -928,8 +1009,8 @@ a {
   line-height: 23.4px;
   text-align: left;
   color: rgb(255, 255, 255);
-  opacity: 1;
-  transition: all 1s ease 0s;
+  opacity: 0;
+  transition: all 1s ease 1s;
 }
 .container .main .modules .modules__container .modules__title.appearance {
   opacity: 1;
@@ -942,6 +1023,11 @@ a {
   letter-spacing: 0.03em;
   line-height: 47.81px;
   text-align: left;
+  opacity: 0;
+}
+.container .main .modules .modules__container .modules__title span.appearance {
+  transition: all 1s ease 0s;
+  opacity: 1;
 }
 .container .main .modules .modules__container .modules__content {
   margin-top: 165px;
@@ -956,6 +1042,11 @@ a {
 .container .main .modules .modules__container .modules__content .modules__box:nth-child(n) .modules__box__picture {
   width: 248px;
   height: 248px;
+  opacity: 0;
+  transition: 1s ease 1s;
+}
+.container .main .modules .modules__container .modules__content .modules__box:nth-child(n) .modules__box__picture.appearance {
+  opacity: 1;
 }
 .container .main .modules .modules__container .modules__content .modules__box:nth-child(n) .modules__box__title {
   margin-top: 30px;
@@ -969,6 +1060,11 @@ a {
   -webkit-text-decoration-skip-ink: none;
   text-decoration-skip-ink: none;
   color: rgb(240, 246, 252);
+  opacity: 0;
+  transition: 1s ease 1s;
+}
+.container .main .modules .modules__container .modules__content .modules__box:nth-child(n) .modules__box__title.appearance {
+  opacity: 1;
 }
 .container .main .modules .modules__container .modules__content .modules__box:nth-child(n) .modules__box__discription {
   margin-top: 30px;
@@ -982,6 +1078,11 @@ a {
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
   color: rgb(120, 119, 146);
+  opacity: 0;
+  transition: 1s ease 1s;
+}
+.container .main .modules .modules__container .modules__content .modules__box:nth-child(n) .modules__box__discription.appearance {
+  opacity: 1;
 }
 .container .main .modules .modules__container .modules__content .modules__more {
   width: 356px;
@@ -997,6 +1098,11 @@ a {
   -webkit-text-decoration-skip-ink: none;
   text-decoration-skip-ink: none;
   color: rgb(240, 246, 252);
+  opacity: 0;
+  transition: 1s ease 1s;
+}
+.container .main .modules .modules__container .modules__content .modules__more .modules__box__title.appearance {
+  opacity: 1;
 }
 .container .main .modules .modules__container .modules__content .modules__more .modules__box-button {
   margin-top: 62px;
@@ -1017,9 +1123,14 @@ a {
   text-align: center;
   transition: 0.5s;
   color: rgb(255, 255, 255);
+  opacity: 0;
+  transition: 1s ease 1s;
 }
 .container .main .modules .modules__container .modules__content .modules__more .modules__box-button:hover {
   box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+}
+.container .main .modules .modules__container .modules__content .modules__more .modules__box-button.appearance {
+  opacity: 1;
 }
 .container .main .inplomintation {
   padding-top: 179px;
@@ -1044,7 +1155,7 @@ a {
   line-height: 47.81px;
   text-align: left;
   color: rgb(255, 255, 255);
-  opacity: 1;
+  opacity: 0;
   transition: all 1s ease 0s;
 }
 .container .main .inplomintation .inplomintation__container .inplomintation__title.appearance {
@@ -1085,8 +1196,8 @@ a {
   line-height: 23.4px;
   text-align: left;
   color: rgb(255, 255, 255);
-  opacity: 1;
   z-index: 10;
+  opacity: 0;
   transition: 1s ease;
 }
 .container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__code .inplomintation__code__discription.appearance {
@@ -1106,6 +1217,11 @@ a {
   justify-content: center;
   mix-blend-mode: screen;
   top: -125px;
+  opacity: 0;
+  transition: 1s ease;
+}
+.container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__code .inplomintation__code__big.appearance {
+  opacity: 1;
 }
 .container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__code .inplomintation__code__big img {
   width: 559px;
@@ -1152,7 +1268,11 @@ a {
   opacity: 1;
 }
 .container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__branch p {
-  transition: 1s ease 0s;
+  opacity: 0;
+  transition: 1s ease;
+}
+.container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__branch p.appearance {
+  opacity: 1;
 }
 .container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__branch p span {
   transition: 1s ease 0.1s;
@@ -1162,6 +1282,11 @@ a {
   display: flex;
   justify-content: center;
   mix-blend-mode: screen;
+  opacity: 0;
+  transition: 1s ease;
+}
+.container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__branch .inplomintation__img.appearance {
+  opacity: 1;
 }
 .container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__branch .inplomintation__img img {
   width: 410px;
@@ -1201,7 +1326,11 @@ a {
   opacity: 1;
 }
 .container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__manage p {
-  transition: 1s ease 0.3s;
+  opacity: 0;
+  transition: 1s ease;
+}
+.container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__manage p.appearance {
+  opacity: 1;
 }
 .container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__manage p span {
   transition: 1s ease 0.4s;
@@ -1211,6 +1340,11 @@ a {
   display: flex;
   justify-content: center;
   mix-blend-mode: screen;
+  opacity: 0;
+  transition: 1s ease;
+}
+.container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__manage .inplomintation__img.appearance {
+  opacity: 1;
 }
 .container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__manage .inplomintation__img img {
   width: 470px;
@@ -1254,6 +1388,11 @@ a {
   line-height: 23.4px;
   text-align: left;
   color: rgb(255, 255, 255);
+  opacity: 0;
+  transition: 1s ease;
+}
+.container .main .characteristic .characteristic__container .characteristic__title.appearance {
+  opacity: 1;
 }
 .container .main .characteristic .characteristic__container .characteristic__title span {
   color: rgb(68, 63, 219);
@@ -1278,6 +1417,11 @@ a {
   width: 248px;
   height: 248px;
   mix-blend-mode: screen;
+  opacity: 0;
+  transition: 1s ease;
+}
+.container .main .characteristic .characteristic__container .characteristic__content .characteristic__box:nth-child(n) .characteristic__box__picture.appearance {
+  opacity: 1;
 }
 .container .main .characteristic .characteristic__container .characteristic__content .characteristic__box:nth-child(n) .characteristic__box__title {
   height: 44px;
@@ -1292,6 +1436,11 @@ a {
   -webkit-text-decoration-skip-ink: none;
   text-decoration-skip-ink: none;
   color: rgb(240, 246, 252);
+  opacity: 0;
+  transition: 1s ease;
+}
+.container .main .characteristic .characteristic__container .characteristic__content .characteristic__box:nth-child(n) .characteristic__box__title.appearance {
+  opacity: 1;
 }
 .container .main .characteristic .characteristic__container .characteristic__content .characteristic__box:nth-child(n) .characteristic__box__discription {
   margin-top: 30px;
@@ -1305,6 +1454,11 @@ a {
   -webkit-text-decoration-skip-ink: none;
   text-decoration-skip-ink: none;
   color: rgb(120, 119, 146);
+  opacity: 0;
+  transition: 1s ease;
+}
+.container .main .characteristic .characteristic__container .characteristic__content .characteristic__box:nth-child(n) .characteristic__box__discription.appearance {
+  opacity: 1;
 }
 .container .main .characteristic .characteristic__container::after {
   margin-top: 50px;
@@ -1346,6 +1500,11 @@ a {
   line-height: 46px;
   text-align: center;
   color: rgb(240, 246, 252);
+  opacity: 0;
+  transition: 1s ease;
+}
+.container .main .earn .earn__container .earn__title.appearance {
+  opacity: 1;
 }
 .container .main .earn .earn__container .earn__discripiton {
   margin-top: 52px;
@@ -1356,6 +1515,11 @@ a {
   line-height: 20.8px;
   text-align: center;
   color: rgb(112, 111, 146);
+  opacity: 0;
+  transition: 1s ease 0.5s;
+}
+.container .main .earn .earn__container .earn__discripiton.appearance {
+  opacity: 1;
 }
 .container .main .earn .earn__container .earn__search {
   padding-top: 104px;

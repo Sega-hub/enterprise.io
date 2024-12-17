@@ -1,0 +1,434 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+body {
+    background: linear-gradient(180deg, #010049 -34.45%, rgba(0, 0, 0, 1) 100%);
+}
+
+a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: "Hauora";
+    src: url("../../public/fonts/hauora_sans/Hauora.eot");
+    src: url("../../public/fonts/hauora_sans/Hauora.eot?#iefix")format("embedded-opentype"),
+    url("../../public/fonts/hauora_sans/Hauora.woff2")format("woff2"),
+    url("../../public/fonts/hauora_sans/Hauora.woff")format("woff"),
+    url("../../public/fonts/hauora_sans/Hauora.ttf")format("truetype"),
+}
+
+.mob {
+    display: none;
+}
+
+$FONT_SIZE_12: 12px;
+$FONT_SIZE_14: 14px;
+$FONT_SIZE_16: 16px;
+$FONT_SIZE_18: 18px;
+$FONT_SIZE_35: 35px;
+$FONT_SIZE_40: 40px;
+
+$COLOR_DARK_GRAY: rgba(73, 73, 73, 1);
+$COLOR_GRAY: rgba(112, 111, 146, 1);
+$COLOR_LIGHT_WHITE: rgba(240, 246, 252, 1);;
+$COLOR_WHITE: rgba(255, 255, 255 , 1);
+$COLOR_BLACK: rgba(6, 6, 6, 1);
+
+$width: 80%;
+
+@mixin center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin button($width, $color, $borderC) {
+    width: $width;
+    height: 30px;
+    @include center();
+    border-radius: 10px;
+    background-color: $color;
+    border: 1px solid $borderC;   
+    cursor: pointer;
+
+    font-family: "Hauora";
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    line-height: 16px;
+    text-align: center;   
+    transition: 0.5s;
+    color: rgba(255, 255, 255, 1);
+    &:hover {
+        box-shadow: 0px 0px 26.39px 0px rgba(17, 14, 104, 1);
+    }
+}
+
+@mixin card() {
+    display: flex;
+    flex-direction: column;    
+    overflow: hidden;
+    background-color: rgb(7, 7, 7);
+    border-radius: 20px;
+    border: 1px solid $COLOR_DARK_GRAY;
+    padding-bottom: 1px;
+    p {
+        padding: 88px 0 0 95px;
+        font-family: "Hauora";
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        line-height: 23.4px;
+        text-align: left;
+        color: $COLOR_WHITE;
+        z-index: 10;
+        opacity: 1;
+        &.appearance {
+            opacity: 1;
+        }
+        span {
+            opacity: 1;
+            color: $COLOR_GRAY;           
+            &.appearance {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+@mixin input() {
+    display: flex;
+    width: 100%;
+    max-width: 504px;
+    height: 42px;
+    border-radius: 10px;
+    transition: 0.5s;
+    border: 1px solid rgba(3, 16, 180, 1);
+    &:hover {                            
+        box-shadow: 0px 0px 26.39px 0px rgba(3, 16, 180, 1);
+    }
+    input {
+        width: 367px;                            
+        border-radius: 10px 0px 0px 10px;                            
+        background-color: rgba(255, 255, 255, 1);
+        border: none;
+        outline: none;
+        padding-left: 15px;        font-family: "Hauora";
+        font-size: $FONT_SIZE_14;
+        font-weight: 500;
+        letter-spacing: 0.03em;
+        line-height: 19.6px;
+        text-align: left;
+        color: $COLOR_BLACK;        
+        &::placeholder {
+            font-family: "Hauora";
+            font-size: $FONT_SIZE_14;
+            font-weight: 500;
+            letter-spacing: 0.03em;
+            line-height: 19.6px;
+            text-align: left;
+            color: $COLOR_GRAY;
+        }
+    }
+    button {
+        width: 153px;
+        border-radius: 0px 10px 10px 0px ;
+        border: none;
+        cursor: pointer;
+        background-color: rgba(23, 19, 147, 0.4);     
+        
+        font-family: "Hauora";
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: rgba(255, 255, 255, 1);
+        
+    }
+    
+}
+
+
+@keyframes mainTitle {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.effect {
+    scale: 0;
+    opacity: 1;
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(4, 0, 110, 0.1);
+    width: 1000px;
+    height: 1000px;
+    border-radius: 50%;
+    filter: blur(50px);
+    transition:  0.1s ease;
+    pointer-events: none;
+}
+
+.container {
+    display: block;
+    margin: auto;
+    max-width: 2560px;
+    .header {
+        width: 100vw;
+        max-width: 100%;
+        @include center();
+        background: transparent;
+        padding-bottom: 10px;
+        transition: transform 0.3s ease-in-out;
+        position: fixed;
+        z-index: 1000;
+
+        &.hidden {
+            transform: translateY(-100%);
+        }
+
+        &.scrolled {
+            background: linear-gradient(180deg, #000000 20.98%, rgba(0, 0, 0, 0) 100%);
+        }
+
+        .header__container {
+            width: $width;
+            max-width: 1120px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 41px;
+            a {
+                img {
+                    width: 216px;
+                    height: 33px;
+                }
+            }
+            .header__nav {
+                display: flex;
+                align-items: center;
+                .header__nav-link {
+                    padding: 0 10px;
+                    margin-left: 10px;
+                    font-family: "Hauora";
+                    font-size: $FONT_SIZE_14;
+                    font-weight: 500;
+                    letter-spacing: 0.03em;
+                    letter-spacing: 0.03em;
+                    line-height: 16.8px;
+                    text-align: left;
+                    color: $COLOR_GRAY;
+                    &:nth-child(1) {
+                        margin-left: 0;
+                    }
+                }
+            }
+            .header__buttons {
+                @include center();
+                .header__buttons-search {
+                    margin-left: 10px;
+                    font-family: "Hauora";
+                    font-size: $FONT_SIZE_14;
+                    font-weight: 500;
+                    letter-spacing: 0.03em;
+                    letter-spacing: 0.03em;
+                    line-height: 16.8px;
+                    text-align: left;
+                    color: $COLOR_GRAY;
+                }
+                .header__buttons-enter {
+                    margin-left: 38.5px;
+                    @include button(117px, rgba(23, 19, 147, 0.4), rgba(23, 19, 147, 1));
+                }
+                .header__buttons-menu {
+                    display: none;
+                }
+            }
+        }
+    }
+    .main {
+        width: 100vw;
+        max-width: 100%;
+        @include center();
+        flex-direction: column;
+        .products {
+            position: relative;
+            width: 100%;
+            @include center();
+            background: linear-gradient(rgb(1, 0, 52), rgb(0,0,0), rgb(3, 3, 22));
+            .products__container {
+                padding-top: 259px;
+                width: 80%;
+                max-width: 1120px;
+                flex-direction: column;
+                .products__head {
+                    display: grid;
+                    align-items: center;
+                    grid-template-columns: 8.5fr 3.5fr;
+                    .products__title {
+                        font-family: "Hauora";
+                        font-size: 35px;
+                        font-weight: 500;
+                        letter-spacing: 0.03em;
+                        line-height: 47.81px;
+                        text-align: left;
+                        color: rgb(255, 255, 255);
+                    }
+                    .products__button {
+                        @include button(110px, rgba(23, 19, 147, 0.4), rgba(23, 19, 147, 1));
+                    }
+                }
+                .products__more {
+                    margin-top: 100px;                   
+                    display: grid;
+                    grid-template-columns: repeat(3, 287px);
+                    column-gap: 110px;
+
+                    .products__column {
+                        .products__column__title {
+                            font-family: "Hauora";
+                            font-size: 18px;
+                            font-weight: 500;
+                            line-height: 18px;
+                            letter-spacing: 0.02em;
+                            text-align: left;
+                            text-underline-position: from-font;
+                            -webkit-text-decoration-skip-ink: none;
+                            text-decoration-skip-ink: none;
+                            color: rgb(240, 246, 252);
+                        }
+                        ul {
+                            margin-top: 40px;
+                            li {
+                                margin-top: 15px;
+                                margin-left: 20px;
+                                font-family: "Hauora";
+                                font-size: 18px;
+                                font-weight: 500;
+                                line-height: 23.4px;
+                                letter-spacing: 0.02em;
+                                text-align: left;
+                                color: rgb(120, 119, 146);
+                            }
+                        }
+                    }
+                
+                    .products__column {
+                        &:nth-child(1) {
+                            .products__column__title {
+                                &:nth-child(3) {
+                                    margin-top: 100px;
+                                }
+                                &:nth-child(5) {
+                                    margin-top: 100px;
+                                }
+                            }
+                        }
+                    }
+
+                    .products__column {
+                        &:nth-child(2) {
+                            .products__column__title {
+                                &:nth-child(3) {
+                                    margin-top: 100px;
+                                }
+                                
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        } 
+    }
+    .footer {
+        background: linear-gradient(rgb(3, 3, 22), rgb(8, 7, 51));
+        padding-top: 320px;
+        padding-bottom: 109.46px;
+        width: 100%;
+        @include center();
+        .footer__container {
+            width: 80%;
+            max-width: 1120px;
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            .footer__top {
+                display: flex;
+                align-items: left;
+                flex-direction: column;
+                .footer__logo {
+                    width: 140.85px;
+                    height: 32.61px;                    
+                }
+                .footer__newsletter {
+                    margin-top: 97.06px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 97px;
+                    height: 30px;
+                    border-radius: 10px;
+                    border: 1px solid rgba(52, 59, 67, 1);
+                    background-color: transparent;
+                    cursor: pointer;
+
+                    font-family: "Hauora";
+                    font-size: $FONT_SIZE_14;
+                    font-weight: 500;
+                    letter-spacing: 0.03em;
+                    line-height: 16.8px;
+                    text-align: left;
+                    color: $COLOR_WHITE;
+
+                    &:hover {
+                        box-shadow: 0px 0px 26.39px 0px rgba(17, 14, 104, 1);
+                    }
+                }
+            }
+            .footer__menu {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                margin-left: 54px;
+                margin-top: 18px;
+                .footer__column {
+                display: flex;
+                flex-direction: column;
+            
+               .footer__column__title {
+                    font-family: "Hauora";
+                    font-size: $FONT_SIZE_12;
+                    font-weight: 400;
+                    line-height: 15.6px;
+                    text-align: left;
+                    color: $COLOR_WHITE;
+                    padding-bottom: 42.54px;
+               }
+
+               .footer__column__item {
+               
+                    margin-top: 8px;
+                    font-family: "Hauora";
+                    font-size: $FONT_SIZE_12;
+                    font-weight: 400;
+                    line-height: 15.6px;
+                    text-align: left;
+                    color: $COLOR_GRAY;                
+               }
+                }
+            }
+        }
+    }    
+}
+
+

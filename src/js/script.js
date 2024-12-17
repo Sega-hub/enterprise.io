@@ -337,6 +337,55 @@ document.addEventListener("DOMContentLoaded", () => {
       
     });
 
+    let lastScrollTop = 0;
+    const header = document.querySelector('.header');
+    const SCROLL_THRESHOLD = 50;
+    
+    const handleScroll = () => {
+        const scrollTop = window.scrollY;
+     
+        if (scrollTop > SCROLL_THRESHOLD) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    
+     
+        if (scrollTop > lastScrollTop) {
+            header.classList.add('hidden');
+        } else {
+            header.classList.remove('hidden');
+        }
+    
+        lastScrollTop = Math.max(0, scrollTop);
+    };
+    
+    window.addEventListener('scroll', () => requestAnimationFrame(handleScroll));
+
+    const texts = document.querySelectorAll("#text");
+
+    if (texts.length > 0) {
+        window.addEventListener("scroll", textAppearance);
+        function textAppearance() {
+            for (let i = 0; i < texts.length; i++) {
+                const textAnim = texts[i];
+                const textHeight = textAnim.offsetHeight;
+                const textAnimOffset = offset(textAnim).top;
+                const textStart = 0.8;
+    
+                let textStartPoint = window.innerHeight - textHeight / textStart;
+    
+                if (textHeight > window.innerHeight) {
+                    textStartPoint = window.innerHeight - window.innerHeight / textStart;
+                }
+    
+                if ((pageYOffset > textAnimOffset - textStartPoint) && pageYOffset < (textAnimOffset + textHeight)) {               
+                    textAnim.classList.add("appearance");
+                }
+            };
+        }
+    } 
+
     function offset(el) {
         const rect = el.getBoundingClientRect(), 
             scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
