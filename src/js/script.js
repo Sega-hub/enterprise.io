@@ -323,7 +323,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 platform.style.boxShadow = "0px 0px 26.39px 0px rgba(17, 14, 104, 1)";
                 console.log(picture.src);
             } else if (platform.innerHTML == "Установка и развертывание") {
-                picture.src = "./public/images/deploy.webp";
+                picture.src = "./public/images/deploy.jpg";
                 platforms[0].style.boxShadow = "none";
                 platforms[2].style.boxShadow = "none";
                 platform.style.boxShadow = "0px 0px 26.39px 0px rgba(17, 14, 104, 1)";
