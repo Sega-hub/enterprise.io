@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/style.css">
-    <title>GitLife</title>
+    <title>Enterprise</title>
 </head>
 <body>
     <div class="effect"></div>
@@ -15,7 +15,7 @@
                     <img src="./public/images/logo.svg" alt="logotip" class="header__logo"> 
                 </a>
                 <nav class="header__nav">
-                    <a href="#" class="header__nav-link">Продукты</a>
+                    <a href="./src/html/productsandfunctions.html" class="header__nav-link">Продукты</a>
                     <a href="#" class="header__nav-link">Цены</a>
                     <a href="#" class="header__nav-link">Документация</a>
                     <a href="#" class="header__nav-link">О компании</a>
@@ -41,7 +41,7 @@
                         </p>
                     </div>
                     <div class="offer__search">
-                        <form action="" method="get" class="form">
+                        <form action="" method="get" class="form" id="text">
                             <input type="text" name="mail" class="offer__search__input" placeholder="you@example.ru">
                             <button class="offer__search__button">Войти</button>
                         </form>
@@ -140,15 +140,15 @@
             <div class="client">
                 <div class="client__container">
                     <div class="client__buttons">
-                        <button class="client__button">Дистрибутив</button>
-                        <button class="client__button">Установка и развертывание</button>
-                        <button class="client__button">Техподдержка</button>
+                        <button class="client__button" id="text">Дистрибутив</button>
+                        <button class="client__button" id="text">Установка и развертывание</button>
+                        <button class="client__button" id="text">Техподдержка</button>
                     </div>
-                    <h2 class="client__title">
+                    <h2 class="client__title" id="text">
                         Enterprise платформа на сервере <br> клиента
                     </h2>
                     <div class="client__img">
-                        <img src="./public/images/destibyut.webp" alt="client img">
+                        <img src="./public/images/destibyut.webp" alt="client img" id="text">
                     </div>
                 </div>
             </div>
@@ -288,7 +288,7 @@
                     <p class="earn__discripiton" id="text">
                         Отправьте запрос и мы свяжемся с вами и рассчитаем <br> индивидуальные условия использования продуктов <br> для вашей компании
                     </p>
-                    <div class="earn__search">
+                    <div class="earn__search" id="text">
                         <div class="earn__invite">
                             <label>Email адрес</label>
                             <form action="" method="get" class="earn__form">

@@ -264,7 +264,7 @@ $width: 80%;
             position: relative;
             width: 100%;
             @include center();
-            background: linear-gradient(rgb(1, 0, 52), rgb(0,0,0), rgb(3, 3, 22));
+            background: linear-gradient(rgb(7, 6, 46), rgb(0,0,0));
             .products__container {
                 padding-top: 259px;
                 width: 80%;
@@ -274,6 +274,10 @@ $width: 80%;
                     display: grid;
                     align-items: center;
                     grid-template-columns: 8.5fr 3.5fr;
+                    opacity: 0;
+                    animation: mainTitle 2s ease 0.5s;
+                    animation-fill-mode: forwards;
+
                     .products__title {
                         font-family: "Hauora";
                         font-size: 35px;
@@ -285,13 +289,160 @@ $width: 80%;
                     }
                     .products__button {
                         @include button(110px, rgba(23, 19, 147, 0.4), rgba(23, 19, 147, 1));
-                    }
+                    }                    
                 }
                 .products__more {
                     margin-top: 100px;                   
                     display: grid;
                     grid-template-columns: repeat(3, 287px);
                     column-gap: 110px;
+
+                   .products__column {
+                        &:nth-child(1) {
+                           p {
+                                &:nth-child(1) {
+                                   opacity: 0;
+                                   animation: mainTitle 2s ease 1.2s;
+                                   animation-fill-mode: forwards;
+                                }
+                                &:nth-child(3) {
+                                    opacity: 0;
+                                    transition: 1s ease 0.5s;
+
+                                    &.appearance {
+                                        opacity: 1;
+                                    }
+                                }
+                                &:nth-child(5) {
+                                    opacity: 0;
+                                    transition: 1s ease 0.5s;
+
+                                    &.appearance {
+                                        opacity: 1;
+                                    }
+                                }
+                           }
+                           ul {
+                                &:nth-child(2){
+                                    opacity: 0;
+                                    animation: mainTitle 2s ease 1.5s;
+                                    animation-fill-mode: forwards;
+                                }
+                                &:nth-child(4){
+                                    opacity: 0;
+                                    transition: 1s ease 0.5s;
+
+                                    &.appearance {
+                                        opacity: 1;
+                                    }
+                                }
+                                &:nth-child(6){
+                                    opacity: 0;
+                                    transition: 1s ease 0.5s;
+
+                                    &.appearance {
+                                        opacity: 1;
+                                    }
+                                }
+                           }
+                        }
+                        &:nth-child(2) {
+                            p {
+                                 &:nth-child(1) {
+                                    opacity: 0;
+                                    animation: mainTitle 2s ease 1.7s;
+                                    animation-fill-mode: forwards;
+                                 }
+                                 &:nth-child(3) {
+                                    opacity: 0;
+                                    transition: 1s ease 0.5s;
+
+                                    &.appearance {
+                                        opacity: 1;
+                                    }
+                                 }
+                                 &:nth-child(5) {
+                                    opacity: 0;
+                                    transition: 1s ease 0.5s;
+
+                                    &.appearance {
+                                        opacity: 1;
+                                    }
+                                 }
+                            }
+                            ul {
+                                 &:nth-child(2){
+                                     opacity: 0;
+                                     animation: mainTitle 2s ease 1.9s;
+                                     animation-fill-mode: forwards;
+                                 }
+                                 &:nth-child(4){
+                                    opacity: 0;
+                                    transition: 1s ease 0.5s;
+
+                                    &.appearance {
+                                        opacity: 1;
+                                    }
+                                 }
+                                 &:nth-child(6){
+                                    opacity: 0;
+                                    transition: 1s ease 0.5s;
+
+                                    &.appearance {
+                                        opacity: 1;
+                                    }
+                                 }
+                            }
+                        }
+                        &:nth-child(3) {
+                            p {
+                                 &:nth-child(1) {
+                                    opacity: 0;
+                                    animation: mainTitle 2s ease 2.1s;
+                                    animation-fill-mode: forwards;
+                                 }
+                                 &:nth-child(3) {
+                                    opacity: 0;
+                                    transition: 1s ease 0.5s;
+
+                                    &.appearance {
+                                        opacity: 1;
+                                    }
+                                 }
+                                 &:nth-child(5) {
+                                    opacity: 0;
+                                    transition: 1s ease 0.5s;
+
+                                    &.appearance {
+                                        opacity: 1;
+                                    }
+                                 }
+                            }
+                            ul {
+                                 &:nth-child(2){
+                                     opacity: 0;
+                                     animation: mainTitle 2s ease 2.3s;
+                                     animation-fill-mode: forwards;
+                                 }
+                                 &:nth-child(4){
+                                    opacity: 0;
+                                    transition: 1s ease 0.5s;
+
+                                    &.appearance {
+                                        opacity: 1;
+                                    }
+                                 }
+                                 &:nth-child(6){
+                                    opacity: 0;
+                                    transition: 1s ease 0.5s;
+
+                                    &.appearance {
+                                        opacity: 1;
+                                    }
+                                 }
+                            }
+                        }
+                   }
 
                     .products__column {
                         .products__column__title {
@@ -309,7 +460,7 @@ $width: 80%;
                         ul {
                             margin-top: 40px;
                             li {
-                                margin-top: 15px;
+                                margin-top: 20px;
                                 margin-left: 20px;
                                 font-family: "Hauora";
                                 font-size: 18px;
@@ -319,6 +470,8 @@ $width: 80%;
                                 text-align: left;
                                 color: rgb(120, 119, 146);
                             }
+
+                           
                         }
                     }
                 
@@ -345,10 +498,121 @@ $width: 80%;
                             }
                         }
                     }
-                    
+
+                    .products__column {
+                        &:nth-child(3) {
+                            .products__column__title {
+                                &:nth-child(3) {
+                                    margin-top: 88px;
+                                }
+                                
+                            }
+                        }
+                    }
                 }
             }
         } 
+        .invitation {
+            background: linear-gradient(rgb(0, 0, 0), rgb(3, 3, 22));
+            padding-top: 420px;
+            width: 100%;
+            @include center();
+            .invitation__container {
+                width: 80%;
+                max-width: 1120px;
+                display: flex;
+                flex-direction: column;
+                .invitation__title {
+                    font-family: "Hauora";
+                    font-size: $FONT_SIZE_40;
+                    font-weight: 500;
+                    letter-spacing: 0.03em;
+                    line-height: 40px;
+                    text-align: left;
+                    color: $COLOR_LIGHT_WHITE;
+                    opacity: 0;
+                    transition: all 1s ease 0s;
+                    &.appearance {
+                        opacity: 1;
+                    }  
+                }
+                .invitation__slogan {
+                    padding-top: 25px;
+                    font-family: "Hauora";
+                    font-size: $FONT_SIZE_16;
+                    font-weight: 500;
+                    letter-spacing: 0.03em;
+                    line-height: 20.8px;
+                    text-align: left;
+                    color: $COLOR_GRAY;
+                    opacity: 0;
+                    transition: all 1s ease 0s;
+                    &.appearance {
+                        opacity: 1;
+                    }  
+                }
+                .invitation__search {                    
+                    padding-top: 67px;
+                    width: 100%;
+                    display: flex;
+                    opacity: 0;
+                    transition: all 1s ease 0s;
+                    &.appearance {
+                        opacity: 1;
+                    }  
+                    .invitation__invite {
+                        label {
+                            width: 483px;
+                            display: flex;
+                            justify-content: start;
+                            font-family: "Hauora";
+                            font-size: $FONT_SIZE_16;
+                            font-weight: 500;
+                            line-height: 20.8px;
+                            text-align: left;
+                            color: $COLOR_GRAY
+                        }
+                        .invitation__form {
+                            margin-top: 9px;
+                            @include input();
+                        }
+                    }   
+                    .invitation__button {
+                        margin-left: 20px;
+                        display: flex;
+                        align-items: end;   
+                        .invitation__enter__button {
+                            display: none;
+                        }                  
+                        .invitation__button-btn {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 138px;
+                            height: 42px;                            
+                            padding: 10px 15px 10px 15px;
+                            border-radius: 10px;
+                            border: 1px solid rgba(23, 19, 147, 1);  
+                            background-color: transparent;                            
+                            cursor: pointer;
+                            transition: 0.5s;
+
+                            font-family: "Hauora";
+                            font-size: $FONT_SIZE_14;
+                            font-weight: 500;
+                            letter-spacing: 0.03em;
+                            line-height: 16.8px;
+                            text-align: left;
+                            color: $COLOR_WHITE;
+
+                            &:hover {
+                                box-shadow: 0px 0px 26.39px 0px rgba(3, 16, 180, 1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
     .footer {
         background: linear-gradient(rgb(3, 3, 22), rgb(8, 7, 51));

@@ -195,7 +195,7 @@ $width: 80%;
         &.hidden {
             transform: translateY(-100%);
         }
-
+        
         &.scrolled {
             background: linear-gradient(180deg, #000000 20.98%, rgba(0, 0, 0, 0) 100%);
         }
@@ -293,14 +293,23 @@ $width: 80%;
                             &:nth-child(1) {
                                 margin-left: 0;
                                 @include button(135px, rgba(22, 23, 24, 0), rgba(13, 10, 103, 1));
+                                animation: mainTitle 2s ease 1.6s;
+                                animation-fill-mode: forwards;
+                                opacity: 0;
                             }
                             &:nth-child(2) {
                                 @include button(182px, rgba(22, 23, 24, 0), rgba(13, 10, 103, 1));
                                 margin-left: 30px;
+                                animation: mainTitle 2s ease 1.7s;
+                                animation-fill-mode: forwards;
+                                opacity: 0;
                             }
                             &:nth-child(3) {
                                 @include button(135px, rgba(22, 23, 24, 0), rgba(13, 10, 103, 1));
                                 margin-left: 30px;
+                                animation: mainTitle 2s ease 1.8s;
+                                animation-fill-mode: forwards;
+                                opacity: 0;
                             }
                         }
                     }
@@ -310,10 +319,16 @@ $width: 80%;
                         .offer__button {
                             &:nth-child(1) {
                                 @include button(152px, rgba(22, 23, 24, 0), rgba(13, 10, 103, 1));
+                                animation: mainTitle 2s ease 1.9s;
+                                animation-fill-mode: forwards;
+                                opacity: 0;
                             }
                             &:nth-child(2) {
                                 @include button(121px, rgba(22, 23, 24, 0), rgba(13, 10, 103, 1));
                                 margin-left: 30px;
+                                animation: mainTitle 2s ease 2s;
+                                animation-fill-mode: forwards;
+                                opacity: 0;
                             }
                         }
                     }
@@ -364,6 +379,9 @@ $width: 80%;
                     @include center();
                     .form {
                         @include input();
+                        animation: mainTitle 2s ease 1.5s;
+                        animation-fill-mode: forwards;
+                        opacity: 0;
                     }
                 }
                 .offer__partners {
@@ -809,15 +827,33 @@ $width: 80%;
                     justify-content: center;
                     .client__button {
                         &:nth-child(1) {
-                            @include button(140px, rgba(22, 23, 24, 0), rgba(13, 10, 103, 1));                           
+                            @include button(140px, rgba(22, 23, 24, 0), rgba(13, 10, 103, 1));      
+                            opacity: 0;
+                            transition: 0.5s ease 0.5s;
+
+                            &.appearance {
+                                opacity: 1;
+                            }                     
                         }
                         &:nth-child(2) {
                             margin-left: 30px;
                             @include button(236px, rgba(22, 23, 24, 0), rgba(13, 10, 103, 1));
+                            opacity: 0;
+                            transition: 0.5s ease 0.7s;
+
+                            &.appearance {
+                                opacity: 1;
+                            }   
                         }
                         &:nth-child(3) {
                             margin-left: 30px;
                             @include button(148px, rgba(22, 23, 24, 0), rgba(13, 10, 103, 1));
+                            opacity: 0;
+                            transition: 0.5s ease 0.9s;
+
+                            &.appearance {
+                                opacity: 1;
+                            }   
                         }
                     }
                 }
@@ -830,12 +866,24 @@ $width: 80%;
                     line-height: 46px;
                     text-align: center;
                     color: rgb(240, 246, 252);
+                    opacity: 0;
+                    transition: 0.5s ease 0.5s;
+
+                    &.appearance {
+                        opacity: 1;
+                    }  
                 }
                 .client__img {
                     margin-top: 5px;
                     img {
                         width: 410px;
                         height: 408px;
+                        opacity: 0;
+                        transition: 0.5s ease 0.5s;
+    
+                        &.appearance {
+                            opacity: 1;
+                        }  
                     }
                 }
             }
@@ -1309,6 +1357,12 @@ $width: 80%;
                     padding-top: 104px;
                     width: 100%;
                     @include center();
+                    opacity: 0;
+                    transition: 0.5s ease 0.5s;
+
+                    &.appearance {
+                        opacity: 1;
+                    }  
                     .earn__invite {
                         label {
                             margin-left: 13px;
