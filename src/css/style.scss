@@ -414,7 +414,6 @@ $width: 80%;
                     button {                      
                         @include button(277px, rgba(7, 4, 51, 1), rgba(23, 19, 147, 1));
                         height: 42px !important;
-                        box-shadow: none !important;
                     }
 
                 }

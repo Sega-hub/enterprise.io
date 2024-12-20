@@ -415,7 +415,6 @@ a {
   transition: 0.5s;
   color: rgb(255, 255, 255);
   height: 42px !important;
-  box-shadow: none !important;
 }
 .container .main .offer .offer__container .offer__anchor button:hover {
   box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
