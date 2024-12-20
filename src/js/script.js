@@ -312,31 +312,37 @@ document.addEventListener("DOMContentLoaded", () => {
         const platforms = document.querySelectorAll(".client__button");
         const img = document.querySelector(".client__img");
         const picture = img.children[0];
-        platforms[0].style.boxShadow = "0px 0px 26.39px 0px rgba(17, 14, 104, 1)";
+        
+        // Устанавливаем начальную тень
+        platforms[0].style.boxShadow = "0px 0px 1.1px 0px rgba(17, 14, 104, 1), 0px 0px 2.2px 0px rgba(17, 14, 104, 1),  0px 0px 7.7px 0px rgba(17, 14, 104, 1), 0px 0px 15.39px 0px rgba(17, 14, 104, 1),  0px 0px 26.39px 0px rgba(17, 14, 104, 1), 0px 0px 46.18px 0px rgba(17, 14, 104, 1)";
+        
         platforms.forEach(platform => {
             platform.addEventListener("click", () => {
+                // Сбрасываем тени кнопок
+                resetShadows();
+                // Устанавливаем тень на выбранной кнопке
+                platform.style.boxShadow = "0px 0px 1.1px 0px rgba(17, 14, 104, 1), 0px 0px 2.2px 0px rgba(17, 14, 104, 1),  0px 0px 7.7px 0px rgba(17, 14, 104, 1), 0px 0px 15.39px 0px rgba(17, 14, 104, 1),  0px 0px 26.39px 0px rgba(17, 14, 104, 1), 0px 0px 46.18px 0px rgba(17, 14, 104, 1)";
+        
                 // Добавляем класс для скрытия изображения
                 picture.classList.add("hidden");
+        
                 // Меняем изображение с небольшой задержкой, чтобы анимация отработала
+                const newSrc =
+                    platform.innerHTML === "Дистрибутив"
+                        ? "./public/images/destibyut.webp"
+                        : platform.innerHTML === "Установка и развертывание"
+                        ? "./public/images/deploy.jpg"
+                        : "./public/images/support.webp";
+        
                 setTimeout(() => {
-                    if (platform.innerHTML === "Дистрибутив") {
-                        picture.src = "./public/images/destibyut.webp";                
-                        resetShadows();
-                        platform.style.boxShadow = "0px 0px 26.39px 0px rgba(17, 14, 104, 1)";
-                    } else if (platform.innerHTML === "Установка и развертывание") {
-                        picture.src = "./public/images/deploy.jpg";
-                        resetShadows();
-                        platform.style.boxShadow = "0px 0px 26.39px 0px rgba(17, 14, 104, 1)";
-                    } else {
-                        picture.src = "./public/images/support.webp";
-                        resetShadows();
-                        platform.style.boxShadow = "0px 0px 26.39px 0px rgba(17, 14, 104, 1)";
-                    }
-                    // Убираем класс скрытия, чтобы запустить анимацию появления
+                    picture.src = newSrc;
+        
+                    // Убираем класс скрытия после загрузки нового изображения
                     picture.onload = () => picture.classList.remove("hidden");
                 }, 500);
             });
         });
+        
         // Сбрасываем тени кнопок
         function resetShadows() {
             platforms.forEach(p => (p.style.boxShadow = "none"));

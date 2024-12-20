@@ -134,7 +134,7 @@ a {
   color: rgb(255, 255, 255);
 }
 .container .header .header__container .header__buttons .header__buttons-enter:hover {
-  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+  box-shadow: 0px 0px 1.1px 0px rgb(17, 14, 104), 0px 0px 2.2px 0px rgb(17, 14, 104), 0px 0px 7.7px 0px rgb(17, 14, 104), 0px 0px 15.39px 0px rgb(17, 14, 104), 0px 0px 26.39px 0px rgb(17, 14, 104), 0px 0px 46.18px 0px rgb(17, 14, 104);
 }
 .container .header .header__container .header__buttons .header__buttons-menu {
   display: none;
@@ -208,7 +208,7 @@ a {
   opacity: 0;
 }
 .container .main .offer .offer__container .offer__buttons .offer__buttons__top .offer__button:nth-child(1):hover {
-  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+  box-shadow: 0px 0px 1.1px 0px rgb(17, 14, 104), 0px 0px 2.2px 0px rgb(17, 14, 104), 0px 0px 7.7px 0px rgb(17, 14, 104), 0px 0px 15.39px 0px rgb(17, 14, 104), 0px 0px 26.39px 0px rgb(17, 14, 104), 0px 0px 46.18px 0px rgb(17, 14, 104);
 }
 .container .main .offer .offer__container .offer__buttons .offer__buttons__top .offer__button:nth-child(2) {
   width: 182px;
@@ -234,7 +234,7 @@ a {
   opacity: 0;
 }
 .container .main .offer .offer__container .offer__buttons .offer__buttons__top .offer__button:nth-child(2):hover {
-  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+  box-shadow: 0px 0px 1.1px 0px rgb(17, 14, 104), 0px 0px 2.2px 0px rgb(17, 14, 104), 0px 0px 7.7px 0px rgb(17, 14, 104), 0px 0px 15.39px 0px rgb(17, 14, 104), 0px 0px 26.39px 0px rgb(17, 14, 104), 0px 0px 46.18px 0px rgb(17, 14, 104);
 }
 .container .main .offer .offer__container .offer__buttons .offer__buttons__top .offer__button:nth-child(3) {
   width: 135px;
@@ -260,7 +260,7 @@ a {
   opacity: 0;
 }
 .container .main .offer .offer__container .offer__buttons .offer__buttons__top .offer__button:nth-child(3):hover {
-  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+  box-shadow: 0px 0px 1.1px 0px rgb(17, 14, 104), 0px 0px 2.2px 0px rgb(17, 14, 104), 0px 0px 7.7px 0px rgb(17, 14, 104), 0px 0px 15.39px 0px rgb(17, 14, 104), 0px 0px 26.39px 0px rgb(17, 14, 104), 0px 0px 46.18px 0px rgb(17, 14, 104);
 }
 .container .main .offer .offer__container .offer__buttons .offer__buttons__bottom {
   margin-top: 30px;
@@ -289,7 +289,7 @@ a {
   opacity: 0;
 }
 .container .main .offer .offer__container .offer__buttons .offer__buttons__bottom .offer__button:nth-child(1):hover {
-  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+  box-shadow: 0px 0px 1.1px 0px rgb(17, 14, 104), 0px 0px 2.2px 0px rgb(17, 14, 104), 0px 0px 7.7px 0px rgb(17, 14, 104), 0px 0px 15.39px 0px rgb(17, 14, 104), 0px 0px 26.39px 0px rgb(17, 14, 104), 0px 0px 46.18px 0px rgb(17, 14, 104);
 }
 .container .main .offer .offer__container .offer__buttons .offer__buttons__bottom .offer__button:nth-child(2) {
   width: 121px;
@@ -315,7 +315,7 @@ a {
   opacity: 0;
 }
 .container .main .offer .offer__container .offer__buttons .offer__buttons__bottom .offer__button:nth-child(2):hover {
-  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+  box-shadow: 0px 0px 1.1px 0px rgb(17, 14, 104), 0px 0px 2.2px 0px rgb(17, 14, 104), 0px 0px 7.7px 0px rgb(17, 14, 104), 0px 0px 15.39px 0px rgb(17, 14, 104), 0px 0px 26.39px 0px rgb(17, 14, 104), 0px 0px 46.18px 0px rgb(17, 14, 104);
 }
 .container .main .offer .offer__container .offer__partners {
   padding-top: 207px;
@@ -417,7 +417,7 @@ a {
   height: 42px !important;
 }
 .container .main .offer .offer__container .offer__anchor button:hover {
-  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+  box-shadow: 0px 0px 1.1px 0px rgb(17, 14, 104), 0px 0px 2.2px 0px rgb(17, 14, 104), 0px 0px 7.7px 0px rgb(17, 14, 104), 0px 0px 15.39px 0px rgb(17, 14, 104), 0px 0px 26.39px 0px rgb(17, 14, 104), 0px 0px 46.18px 0px rgb(17, 14, 104);
 }
 .container .main .openspace {
   padding-top: 179px;
@@ -860,7 +860,7 @@ a {
   height: 286px;
 }
 .container .main .client {
-  padding-top: 20px;
+  padding-top: 55px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -902,7 +902,7 @@ a {
   transition: 0.5s ease 0.5s;
 }
 .container .main .client .client__container .client__buttons .client__button:nth-child(1):hover {
-  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+  box-shadow: 0px 0px 1.1px 0px rgb(17, 14, 104), 0px 0px 2.2px 0px rgb(17, 14, 104), 0px 0px 7.7px 0px rgb(17, 14, 104), 0px 0px 15.39px 0px rgb(17, 14, 104), 0px 0px 26.39px 0px rgb(17, 14, 104), 0px 0px 46.18px 0px rgb(17, 14, 104);
 }
 .container .main .client .client__container .client__buttons .client__button:nth-child(1).appearance {
   opacity: 1;
@@ -930,7 +930,7 @@ a {
   transition: 0.5s ease 0.7s;
 }
 .container .main .client .client__container .client__buttons .client__button:nth-child(2):hover {
-  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+  box-shadow: 0px 0px 1.1px 0px rgb(17, 14, 104), 0px 0px 2.2px 0px rgb(17, 14, 104), 0px 0px 7.7px 0px rgb(17, 14, 104), 0px 0px 15.39px 0px rgb(17, 14, 104), 0px 0px 26.39px 0px rgb(17, 14, 104), 0px 0px 46.18px 0px rgb(17, 14, 104);
 }
 .container .main .client .client__container .client__buttons .client__button:nth-child(2).appearance {
   opacity: 1;
@@ -958,7 +958,7 @@ a {
   transition: 0.5s ease 0.9s;
 }
 .container .main .client .client__container .client__buttons .client__button:nth-child(3):hover {
-  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+  box-shadow: 0px 0px 1.1px 0px rgb(17, 14, 104), 0px 0px 2.2px 0px rgb(17, 14, 104), 0px 0px 7.7px 0px rgb(17, 14, 104), 0px 0px 15.39px 0px rgb(17, 14, 104), 0px 0px 26.39px 0px rgb(17, 14, 104), 0px 0px 46.18px 0px rgb(17, 14, 104);
 }
 .container .main .client .client__container .client__buttons .client__button:nth-child(3).appearance {
   opacity: 1;
@@ -1135,7 +1135,7 @@ a {
   transition: 1s ease 1s;
 }
 .container .main .modules .modules__container .modules__content .modules__more .modules__box-button:hover {
-  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+  box-shadow: 0px 0px 1.1px 0px rgb(17, 14, 104), 0px 0px 2.2px 0px rgb(17, 14, 104), 0px 0px 7.7px 0px rgb(17, 14, 104), 0px 0px 15.39px 0px rgb(17, 14, 104), 0px 0px 26.39px 0px rgb(17, 14, 104), 0px 0px 46.18px 0px rgb(17, 14, 104);
 }
 .container .main .modules .modules__container .modules__content .modules__more .modules__box-button.appearance {
   opacity: 1;
