@@ -489,7 +489,7 @@ a {
   color: rgb(112, 111, 146);
 }
 .container .main .openspace .openspace__container .openspace__content .openspace__code .openspace__code__discription span.appearance {
-  transition: 1s ease 0.5s;
+  transition: ease 0.5s;
   opacity: 1;
 }
 .container .main .openspace .openspace__container .openspace__content .openspace__code .openspace__code__discription.appearance {
@@ -510,7 +510,7 @@ a {
 }
 .container .main .openspace .openspace__container .openspace__content .openspace__code .openspace__code__big.appearance {
   opacity: 1;
-  transition: 1s ease 1s;
+  transition: ease 1s;
 }
 .container .main .openspace .openspace__container .openspace__content .openspace__grid {
   padding-top: 24px;
@@ -554,11 +554,11 @@ a {
 }
 .container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__branch p {
   opacity: 0;
-  transition: 1s ease 0s;
+  transition: ease 0s;
 }
 .container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__branch p span {
   opacity: 0;
-  transition: 1s ease 0.1s;
+  transition: ease 0.1s;
 }
 .container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__branch p span.appearance {
   opacity: 1;
@@ -572,7 +572,7 @@ a {
   justify-content: center;
   mix-blend-mode: screen;
   opacity: 0;
-  transition: 1s ease 0s;
+  transition: ease 0s;
 }
 .container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__branch .openspace__img img {
   width: 410px;
@@ -616,11 +616,11 @@ a {
 }
 .container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__manage p {
   opacity: 0;
-  transition: 1s ease 0.3s;
+  transition: ease 0.3s;
 }
 .container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__manage p span {
   opacity: 0;
-  transition: 1s ease 0.4s;
+  transition: ease 0.4s;
 }
 .container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__manage p span.appearance {
   opacity: 1;
@@ -634,7 +634,7 @@ a {
   justify-content: center;
   mix-blend-mode: screen;
   opacity: 0;
-  transition: 1s ease 0s;
+  transition: ease 0s;
 }
 .container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__manage .openspace__img img {
   width: 360px;
@@ -1051,7 +1051,7 @@ a {
   width: 248px;
   height: 248px;
   opacity: 0;
-  transition: 1s ease 1s;
+  transition: ease 1s;
 }
 .container .main .modules .modules__container .modules__content .modules__box:nth-child(n) .modules__box__picture.appearance {
   opacity: 1;
@@ -1069,7 +1069,7 @@ a {
   text-decoration-skip-ink: none;
   color: rgb(240, 246, 252);
   opacity: 0;
-  transition: 1s ease 1s;
+  transition: ease 1s;
 }
 .container .main .modules .modules__container .modules__content .modules__box:nth-child(n) .modules__box__title.appearance {
   opacity: 1;
@@ -1087,7 +1087,7 @@ a {
           text-decoration-skip-ink: none;
   color: rgb(120, 119, 146);
   opacity: 0;
-  transition: 1s ease 1s;
+  transition: ease 1s;
 }
 .container .main .modules .modules__container .modules__content .modules__box:nth-child(n) .modules__box__discription.appearance {
   opacity: 1;
@@ -1107,14 +1107,14 @@ a {
   text-decoration-skip-ink: none;
   color: rgb(240, 246, 252);
   opacity: 0;
-  transition: 1s ease 1s;
+  transition: ease 1s;
 }
 .container .main .modules .modules__container .modules__content .modules__more .modules__box__title.appearance {
   opacity: 1;
 }
 .container .main .modules .modules__container .modules__content .modules__more .modules__box__link {
   opacity: 0;
-  transition: 1s ease 1s;
+  transition: ease 1s;
 }
 .container .main .modules .modules__container .modules__content .modules__more .modules__box__link.appearance {
   opacity: 1;
@@ -1215,7 +1215,7 @@ a {
 }
 .container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__code .inplomintation__code__discription span {
   opacity: 1;
-  transition: 1s ease 0.5s;
+  transition: ease 0.5s;
   color: rgb(112, 111, 146);
 }
 .container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__code .inplomintation__code__discription span.appearance {
@@ -1285,7 +1285,7 @@ a {
   opacity: 1;
 }
 .container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__branch p span {
-  transition: 1s ease 0.1s;
+  transition: ease 0.1s;
 }
 .container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__branch .inplomintation__img {
   margin-top: 24px;
@@ -1343,7 +1343,7 @@ a {
   opacity: 1;
 }
 .container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__manage p span {
-  transition: 1s ease 0.4s;
+  transition: ease 0.4s;
 }
 .container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__manage .inplomintation__img {
   margin-top: 49px;
@@ -1526,7 +1526,7 @@ a {
   text-align: center;
   color: rgb(112, 111, 146);
   opacity: 0;
-  transition: 1s ease 0.5s;
+  transition: ease 0.5s;
 }
 .container .main .earn .earn__container .earn__discripiton.appearance {
   opacity: 1;

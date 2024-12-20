@@ -482,7 +482,7 @@ $width: 80%;
                                 opacity: 0;
                                 color: $COLOR_GRAY;
                                 &.appearance {
-                                    transition: 1s ease 0.5s;
+                                    transition:  ease 0.5s;
                                     opacity: 1;
                                 }
                             }
@@ -505,7 +505,7 @@ $width: 80%;
                             }
                             &.appearance {
                                 opacity: 1;
-                                transition: 1s ease 1s;
+                                transition:  ease 1s;
                             }
                         }                        
                     }
@@ -521,10 +521,10 @@ $width: 80%;
                             padding-bottom: 0;
                             p {
                                 opacity: 0;
-                                transition: 1s ease 0s;
+                                transition:  ease 0s;
                                 span {
                                     opacity: 0;
-                                    transition: 1s ease 0.1s;
+                                    transition:  ease 0.1s;
                                     &.appearance {
                                         opacity: 1;
                                     }
@@ -539,7 +539,7 @@ $width: 80%;
                                justify-content: center;
                                mix-blend-mode: screen;
                                opacity: 0;
-                               transition: 1s ease 0s;
+                               transition:  ease 0s;
                                img {
                                     width: 410px;
                                     height: 410px;
@@ -555,10 +555,10 @@ $width: 80%;
                             padding-bottom: 0;
                             p {
                                 opacity: 0;
-                                transition: 1s ease 0.3s;
+                                transition:  ease 0.3s;
                                 span {
                                     opacity: 0;
-                                    transition: 1s ease 0.4s;
+                                    transition:  ease 0.4s;
                                     &.appearance {
                                         opacity: 1;
                                     }
@@ -573,7 +573,7 @@ $width: 80%;
                                 justify-content: center;
                                 mix-blend-mode: screen;
                                 opacity: 0;
-                                transition: 1s ease 0s;
+                                transition:  ease 0s;
                                 img {
                                      width: 360px;
                                      height: 360px;
@@ -950,7 +950,7 @@ $width: 80%;
                             width: 248px;
                             height: 248px;
                             opacity: 0;
-                            transition: 1s ease 1s;
+                            transition:  ease 1s;
 
                             &.appearance {
                                 opacity: 1;
@@ -970,7 +970,7 @@ $width: 80%;
                             text-decoration-skip-ink: none;
                             color: rgb(240, 246, 252);
                             opacity: 0;
-                            transition: 1s ease 1s;
+                            transition:  ease 1s;
 
                             &.appearance {
                                 opacity: 1;
@@ -988,7 +988,7 @@ $width: 80%;
                             text-decoration-skip-ink: none;
                             color: rgba(120, 119, 146, 1);
                             opacity: 0;
-                            transition: 1s ease 1s;
+                            transition:  ease 1s;
 
                             &.appearance {
                                 opacity: 1;
@@ -1014,7 +1014,7 @@ $width: 80%;
                             text-decoration-skip-ink: none;
                             color: rgb(240, 246, 252);
                             opacity: 0;
-                            transition: 1s ease 1s;
+                            transition:  ease 1s;
 
                             &.appearance {
                                 opacity: 1;
@@ -1023,7 +1023,7 @@ $width: 80%;
 
                         .modules__box__link {
                             opacity: 0;
-                            transition: 1s ease 1s;
+                            transition:  ease 1s;
 
                             &.appearance {
                                 opacity: 1;
@@ -1105,7 +1105,7 @@ $width: 80%;
                             }
                             span {                                
                                 opacity: 1;
-                                transition: 1s ease 0.5s;
+                                transition:  ease 0.5s;
                                 &.appearance {
                                     opacity: 1;
                                 }
@@ -1146,7 +1146,7 @@ $width: 80%;
                                     opacity: 1;
                                 }
                                 span {
-                                    transition: 1s ease 0.1s;
+                                    transition:  ease 0.1s;
                                 }
                             }
                             .inplomintation__img {
@@ -1176,7 +1176,7 @@ $width: 80%;
                                     opacity: 1;
                                 }
                                 span {
-                                    transition: 1s ease 0.4s;
+                                    transition:  ease 0.4s;
                                 }
                             }
                             .inplomintation__img {
@@ -1361,7 +1361,7 @@ $width: 80%;
                     text-align: center;
                     color: rgb(112, 111, 146);
                     opacity: 0;  
-                    transition: 1s ease 0.5s;
+                    transition:  ease 0.5s;
                     &.appearance {
                         opacity: 1;
                     }
