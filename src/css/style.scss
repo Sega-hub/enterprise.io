@@ -521,10 +521,10 @@ $width: 80%;
                             padding-bottom: 0;
                             p {
                                 opacity: 0;
-                                transition:  ease 0s;
+                                transition:  ease 0.5s;
                                 span {
                                     opacity: 0;
-                                    transition:  ease 0.1s;
+                                    transition:  ease 1s;
                                     &.appearance {
                                         opacity: 1;
                                     }
@@ -539,7 +539,7 @@ $width: 80%;
                                justify-content: center;
                                mix-blend-mode: screen;
                                opacity: 0;
-                               transition:  ease 0s;
+                               transition:  ease 0.5s;
                                img {
                                     width: 410px;
                                     height: 410px;
@@ -573,7 +573,7 @@ $width: 80%;
                                 justify-content: center;
                                 mix-blend-mode: screen;
                                 opacity: 0;
-                                transition:  ease 0s;
+                                transition:  ease 0.5s;
                                 img {
                                      width: 360px;
                                      height: 360px;
@@ -595,7 +595,7 @@ $width: 80%;
                     background-image: url(../../public/images/firstLine.svg);
                     background-repeat: no-repeat;
                     background-size: 793px 271px; 
-                    transition: all 1s ease 0s;
+                    transition: all 1s ease 0.5s;
                 }
                 &.line.play::after{                   
                     height: 271px;
@@ -634,7 +634,7 @@ $width: 80%;
                         line-height: 47.81px;
                         text-align: left;
                         color: rgb(68, 63, 219);
-                        transition: all 1s ease 0s;
+                        transition: all 1s ease 0.5s;
                         &.appearance {
                             opacity: 1;
                         }
@@ -807,7 +807,7 @@ $width: 80%;
                     background-image: url(../../public/images/Line10.png);
                     background-repeat: no-repeat;
                     background-size: 5px 286px;
-                    transition: all 1s ease 0s;
+                    transition: all 1s ease 0.5s;
                 }
                 &.line.play::after{                   
                     height: 286px;
@@ -931,7 +931,7 @@ $width: 80%;
                         text-align: left;
                         opacity: 0;
                         &.appearance {
-                            transition: all 1s ease 0s;
+                            transition: all 1s ease 0.5s;
                             opacity: 1;
                         }
                     }                   
@@ -1059,7 +1059,7 @@ $width: 80%;
                     text-align: left;
                     color: $COLOR_WHITE; 
                     opacity: 0;
-                    transition: all 1s ease 0s;
+                    transition: all 1s ease 0.5s;
                     &.appearance {
                         opacity: 1;
                     }
@@ -1146,7 +1146,7 @@ $width: 80%;
                                     opacity: 1;
                                 }
                                 span {
-                                    transition:  ease 0.1s;
+                                    transition:  ease 1s;
                                 }
                             }
                             .inplomintation__img {
@@ -1207,7 +1207,7 @@ $width: 80%;
                     background-image: url(../../public/images/thirdLine.svg);
                     background-repeat: no-repeat;
                     background-size: 3px 473px;
-                    transition: all 1s ease 0s;
+                    transition: all 1s ease 0.5s;
                 }
                 &.line.play::after{                   
                     height: 413px;
@@ -1320,7 +1320,7 @@ $width: 80%;
                     background-image: url(../../public/images/fourthLine.svg);
                     background-repeat: no-repeat;
                     background-size: 5px 286px;
-                    transition: all 1s ease 0s;
+                    transition: all 1s ease 0.5s;
                 }
                 &.line.play::after{                   
                     height: 286px;

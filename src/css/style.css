@@ -554,11 +554,11 @@ a {
 }
 .container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__branch p {
   opacity: 0;
-  transition: ease 0s;
+  transition: ease 0.5s;
 }
 .container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__branch p span {
   opacity: 0;
-  transition: ease 0.1s;
+  transition: ease 1s;
 }
 .container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__branch p span.appearance {
   opacity: 1;
@@ -572,7 +572,7 @@ a {
   justify-content: center;
   mix-blend-mode: screen;
   opacity: 0;
-  transition: ease 0s;
+  transition: ease 0.5s;
 }
 .container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__branch .openspace__img img {
   width: 410px;
@@ -634,7 +634,7 @@ a {
   justify-content: center;
   mix-blend-mode: screen;
   opacity: 0;
-  transition: ease 0s;
+  transition: ease 0.5s;
 }
 .container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__manage .openspace__img img {
   width: 360px;
@@ -653,7 +653,7 @@ a {
   background-image: url(../../public/images/firstLine.svg);
   background-repeat: no-repeat;
   background-size: 793px 271px;
-  transition: all 1s ease 0s;
+  transition: all 1s ease 0.5s;
 }
 .container .main .openspace .openspace__container.line.play::after {
   height: 271px;
@@ -694,7 +694,7 @@ a {
   line-height: 47.81px;
   text-align: left;
   color: rgb(68, 63, 219);
-  transition: all 1s ease 0s;
+  transition: all 1s ease 0.5s;
 }
 .container .main .possibilities .possibilities__container .possibilities__title span.appearance {
   opacity: 1;
@@ -854,7 +854,7 @@ a {
   background-image: url(../../public/images/Line10.png);
   background-repeat: no-repeat;
   background-size: 5px 286px;
-  transition: all 1s ease 0s;
+  transition: all 1s ease 0.5s;
 }
 .container .main .possibilities .possibilities__container.line.play::after {
   height: 286px;
@@ -1034,7 +1034,7 @@ a {
   opacity: 0;
 }
 .container .main .modules .modules__container .modules__title span.appearance {
-  transition: all 1s ease 0s;
+  transition: all 1s ease 0.5s;
   opacity: 1;
 }
 .container .main .modules .modules__container .modules__content {
@@ -1166,7 +1166,7 @@ a {
   text-align: left;
   color: rgb(255, 255, 255);
   opacity: 0;
-  transition: all 1s ease 0s;
+  transition: all 1s ease 0.5s;
 }
 .container .main .inplomintation .inplomintation__container .inplomintation__title.appearance {
   opacity: 1;
@@ -1285,7 +1285,7 @@ a {
   opacity: 1;
 }
 .container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__branch p span {
-  transition: ease 0.1s;
+  transition: ease 1s;
 }
 .container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__branch .inplomintation__img {
   margin-top: 24px;
@@ -1370,7 +1370,7 @@ a {
   background-image: url(../../public/images/thirdLine.svg);
   background-repeat: no-repeat;
   background-size: 3px 473px;
-  transition: all 1s ease 0s;
+  transition: all 1s ease 0.5s;
 }
 .container .main .inplomintation .inplomintation__container.line.play::after {
   height: 413px;
@@ -1481,7 +1481,7 @@ a {
   background-image: url(../../public/images/fourthLine.svg);
   background-repeat: no-repeat;
   background-size: 5px 286px;
-  transition: all 1s ease 0s;
+  transition: all 1s ease 0.5s;
 }
 .container .main .characteristic .characteristic__container.line.play::after {
   height: 286px;
