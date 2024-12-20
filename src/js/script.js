@@ -363,6 +363,33 @@ document.addEventListener("DOMContentLoaded", () => {
     
     window.addEventListener('scroll', () => requestAnimationFrame(handleScroll));
 
+    // Работает только для product&func.html
+    if (document.title == "Products&Functions") {
+        const lists = document.querySelectorAll("#list");
+
+        if (lists.length > 0) {
+            window.addEventListener("scroll", listAppearance);
+            function listAppearance() {
+                for (let i = 0; i < lists.length; i++) {
+                    const listAnim = lists[i];
+                    const listHeight = listAnim.offsetHeight;
+                    const listAnimOffset = offset(listAnim).top;
+                    const listStart = 1.7;
+        
+                    let listStartPoint = window.innerHeight - listHeight / listStart;
+        
+                    if (listHeight > window.innerHeight) {
+                        listStartPoint = window.innerHeight - window.innerHeight / listStart;
+                    }
+        
+                    if ((pageYOffset > listAnimOffset - listStartPoint) && pageYOffset < (listAnimOffset + listHeight)) {               
+                        listAnim.classList.add("appearance");
+                    }
+                };
+            }
+        } 
+    }
+
     const texts = document.querySelectorAll("#text");
 
     if (texts.length > 0) {
