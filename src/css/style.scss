@@ -262,21 +262,21 @@ $width: 80%;
         flex-direction: column;
         .offer {
             position: relative;
-            width: 100%;
-            @include center();
-            background-color: rgb(6, 6, 40);
-            background-blend-mode: overlay; 
-            background-position: center;
-            aspect-ratio: 16/9;
-            .offer__video {
-                position: absolute;
-                top: 0;
-                left: 0;
                 width: 100%;
-                height: 100%;
-                object-fit: cover; 
-                z-index: -1; 
-            }
+                @include center();
+                background-image: linear-gradient(rgba(7, 6, 48, 0.5), rgb(4, 3, 26));
+                background-blend-mode: overlay; 
+                background-position: center;
+                aspect-ratio: 16/9;
+                .offer__video {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover; 
+                    z-index: -1; 
+                }
             .offer__container {
                 padding-top: 120px;
                 width: 80%;
@@ -424,7 +424,7 @@ $width: 80%;
             padding-top: 179px;
             padding-bottom: 295px;
             position: relative;
-            background: linear-gradient(rgb(6, 6, 40), rgb(0,0,0));
+            background: linear-gradient(rgb(4, 3, 26), rgb(0,0,0));
             width: 100%;
             @include center();                 
             .openspace__container {
