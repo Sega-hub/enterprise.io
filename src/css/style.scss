@@ -1021,15 +1021,18 @@ $width: 80%;
                             }
                         }
 
-                        .modules__box-button {
-                            margin-top: 62px;
-                            @include button(108px,rgba(23, 19, 147, 0.4), rgba(23, 19, 147, 1));
+                        .modules__box__link {
                             opacity: 0;
                             transition: 1s ease 1s;
 
                             &.appearance {
                                 opacity: 1;
                             }
+                        }
+
+                        .modules__box-button {
+                            margin-top: 62px;
+                            @include button(108px,rgba(23, 19, 147, 0.4), rgba(23, 19, 147, 1));
                         }
                     }
 

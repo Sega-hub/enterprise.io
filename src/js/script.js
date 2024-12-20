@@ -410,7 +410,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 const textAnim = texts[i];
                 const textHeight = textAnim.offsetHeight;
                 const textAnimOffset = offset(textAnim).top;
-                const textStart = 0.8;
+                const textStart = 1;
     
                 let textStartPoint = window.innerHeight - textHeight / textStart;
     

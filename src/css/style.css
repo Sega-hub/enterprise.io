@@ -1112,6 +1112,13 @@ a {
 .container .main .modules .modules__container .modules__content .modules__more .modules__box__title.appearance {
   opacity: 1;
 }
+.container .main .modules .modules__container .modules__content .modules__more .modules__box__link {
+  opacity: 0;
+  transition: 1s ease 1s;
+}
+.container .main .modules .modules__container .modules__content .modules__more .modules__box__link.appearance {
+  opacity: 1;
+}
 .container .main .modules .modules__container .modules__content .modules__more .modules__box-button {
   margin-top: 62px;
   width: 108px;
@@ -1131,14 +1138,9 @@ a {
   text-align: center;
   transition: 0.5s;
   color: rgb(255, 255, 255);
-  opacity: 0;
-  transition: 1s ease 1s;
 }
 .container .main .modules .modules__container .modules__content .modules__more .modules__box-button:hover {
   box-shadow: 0px 0px 1.1px 0px rgb(17, 14, 104), 0px 0px 2.2px 0px rgb(17, 14, 104), 0px 0px 7.7px 0px rgb(17, 14, 104), 0px 0px 15.39px 0px rgb(17, 14, 104), 0px 0px 26.39px 0px rgb(17, 14, 104), 0px 0px 46.18px 0px rgb(17, 14, 104);
-}
-.container .main .modules .modules__container .modules__content .modules__more .modules__box-button.appearance {
-  opacity: 1;
 }
 .container .main .inplomintation {
   padding-top: 179px;
