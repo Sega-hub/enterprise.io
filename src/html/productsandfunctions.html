@@ -9,19 +9,18 @@
 <body>
     <div class="effect"></div>
    <div class="container">
-        <header class="header">
+        <header class="header" >
             <div class="header__container">
                 <a href="../../index.html"> 
                     <img src="../../public/images/logo.svg" alt="logotip" class="header__logo"> 
                 </a>
                 <nav class="header__nav">
-                    <a href="productsandfunctions.html" class="header__nav-link">Продукты</a>
+                    <a href="./src/html/productsandfunctions.html" class="header__nav-link">Продукты</a>
                     <a href="#" class="header__nav-link">Цены</a>
-                    <a href="#" class="header__nav-link">Документация</a>
-                    <a href="#" class="header__nav-link">О компании</a>
-                    <a href="#" class="header__nav-link">Контакты</a>
+                    <a href="https://docs.gitlife.ru" class="header__nav-link">Документация</a>
+                    <a href="#footer" class="header__nav-link">Контакты</a>
                 </nav>
-                <div class="header__buttons">
+                <div class="header__buttons" >
                     <button class="header__buttons-enter">Презентация</button>
                     <button class="header__buttons-menu">Меню</button>
                 </div>
@@ -29,12 +28,12 @@
         </header>
         <main class="main">
             <section class="products">
-                <div class="products__container">
+                <div class="products__container line">
                     <div class="products__head">
                         <h2 class="products__title">
                             Продукты и функции
                         </h2>
-                        <a href="../../index.html">
+                        <a href="../../../../index.html">
                             <button class="products__button">
                                 На главную
                             </button>
@@ -251,105 +250,40 @@
                     </div>
                 </div>
             </section>
-            <div class="invitation">
-                <div class="invitation__container">
-                    <h2 class="invitation__title" id="text">
-                        Присоединяйтесь к GitLife
-                    </h2>
-                    <p class="invitation__slogan" id="text">
-                        Зарегистрируйтесь сейчас и начните использовать <br> 
-                        GitLife для своих проектов.
+            <div class="earn">
+                <div class="earn__container">
+                    <h2 class="earn__title" id="text">Рассчитать стоимость</h2>
+                    <p class="earn__discripiton" id="text">
+                        Отправьте запрос и мы свяжемся с вами и рассчитаем <br> индивидуальные условия использования продуктов <br> для вашей компании
                     </p>
-                    <div class="invitation__search" id="text">
-                        <div class="invitation__invite">
+                    <div class="earn__search" id="text">
+                        <div class="earn__invite">
                             <label>Email адрес</label>
-                            <form action="" method="get" class="invitation__form">
-                                <input type="text" name="mail" class="invitation__form__input" placeholder="you@example.ru">
-                                <button class="invitation__form__button">Войти</button>
+                            <form action="" method="get" class="earn__form">
+                                <input type="text" name="mail" class="earn__form__input" placeholder="you@example.ru">
+                                <button class="earn__form__button">Отправить запрос</button>
                             </form>
-                        </div>
-                        <div class="invitation__button">
-                            <button class="invitation__enter__button">Войти</button>
-                            <button class="invitation__button-btn">Регистрация</button>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
-        <footer class="footer">
+        <footer class="footer" id="footer">
             <div class="footer__container">
                 <div class="footer__top">
-                    <img src="../../public/images/logoBottom.svg" alt="logotip" class="footer__logo">
-                    <div class="footer__newsletter">Рассылка</div>
+                   <a href="../../index.html"> <img src="../../public/images/logo.svg" alt="logotip" class="footer__logo"> </a>                   
                 </div>
                 <div class="footer__menu">
-                    <div class="footer__column">
-                        <p class="footer__column__title">Платформа</p>
-                        <a href="#" class="footer__column__item">Roadmap</a>
-                        <a href="#" class="footer__column__item">Сравнение</a>
-                        <a href="#" class="footer__column__item">Безопасность</a>
-                        <a href="#" class="footer__column__item">Интеграции</a>
-                    </div>
-                    <div class="footer__column">
-                        <p class="footer__column__title">Тарифы</p>
-                        <a href="#" class="footer__column__item">Тарифные планы</a>
-                        <a href="#" class="footer__column__item">Gitlife Pro</a>
-                        <a href="#" class="footer__column__item">Gitlife Enterprise</a>
-                    </div>
-                    <div class="footer__column">
-                        <p class="footer__column__title">Решения</p>
-                        <a href="#" class="footer__column__item">Цифровая трансформация</a>
-                        <a href="#" class="footer__column__item">Безопасность</a>
-                        <a href="#" class="footer__column__item">Автоматическая доставка ПО</a>
-                        <a href="#" class="footer__column__item">Гибкая доставка ПО</a>
-                        <a href="#" class="footer__column__item">Переезд в облако</a>
-                        <a href="#" class="footer__column__item">CICD</a>
-                        <a href="#" class="footer__column__item">Value Stream managment</a>
-                        <a href="#" class="footer__column__item">GITOps</a>                    
-                        <a href="#" class="footer__column__item">Корпоративная разработка</a>
-                        <a href="#" class="footer__column__item">Небольшие компании</a>
-                        <a href="#" class="footer__column__item">Стартапы</a>                  
-                        <a href="#" class="footer__column__item">Некомерческое использование</a>
-                        <a href="#" class="footer__column__item">Образование</a>
-                        <a href="#" class="footer__column__item">Финансовые сервисы</a>  
-                    </div>
-                    <div class="footer__column">
-                        <p class="footer__column__title">Документация</p>
-                        <a href="#" class="footer__column__item">Установка</a>
-                        <a href="#" class="footer__column__item">Быстрое начало</a>
-                        <a href="#" class="footer__column__item">Обучение</a>
-                        <a href="#" class="footer__column__item">Платформа</a>
-                        <a href="#" class="footer__column__item">Блог</a>
-                        <a href="#" class="footer__column__item">Истории успеха</a>
-                        <a href="#" class="footer__column__item">Team Ops</a>
-                        <a href="#" class="footer__column__item">Коммьюнтии</a>                    
-                        <a href="#" class="footer__column__item">Форум</a>
-                        <a href="#" class="footer__column__item">События</a>
-                        <a href="#" class="footer__column__item">Партнеры</a> 
-                    </div>
-                    <div class="footer__column">
-                        <p class="footer__column__title">О нас</p>
-                        <a href="#" class="footer__column__item">О компании</a>
-                        <a href="#" class="footer__column__item">Вакансии</a>
-                        <a href="#" class="footer__column__item">Команда</a>
-                        <a href="#" class="footer__column__item">Инвесторы</a>
-                        <a href="#" class="footer__column__item">Новости</a>
-                        <a href="#" class="footer__column__item">Для прессы</a>
-                    </div>
-                    <div class="footer__column">
-                        <p class="footer__column__title">Связаться с нами</p>
-                        <a href="#" class="footer__column__item">Связаться с экспертом</a>
-                        <a href="#" class="footer__column__item">Получить помощь</a>
-                        <a href="#" class="footer__column__item">Портал пользователей</a>
-                        <a href="#" class="footer__column__item">Статус</a>
-                        <a href="#" class="footer__column__item">Правила пользования</a>
-                        <a href="#" class="footer__column__item">Privace statement</a>
-                        <a href="#" class="footer__column__item">Cookie Preferences</a>
-                        <a href="#" class="footer__column__item">Для прессы</a>
-                    </div>
+                   <a class="footer__mail" href="mailto:info@xellon.ru">info@xellon.ru</a>
+                   <a class="footer__phone"  href="tel:8 (800) 533 – 92 – 20">8 (800) 533 – 92 – 20</a>
+                   <a class="footer__xellon" href="xellon.ru">
+                        xellon.ru
+                        <img src="../../public/images/ftarrow.png" alt="arrow">
+                    </a>
+                    <a class="footer__button"  href="productsandfunctions.html">Наверх</a>
                 </div>
             </div>
-        </footer>          
+        </footer>             
    </div>
    <script src="../js/script.js"></script>
 </body>

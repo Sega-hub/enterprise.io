@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     outline: none;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -1410,14 +1411,14 @@ $width: 80%;
             max-width: 1120px;
             display: flex;
             justify-content: space-between;
+            align-items: center;
             color: white;
             .footer__top {
                 display: flex;
                 align-items: left;
                 flex-direction: column;
                 .footer__logo {
-                    width: 140.85px;
-                    height: 32.61px;                    
+                                      
                 }
                 .footer__newsletter {
                     margin-top: 97.06px;
@@ -1446,34 +1447,47 @@ $width: 80%;
             }
             .footer__menu {
                 display: flex;
-                justify-content: space-between;
+                justify-content: start;
+                align-items: center;
                 width: 100%;
-                margin-left: 54px;
                 margin-top: 18px;
-                .footer__column {
-                display: flex;
-                flex-direction: column;
-            
-               .footer__column__title {
+                
+                a {
+                    white-space: nowrap;
                     font-family: "Hauora";
-                    font-size: $FONT_SIZE_12;
-                    font-weight: 400;
-                    line-height: 15.6px;
-                    text-align: left;
-                    color: $COLOR_WHITE;
-                    padding-bottom: 42.54px;
-               }
+                    font-size: 16px;
+                    font-weight: 500;
+                    letter-spacing: 0.03em;
+                    line-height: 20.8px;
+                    text-align: center;
+                    color: rgb(112, 111, 146); 
+                    
+                    &.footer__mail {
+                        margin-left: 164px;
+                    }
+                    
+                    &.footer__phone {
+                        margin-left: 71px;
+                    }
 
-               .footer__column__item {
-               
-                    margin-top: 8px;
-                    font-family: "Hauora";
-                    font-size: $FONT_SIZE_12;
-                    font-weight: 400;
-                    line-height: 15.6px;
-                    text-align: left;
-                    color: $COLOR_GRAY;                
-               }
+                    &.footer__xellon {
+                        font-family: "Hauora";
+                        font-size: 18px;
+                        font-weight: 500;
+                        line-height: 23.4px;
+                        letter-spacing: 0.02em;
+                        text-align: left;
+                        text-underline-position: from-font;
+                        -webkit-text-decoration-skip-ink: none;
+                        text-decoration-skip-ink: none;
+                        color: rgb(240, 246, 252);
+                        margin-left: 71px;
+                    }
+
+                    &.footer__button {
+                        margin-left: 110px;
+                        @include button(80px,  transparent, rgba(52, 59, 67, 1) )
+                    }
                 }
             }
         }

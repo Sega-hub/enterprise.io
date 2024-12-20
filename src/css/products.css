@@ -10,6 +10,7 @@ body {
 
 a {
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 @font-face {
@@ -134,7 +135,7 @@ a {
   color: rgb(255, 255, 255);
 }
 .container .header .header__container .header__buttons .header__buttons-enter:hover {
-  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+  box-shadow: 0px 0px 1.1px 0px rgb(17, 14, 104), 0px 0px 2.2px 0px rgb(17, 14, 104), 0px 0px 7.7px 0px rgb(17, 14, 104), 0px 0px 15.39px 0px rgb(17, 14, 104), 0px 0px 26.39px 0px rgb(17, 14, 104), 0px 0px 46.18px 0px rgb(17, 14, 104);
 }
 .container .header .header__container .header__buttons .header__buttons-menu {
   display: none;
@@ -157,9 +158,26 @@ a {
 }
 .container .main .products .products__container {
   padding-top: 259px;
+  padding-bottom: 420px;
   width: 80%;
   max-width: 1120px;
   flex-direction: column;
+}
+.container .main .products .products__container::after {
+  margin-top: 50px;
+  content: "";
+  position: absolute;
+  display: flex;
+  left: 50%;
+  width: 5px;
+  height: 0;
+  background-image: url(../../public/images/fourthLine.svg);
+  background-repeat: no-repeat;
+  background-size: 5px 286px;
+  transition: all 1s ease 0.5s;
+}
+.container .main .products .products__container.line.play::after {
+  height: 286px;
 }
 .container .main .products .products__container .products__head {
   display: grid;
@@ -198,7 +216,7 @@ a {
   color: rgb(255, 255, 255);
 }
 .container .main .products .products__container .products__head .products__button:hover {
-  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+  box-shadow: 0px 0px 1.1px 0px rgb(17, 14, 104), 0px 0px 2.2px 0px rgb(17, 14, 104), 0px 0px 7.7px 0px rgb(17, 14, 104), 0px 0px 15.39px 0px rgb(17, 14, 104), 0px 0px 26.39px 0px rgb(17, 14, 104), 0px 0px 46.18px 0px rgb(17, 14, 104);
 }
 .container .main .products .products__container .products__more {
   margin-top: 100px;
@@ -359,71 +377,77 @@ a {
 .container .main .products .products__container .products__more .products__column:nth-child(3) .products__column__title:nth-child(3) {
   margin-top: 88px;
 }
-.container .main .invitation {
+.container .main .earn {
   background: linear-gradient(rgb(0, 0, 0), rgb(3, 3, 22));
-  padding-top: 420px;
+  position: relative;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.container .main .invitation .invitation__container {
-  width: 80%;
+.container .main .earn .earn__container {
   max-width: 1120px;
+  width: 80%;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
-.container .main .invitation .invitation__container .invitation__title {
+.container .main .earn .earn__container .earn__title {
   font-family: "Hauora";
   font-size: 40px;
   font-weight: 500;
   letter-spacing: 0.03em;
-  line-height: 40px;
-  text-align: left;
+  line-height: 46px;
+  text-align: center;
   color: rgb(240, 246, 252);
   opacity: 0;
-  transition: all 1s ease 0s;
+  transition: 1s ease;
 }
-.container .main .invitation .invitation__container .invitation__title.appearance {
+.container .main .earn .earn__container .earn__title.appearance {
   opacity: 1;
 }
-.container .main .invitation .invitation__container .invitation__slogan {
-  padding-top: 25px;
+.container .main .earn .earn__container .earn__discripiton {
+  margin-top: 52px;
   font-family: "Hauora";
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.03em;
   line-height: 20.8px;
-  text-align: left;
+  text-align: center;
   color: rgb(112, 111, 146);
   opacity: 0;
-  transition: all 1s ease 0s;
+  transition: ease 0.5s;
 }
-.container .main .invitation .invitation__container .invitation__slogan.appearance {
+.container .main .earn .earn__container .earn__discripiton.appearance {
   opacity: 1;
 }
-.container .main .invitation .invitation__container .invitation__search {
-  padding-top: 67px;
+.container .main .earn .earn__container .earn__search {
+  padding-top: 104px;
   width: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
   opacity: 0;
-  transition: all 1s ease 0s;
+  transition: 0.5s ease 0.5s;
 }
-.container .main .invitation .invitation__container .invitation__search.appearance {
+.container .main .earn .earn__container .earn__search.appearance {
   opacity: 1;
 }
-.container .main .invitation .invitation__container .invitation__search .invitation__invite label {
+.container .main .earn .earn__container .earn__search .earn__invite label {
+  margin-left: 13px;
   width: 483px;
   display: flex;
   justify-content: start;
   font-family: "Hauora";
   font-size: 16px;
   font-weight: 500;
+  letter-spacing: 0.03em;
   line-height: 20.8px;
   text-align: left;
   color: rgb(112, 111, 146);
 }
-.container .main .invitation .invitation__container .invitation__search .invitation__invite .invitation__form {
+.container .main .earn .earn__container .earn__search .earn__invite .earn__form {
   margin-top: 9px;
   display: flex;
   width: 100%;
@@ -433,10 +457,10 @@ a {
   transition: 0.5s;
   border: 1px solid rgb(3, 16, 180);
 }
-.container .main .invitation .invitation__container .invitation__search .invitation__invite .invitation__form:hover {
+.container .main .earn .earn__container .earn__search .earn__invite .earn__form:hover {
   box-shadow: 0px 0px 26.39px 0px rgb(3, 16, 180);
 }
-.container .main .invitation .invitation__container .invitation__search .invitation__invite .invitation__form input {
+.container .main .earn .earn__container .earn__search .earn__invite .earn__form input {
   width: 367px;
   border-radius: 10px 0px 0px 10px;
   background-color: rgb(255, 255, 255);
@@ -451,7 +475,7 @@ a {
   text-align: left;
   color: rgb(6, 6, 6);
 }
-.container .main .invitation .invitation__container .invitation__search .invitation__invite .invitation__form input::-moz-placeholder {
+.container .main .earn .earn__container .earn__search .earn__invite .earn__form input::-moz-placeholder {
   font-family: "Hauora";
   font-size: 14px;
   font-weight: 500;
@@ -460,7 +484,7 @@ a {
   text-align: left;
   color: rgb(112, 111, 146);
 }
-.container .main .invitation .invitation__container .invitation__search .invitation__invite .invitation__form input::placeholder {
+.container .main .earn .earn__container .earn__search .earn__invite .earn__form input::placeholder {
   font-family: "Hauora";
   font-size: 14px;
   font-weight: 500;
@@ -469,7 +493,7 @@ a {
   text-align: left;
   color: rgb(112, 111, 146);
 }
-.container .main .invitation .invitation__container .invitation__search .invitation__invite .invitation__form button {
+.container .main .earn .earn__container .earn__search .earn__invite .earn__form button {
   width: 153px;
   border-radius: 0px 10px 10px 0px;
   border: none;
@@ -485,37 +509,6 @@ a {
           text-decoration-skip-ink: none;
   color: rgb(255, 255, 255);
 }
-.container .main .invitation .invitation__container .invitation__search .invitation__button {
-  margin-left: 20px;
-  display: flex;
-  align-items: end;
-}
-.container .main .invitation .invitation__container .invitation__search .invitation__button .invitation__enter__button {
-  display: none;
-}
-.container .main .invitation .invitation__container .invitation__search .invitation__button .invitation__button-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 138px;
-  height: 42px;
-  padding: 10px 15px 10px 15px;
-  border-radius: 10px;
-  border: 1px solid rgb(23, 19, 147);
-  background-color: transparent;
-  cursor: pointer;
-  transition: 0.5s;
-  font-family: "Hauora";
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.03em;
-  line-height: 16.8px;
-  text-align: left;
-  color: rgb(255, 255, 255);
-}
-.container .main .invitation .invitation__container .invitation__search .invitation__button .invitation__button-btn:hover {
-  box-shadow: 0px 0px 26.39px 0px rgb(3, 16, 180);
-}
 .container .footer {
   background: linear-gradient(rgb(3, 3, 22), rgb(8, 7, 51));
   padding-top: 320px;
@@ -530,16 +523,13 @@ a {
   max-width: 1120px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   color: white;
 }
 .container .footer .footer__container .footer__top {
   display: flex;
   align-items: left;
   flex-direction: column;
-}
-.container .footer .footer__container .footer__top .footer__logo {
-  width: 140.85px;
-  height: 32.61px;
 }
 .container .footer .footer__container .footer__top .footer__newsletter {
   margin-top: 97.06px;
@@ -565,30 +555,60 @@ a {
 }
 .container .footer .footer__container .footer__menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
+  align-items: center;
   width: 100%;
-  margin-left: 54px;
   margin-top: 18px;
 }
-.container .footer .footer__container .footer__menu .footer__column {
-  display: flex;
-  flex-direction: column;
-}
-.container .footer .footer__container .footer__menu .footer__column .footer__column__title {
+.container .footer .footer__container .footer__menu a {
+  white-space: nowrap;
   font-family: "Hauora";
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 15.6px;
-  text-align: left;
-  color: rgb(255, 255, 255);
-  padding-bottom: 42.54px;
-}
-.container .footer .footer__container .footer__menu .footer__column .footer__column__item {
-  margin-top: 8px;
-  font-family: "Hauora";
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 15.6px;
-  text-align: left;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  line-height: 20.8px;
+  text-align: center;
   color: rgb(112, 111, 146);
+}
+.container .footer .footer__container .footer__menu a.footer__mail {
+  margin-left: 164px;
+}
+.container .footer .footer__container .footer__menu a.footer__phone {
+  margin-left: 71px;
+}
+.container .footer .footer__container .footer__menu a.footer__xellon {
+  font-family: "Hauora";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23.4px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
+  color: rgb(240, 246, 252);
+  margin-left: 71px;
+}
+.container .footer .footer__container .footer__menu a.footer__button {
+  margin-left: 110px;
+  width: 80px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 1px solid rgb(52, 59, 67);
+  cursor: pointer;
+  font-family: "Hauora";
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  line-height: 16px;
+  text-align: center;
+  transition: 0.5s;
+  color: rgb(255, 255, 255);
+}
+.container .footer .footer__container .footer__menu a.footer__button:hover {
+  box-shadow: 0px 0px 1.1px 0px rgb(17, 14, 104), 0px 0px 2.2px 0px rgb(17, 14, 104), 0px 0px 7.7px 0px rgb(17, 14, 104), 0px 0px 15.39px 0px rgb(17, 14, 104), 0px 0px 26.39px 0px rgb(17, 14, 104), 0px 0px 46.18px 0px rgb(17, 14, 104);
 }/*# sourceMappingURL=products.css.map */

@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   outline: none;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -1632,16 +1633,13 @@ a {
   max-width: 1120px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   color: white;
 }
 .container .footer .footer__container .footer__top {
   display: flex;
   align-items: left;
   flex-direction: column;
-}
-.container .footer .footer__container .footer__top .footer__logo {
-  width: 140.85px;
-  height: 32.61px;
 }
 .container .footer .footer__container .footer__top .footer__newsletter {
   margin-top: 97.06px;
@@ -1667,32 +1665,62 @@ a {
 }
 .container .footer .footer__container .footer__menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
+  align-items: center;
   width: 100%;
-  margin-left: 54px;
   margin-top: 18px;
 }
-.container .footer .footer__container .footer__menu .footer__column {
-  display: flex;
-  flex-direction: column;
-}
-.container .footer .footer__container .footer__menu .footer__column .footer__column__title {
+.container .footer .footer__container .footer__menu a {
+  white-space: nowrap;
   font-family: "Hauora";
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 15.6px;
-  text-align: left;
-  color: rgb(255, 255, 255);
-  padding-bottom: 42.54px;
-}
-.container .footer .footer__container .footer__menu .footer__column .footer__column__item {
-  margin-top: 8px;
-  font-family: "Hauora";
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 15.6px;
-  text-align: left;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  line-height: 20.8px;
+  text-align: center;
   color: rgb(112, 111, 146);
+}
+.container .footer .footer__container .footer__menu a.footer__mail {
+  margin-left: 164px;
+}
+.container .footer .footer__container .footer__menu a.footer__phone {
+  margin-left: 71px;
+}
+.container .footer .footer__container .footer__menu a.footer__xellon {
+  font-family: "Hauora";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23.4px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
+  color: rgb(240, 246, 252);
+  margin-left: 71px;
+}
+.container .footer .footer__container .footer__menu a.footer__button {
+  margin-left: 110px;
+  width: 80px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 1px solid rgb(52, 59, 67);
+  cursor: pointer;
+  font-family: "Hauora";
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  line-height: 16px;
+  text-align: center;
+  transition: 0.5s;
+  color: rgb(255, 255, 255);
+}
+.container .footer .footer__container .footer__menu a.footer__button:hover {
+  box-shadow: 0px 0px 1.1px 0px rgb(17, 14, 104), 0px 0px 2.2px 0px rgb(17, 14, 104), 0px 0px 7.7px 0px rgb(17, 14, 104), 0px 0px 15.39px 0px rgb(17, 14, 104), 0px 0px 26.39px 0px rgb(17, 14, 104), 0px 0px 46.18px 0px rgb(17, 14, 104);
 }
 
 @media (min-width: 1700px) {
