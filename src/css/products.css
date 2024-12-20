@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   outline: none;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -526,57 +527,24 @@ a {
   align-items: center;
   color: white;
 }
-.container .footer .footer__container .footer__top {
-  display: flex;
-  align-items: left;
-  flex-direction: column;
-}
-.container .footer .footer__container .footer__top .footer__newsletter {
-  margin-top: 97.06px;
-  display: flex;
+.container .footer .footer__container a {
   align-items: center;
-  justify-content: center;
-  width: 97px;
-  height: 30px;
-  border-radius: 10px;
-  border: 1px solid rgb(52, 59, 67);
-  background-color: transparent;
-  cursor: pointer;
-  font-family: "Hauora";
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.03em;
-  line-height: 16.8px;
-  text-align: left;
-  color: rgb(255, 255, 255);
-}
-.container .footer .footer__container .footer__top .footer__newsletter:hover {
-  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
-}
-.container .footer .footer__container .footer__menu {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  width: 100%;
-  margin-top: 18px;
-}
-.container .footer .footer__container .footer__menu a {
   white-space: nowrap;
   font-family: "Hauora";
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   letter-spacing: 0.03em;
   line-height: 20.8px;
   text-align: center;
   color: rgb(112, 111, 146);
 }
-.container .footer .footer__container .footer__menu a.footer__mail {
+.container .footer .footer__container a.footer__mail {
   margin-left: 164px;
 }
-.container .footer .footer__container .footer__menu a.footer__phone {
+.container .footer .footer__container a.footer__phone {
   margin-left: 71px;
 }
-.container .footer .footer__container .footer__menu a.footer__xellon {
+.container .footer .footer__container a.footer__xellon {
   font-family: "Hauora";
   font-size: 18px;
   font-weight: 500;
@@ -589,7 +557,7 @@ a {
   color: rgb(240, 246, 252);
   margin-left: 71px;
 }
-.container .footer .footer__container .footer__menu a.footer__button {
+.container .footer .footer__container a.footer__button {
   margin-left: 110px;
   width: 80px;
   height: 30px;
@@ -609,6 +577,6 @@ a {
   transition: 0.5s;
   color: rgb(255, 255, 255);
 }
-.container .footer .footer__container .footer__menu a.footer__button:hover {
+.container .footer .footer__container a.footer__button:hover {
   box-shadow: 0px 0px 1.1px 0px rgb(17, 14, 104), 0px 0px 2.2px 0px rgb(17, 14, 104), 0px 0px 7.7px 0px rgb(17, 14, 104), 0px 0px 15.39px 0px rgb(17, 14, 104), 0px 0px 26.39px 0px rgb(17, 14, 104), 0px 0px 46.18px 0px rgb(17, 14, 104);
 }/*# sourceMappingURL=products.css.map */

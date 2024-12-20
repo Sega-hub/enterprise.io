@@ -1413,85 +1413,46 @@ $width: 80%;
             justify-content: space-between;
             align-items: center;
             color: white;
-            .footer__top {
-                display: flex;
-                align-items: left;
-                flex-direction: column;
-                .footer__logo {
-                                      
-                }
-                .footer__newsletter {
-                    margin-top: 97.06px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    width: 97px;
-                    height: 30px;
-                    border-radius: 10px;
-                    border: 1px solid rgba(52, 59, 67, 1);
-                    background-color: transparent;
-                    cursor: pointer;
-
-                    font-family: "Hauora";
-                    font-size: $FONT_SIZE_14;
-                    font-weight: 500;
-                    letter-spacing: 0.03em;
-                    line-height: 16.8px;
-                    text-align: left;
-                    color: $COLOR_WHITE;
-
-                    &:hover {
-                        box-shadow: 0px 0px 26.39px 0px rgba(17, 14, 104, 1);
-                    }
-                }
-            }
-            .footer__menu {
-                display: flex;
-                justify-content: start;
+            a {
                 align-items: center;
-                width: 100%;
-                margin-top: 18px;
+                white-space: nowrap;
+                font-family: "Hauora";
+                font-size: 18px;
+                font-weight: 500;
+                letter-spacing: 0.03em;
+                line-height: 20.8px;
+                text-align: center;
+                color: rgb(112, 111, 146); 
                 
-                a {
-                    white-space: nowrap;
+                &.footer__mail {
+                    margin-left: 164px;
+                }
+                
+                &.footer__phone {
+                    margin-left: 71px;
+                }
+
+                &.footer__xellon {
                     font-family: "Hauora";
-                    font-size: 16px;
+                    font-size: 18px;
                     font-weight: 500;
-                    letter-spacing: 0.03em;
-                    line-height: 20.8px;
-                    text-align: center;
-                    color: rgb(112, 111, 146); 
-                    
-                    &.footer__mail {
-                        margin-left: 164px;
-                    }
-                    
-                    &.footer__phone {
-                        margin-left: 71px;
-                    }
+                    line-height: 23.4px;
+                    letter-spacing: 0.02em;
+                    text-align: left;
+                    text-underline-position: from-font;
+                    -webkit-text-decoration-skip-ink: none;
+                    text-decoration-skip-ink: none;
+                    color: rgb(240, 246, 252);
+                    margin-left: 71px;
+                }
 
-                    &.footer__xellon {
-                        font-family: "Hauora";
-                        font-size: 18px;
-                        font-weight: 500;
-                        line-height: 23.4px;
-                        letter-spacing: 0.02em;
-                        text-align: left;
-                        text-underline-position: from-font;
-                        -webkit-text-decoration-skip-ink: none;
-                        text-decoration-skip-ink: none;
-                        color: rgb(240, 246, 252);
-                        margin-left: 71px;
-                    }
-
-                    &.footer__button {
-                        margin-left: 110px;
-                        @include button(80px,  transparent, rgba(52, 59, 67, 1) )
-                    }
+                &.footer__button {
+                    margin-left: 110px;
+                    @include button(80px,  transparent, rgba(52, 59, 67, 1) )
                 }
             }
         }
-    }    
+    }     
 }
 
 
