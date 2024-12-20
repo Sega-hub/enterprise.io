@@ -64,7 +64,27 @@ $width: 80%;
     transition: 0.5s;
     color: rgba(255, 255, 255, 1);
     &:hover {
-        box-shadow: 0px 0px 26.39px 0px rgba(17, 14, 104, 1);
+        @mixin button($width, $color, $borderC) {
+            width: $width;
+            height: 30px;
+            @include center();
+            border-radius: 10px;
+            background-color: $color;
+            border: 1px solid $borderC;   
+            cursor: pointer;
+        
+            font-family: "Hauora";
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.03em;
+            line-height: 16px;
+            text-align: center;   
+            transition: 0.5s;
+            color: rgba(255, 255, 255, 1);
+            &:hover {
+                box-shadow: 0px 0px 1.1px 0px rgba(17, 14, 104, 1), 0px 0px 2.2px 0px rgba(17, 14, 104, 1),  0px 0px 7.7px 0px rgba(17, 14, 104, 1), 0px 0px 15.39px 0px rgba(17, 14, 104, 1),  0px 0px 26.39px 0px rgba(17, 14, 104, 1), 0px 0px 46.18px 0px rgba(17, 14, 104, 1);
+            }
+        }
     }
 }
 
