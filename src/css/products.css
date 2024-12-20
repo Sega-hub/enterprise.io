@@ -166,7 +166,7 @@ a {
   align-items: center;
   grid-template-columns: 8.5fr 3.5fr;
   opacity: 0;
-  animation: mainTitle 2s ease 0.5s;
+  animation: mainTitle ease 0.5s;
   animation-fill-mode: forwards;
 }
 .container .main .products .products__container .products__head .products__title {
@@ -209,114 +209,114 @@ a {
 }
 .container .main .products .products__container .products__more .products__column:nth-child(1) p:nth-child(1) {
   opacity: 0;
-  animation: mainTitle 2s ease 1.2s;
+  animation: mainTitle ease 1.2s;
   animation-fill-mode: forwards;
 }
 .container .main .products .products__container .products__more .products__column:nth-child(1) p:nth-child(3) {
   opacity: 0;
-  transition: 1s ease 0.5s;
+  transition: ease 0.5s;
 }
 .container .main .products .products__container .products__more .products__column:nth-child(1) p:nth-child(3).appearance {
   opacity: 1;
 }
 .container .main .products .products__container .products__more .products__column:nth-child(1) p:nth-child(5) {
   opacity: 0;
-  transition: 1s ease 0.5s;
+  transition: ease 0.5s;
 }
 .container .main .products .products__container .products__more .products__column:nth-child(1) p:nth-child(5).appearance {
   opacity: 1;
 }
 .container .main .products .products__container .products__more .products__column:nth-child(1) ul:nth-child(2) {
   opacity: 0;
-  animation: mainTitle 2s ease 1.5s;
+  animation: mainTitle ease 1.5s;
   animation-fill-mode: forwards;
 }
 .container .main .products .products__container .products__more .products__column:nth-child(1) ul:nth-child(4) {
   opacity: 0;
-  transition: 1s ease 0.5s;
+  transition: ease 0.5s;
 }
 .container .main .products .products__container .products__more .products__column:nth-child(1) ul:nth-child(4).appearance {
   opacity: 1;
 }
 .container .main .products .products__container .products__more .products__column:nth-child(1) ul:nth-child(6) {
   opacity: 0;
-  transition: 1s ease 0.5s;
+  transition: ease 0.5s;
 }
 .container .main .products .products__container .products__more .products__column:nth-child(1) ul:nth-child(6).appearance {
   opacity: 1;
 }
 .container .main .products .products__container .products__more .products__column:nth-child(2) p:nth-child(1) {
   opacity: 0;
-  animation: mainTitle 2s ease 1.7s;
+  animation: mainTitle ease 1.7s;
   animation-fill-mode: forwards;
 }
 .container .main .products .products__container .products__more .products__column:nth-child(2) p:nth-child(3) {
   opacity: 0;
-  transition: 1s ease 0.5s;
+  transition: ease 0.5s;
 }
 .container .main .products .products__container .products__more .products__column:nth-child(2) p:nth-child(3).appearance {
   opacity: 1;
 }
 .container .main .products .products__container .products__more .products__column:nth-child(2) p:nth-child(5) {
   opacity: 0;
-  transition: 1s ease 0.5s;
+  transition: ease 0.5s;
 }
 .container .main .products .products__container .products__more .products__column:nth-child(2) p:nth-child(5).appearance {
   opacity: 1;
 }
 .container .main .products .products__container .products__more .products__column:nth-child(2) ul:nth-child(2) {
   opacity: 0;
-  animation: mainTitle 2s ease 1.9s;
+  animation: mainTitle ease 1.9s;
   animation-fill-mode: forwards;
 }
 .container .main .products .products__container .products__more .products__column:nth-child(2) ul:nth-child(4) {
   opacity: 0;
-  transition: 1s ease 0.5s;
+  transition: ease 0.5s;
 }
 .container .main .products .products__container .products__more .products__column:nth-child(2) ul:nth-child(4).appearance {
   opacity: 1;
 }
 .container .main .products .products__container .products__more .products__column:nth-child(2) ul:nth-child(6) {
   opacity: 0;
-  transition: 1s ease 0.5s;
+  transition: ease 0.5s;
 }
 .container .main .products .products__container .products__more .products__column:nth-child(2) ul:nth-child(6).appearance {
   opacity: 1;
 }
 .container .main .products .products__container .products__more .products__column:nth-child(3) p:nth-child(1) {
   opacity: 0;
-  animation: mainTitle 2s ease 2.1s;
+  animation: mainTitle ease 2.1s;
   animation-fill-mode: forwards;
 }
 .container .main .products .products__container .products__more .products__column:nth-child(3) p:nth-child(3) {
   opacity: 0;
-  transition: 1s ease 0.5s;
+  transition: ease 0.5s;
 }
 .container .main .products .products__container .products__more .products__column:nth-child(3) p:nth-child(3).appearance {
   opacity: 1;
 }
 .container .main .products .products__container .products__more .products__column:nth-child(3) p:nth-child(5) {
   opacity: 0;
-  transition: 1s ease 0.5s;
+  transition: ease 0.5s;
 }
 .container .main .products .products__container .products__more .products__column:nth-child(3) p:nth-child(5).appearance {
   opacity: 1;
 }
 .container .main .products .products__container .products__more .products__column:nth-child(3) ul:nth-child(2) {
   opacity: 0;
-  animation: mainTitle 2s ease 2.3s;
+  animation: mainTitle ease 2.3s;
   animation-fill-mode: forwards;
 }
 .container .main .products .products__container .products__more .products__column:nth-child(3) ul:nth-child(4) {
   opacity: 0;
-  transition: 1s ease 0.5s;
+  transition: ease 0.5s;
 }
 .container .main .products .products__container .products__more .products__column:nth-child(3) ul:nth-child(4).appearance {
   opacity: 1;
 }
 .container .main .products .products__container .products__more .products__column:nth-child(3) ul:nth-child(6) {
   opacity: 0;
-  transition: 1s ease 0.5s;
+  transition: ease 0.5s;
 }
 .container .main .products .products__container .products__more .products__column:nth-child(3) ul:nth-child(6).appearance {
   opacity: 1;

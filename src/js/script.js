@@ -385,7 +385,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     const listAnim = lists[i];
                     const listHeight = listAnim.offsetHeight;
                     const listAnimOffset = offset(listAnim).top;
-                    const listStart = 1.7;
+                    const listStart = 2;
         
                     let listStartPoint = window.innerHeight - listHeight / listStart;
         

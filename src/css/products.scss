@@ -275,7 +275,7 @@ $width: 80%;
                     align-items: center;
                     grid-template-columns: 8.5fr 3.5fr;
                     opacity: 0;
-                    animation: mainTitle 2s ease 0.5s;
+                    animation: mainTitle  ease 0.5s;
                     animation-fill-mode: forwards;
 
                     .products__title {
@@ -302,12 +302,12 @@ $width: 80%;
                            p {
                                 &:nth-child(1) {
                                    opacity: 0;
-                                   animation: mainTitle 2s ease 1.2s;
+                                   animation: mainTitle  ease 1.2s;
                                    animation-fill-mode: forwards;
                                 }
                                 &:nth-child(3) {
                                     opacity: 0;
-                                    transition: 1s ease 0.5s;
+                                    transition:  ease 0.5s;
 
                                     &.appearance {
                                         opacity: 1;
@@ -315,7 +315,7 @@ $width: 80%;
                                 }
                                 &:nth-child(5) {
                                     opacity: 0;
-                                    transition: 1s ease 0.5s;
+                                    transition:  ease 0.5s;
 
                                     &.appearance {
                                         opacity: 1;
@@ -325,12 +325,12 @@ $width: 80%;
                            ul {
                                 &:nth-child(2){
                                     opacity: 0;
-                                    animation: mainTitle 2s ease 1.5s;
+                                    animation: mainTitle  ease 1.5s;
                                     animation-fill-mode: forwards;
                                 }
                                 &:nth-child(4){
                                     opacity: 0;
-                                    transition: 1s ease 0.5s;
+                                    transition:  ease 0.5s;
 
                                     &.appearance {
                                         opacity: 1;
@@ -338,7 +338,7 @@ $width: 80%;
                                 }
                                 &:nth-child(6){
                                     opacity: 0;
-                                    transition: 1s ease 0.5s;
+                                    transition:  ease 0.5s;
 
                                     &.appearance {
                                         opacity: 1;
@@ -350,12 +350,12 @@ $width: 80%;
                             p {
                                  &:nth-child(1) {
                                     opacity: 0;
-                                    animation: mainTitle 2s ease 1.7s;
+                                    animation: mainTitle  ease 1.7s;
                                     animation-fill-mode: forwards;
                                  }
                                  &:nth-child(3) {
                                     opacity: 0;
-                                    transition: 1s ease 0.5s;
+                                    transition:  ease 0.5s;
 
                                     &.appearance {
                                         opacity: 1;
@@ -363,7 +363,7 @@ $width: 80%;
                                  }
                                  &:nth-child(5) {
                                     opacity: 0;
-                                    transition: 1s ease 0.5s;
+                                    transition:  ease 0.5s;
 
                                     &.appearance {
                                         opacity: 1;
@@ -373,12 +373,12 @@ $width: 80%;
                             ul {
                                  &:nth-child(2){
                                      opacity: 0;
-                                     animation: mainTitle 2s ease 1.9s;
+                                     animation: mainTitle  ease 1.9s;
                                      animation-fill-mode: forwards;
                                  }
                                  &:nth-child(4){
                                     opacity: 0;
-                                    transition: 1s ease 0.5s;
+                                    transition:  ease 0.5s;
 
                                     &.appearance {
                                         opacity: 1;
@@ -386,7 +386,7 @@ $width: 80%;
                                  }
                                  &:nth-child(6){
                                     opacity: 0;
-                                    transition: 1s ease 0.5s;
+                                    transition:  ease 0.5s;
 
                                     &.appearance {
                                         opacity: 1;
@@ -398,12 +398,12 @@ $width: 80%;
                             p {
                                  &:nth-child(1) {
                                     opacity: 0;
-                                    animation: mainTitle 2s ease 2.1s;
+                                    animation: mainTitle  ease 2.1s;
                                     animation-fill-mode: forwards;
                                  }
                                  &:nth-child(3) {
                                     opacity: 0;
-                                    transition: 1s ease 0.5s;
+                                    transition:  ease 0.5s;
 
                                     &.appearance {
                                         opacity: 1;
@@ -411,7 +411,7 @@ $width: 80%;
                                  }
                                  &:nth-child(5) {
                                     opacity: 0;
-                                    transition: 1s ease 0.5s;
+                                    transition:  ease 0.5s;
 
                                     &.appearance {
                                         opacity: 1;
@@ -421,12 +421,12 @@ $width: 80%;
                             ul {
                                  &:nth-child(2){
                                      opacity: 0;
-                                     animation: mainTitle 2s ease 2.3s;
+                                     animation: mainTitle  ease 2.3s;
                                      animation-fill-mode: forwards;
                                  }
                                  &:nth-child(4){
                                     opacity: 0;
-                                    transition: 1s ease 0.5s;
+                                    transition:  ease 0.5s;
 
                                     &.appearance {
                                         opacity: 1;
@@ -434,7 +434,7 @@ $width: 80%;
                                  }
                                  &:nth-child(6){
                                     opacity: 0;
-                                    transition: 1s ease 0.5s;
+                                    transition:  ease 0.5s;
 
                                     &.appearance {
                                         opacity: 1;
