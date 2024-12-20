@@ -984,15 +984,16 @@ a {
 .container .main .client .client__container .client__img img {
   width: 410px;
   height: 408px;
-  opacity: 0;
-  transition: 0.5s ease 0.5s;
+}
+.container .main .client .client__container .client__img img.appearance {
+  opacity: 1;
 }
 .container .main .client .client__container .client__img img {
-  opacity: 1;
+  opacity: 0;
   transition: opacity 0.5s ease-in-out;
 }
 .container .main .client .client__container .client__img img.hidden {
-  opacity: 0;
+  opacity: 0 !important;
 }
 .container .main .modules {
   padding-top: 69px;
