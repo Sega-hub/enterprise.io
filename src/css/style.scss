@@ -883,11 +883,16 @@ $width: 80%;
                         height: 408px;
                         opacity: 0;
                         transition: 0.5s ease 0.5s;
-    
-                        &.appearance {
-                            opacity: 1;
-                        }  
                     }
+                }
+
+                .client__img img {
+                    opacity: 1;
+                    transition: opacity 0.5s ease-in-out;
+                }
+                
+                .client__img img.hidden {
+                    opacity: 0;
                 }
             }
         }

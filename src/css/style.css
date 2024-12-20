@@ -987,8 +987,12 @@ a {
   opacity: 0;
   transition: 0.5s ease 0.5s;
 }
-.container .main .client .client__container .client__img img.appearance {
+.container .main .client .client__container .client__img img {
   opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+.container .main .client .client__container .client__img img.hidden {
+  opacity: 0;
 }
 .container .main .modules {
   padding-top: 69px;

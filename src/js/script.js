@@ -312,32 +312,37 @@ document.addEventListener("DOMContentLoaded", () => {
         const platforms = document.querySelectorAll(".client__button");
         const img = document.querySelector(".client__img");
         const picture = img.children[0];
-    
         platforms[0].style.boxShadow = "0px 0px 26.39px 0px rgba(17, 14, 104, 1)";
-    
         platforms.forEach(platform => {
-            platform.addEventListener("click", ()=> {
-                if (platform.innerHTML == "Дистрибутив") {
-                    picture.src = "./public/images/destibyut.webp";                
-                    platforms[1].style.boxShadow = "none";
-                    platforms[2].style.boxShadow = "none";
-                    platform.style.boxShadow = "0px 0px 26.39px 0px rgba(17, 14, 104, 1)";
-                    console.log(picture.src);
-                } else if (platform.innerHTML == "Установка и развертывание") {
-                    picture.src = "./public/images/deploy.jpg";
-                    platforms[0].style.boxShadow = "none";
-                    platforms[2].style.boxShadow = "none";
-                    platform.style.boxShadow = "0px 0px 26.39px 0px rgba(17, 14, 104, 1)";
-                } else {
-                    picture.src = "./public/images/support.webp";
-                    platforms[0].style.boxShadow = "none";
-                    platforms[1].style.boxShadow = "none";
-                    platform.style.boxShadow = "0px 0px 26.39px 0px rgba(17, 14, 104, 1)";
-                }
-            })
-          
+            platform.addEventListener("click", () => {
+                // Добавляем класс для скрытия изображения
+                picture.classList.add("hidden");
+                // Меняем изображение с небольшой задержкой, чтобы анимация отработала
+                setTimeout(() => {
+                    if (platform.innerHTML === "Дистрибутив") {
+                        picture.src = "./public/images/destibyut.webp";                
+                        resetShadows();
+                        platform.style.boxShadow = "0px 0px 26.39px 0px rgba(17, 14, 104, 1)";
+                    } else if (platform.innerHTML === "Установка и развертывание") {
+                        picture.src = "./public/images/deploy.jpg";
+                        resetShadows();
+                        platform.style.boxShadow = "0px 0px 26.39px 0px rgba(17, 14, 104, 1)";
+                    } else {
+                        picture.src = "./public/images/support.webp";
+                        resetShadows();
+                        platform.style.boxShadow = "0px 0px 26.39px 0px rgba(17, 14, 104, 1)";
+                    }
+                    // Убираем класс скрытия, чтобы запустить анимацию появления
+                    picture.onload = () => picture.classList.remove("hidden");
+                }, 500);
+            });
         });
-    }   else console.log("You need page Enterprise");
+        // Сбрасываем тени кнопок
+        function resetShadows() {
+            platforms.forEach(p => (p.style.boxShadow = "none"));
+        }
+
+    } else console.log("You need page Enterprise");
 
     let lastScrollTop = 0;
     const header = document.querySelector('.header');
