@@ -1694,4 +1694,318 @@ a {
   .openspace {
     padding-top: 0 !important;
   }
+}
+@media (max-width: 500px) {
+  * {
+    opacity: 1;
+  }
+  .play {
+    display: none !important;
+  }
+  .effect {
+    display: none;
+  }
+  p, h1, h2, h3, a {
+    letter-spacing: 0 !important;
+  }
+  body {
+    background: linear-gradient(180deg, #000000, rgb(0, 0, 0) 100%);
+  }
+  ::after {
+    display: none;
+  }
+  .container {
+    display: block;
+    margin: auto;
+    max-width: 500px;
+  }
+  .container .header {
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    padding-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+    position: fixed;
+    z-index: 1000;
+  }
+  .container .header.hidden {
+    transform: translateY(-100%);
+  }
+  .container .header .header__container {
+    width: 84.61%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding-top: 26px;
+  }
+  .container .header .header__container a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .header .header__container a img {
+    width: 137px;
+    height: 22.94px;
+  }
+  .container .header .header__container .header__nav {
+    display: none;
+  }
+  .container .header .header__container .header__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .header .header__container .header__buttons .header__buttons-search {
+    display: none;
+  }
+  .container .header .header__container .header__buttons .header__buttons-enter {
+    display: none;
+    margin: 0;
+  }
+  .container .header .header__container .header__buttons .header__buttons-menu {
+    display: flex;
+    width: 66px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #0b0a4e;
+    border: 1px solid rgb(23, 19, 147);
+    cursor: pointer;
+    font-family: "Hauora";
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    line-height: 16px;
+    text-align: center;
+    transition: 0.5s;
+    color: rgb(255, 255, 255);
+  }
+  .container .header .header__container .header__buttons .header__buttons-menu:hover {
+    box-shadow: 0px 0px 1.1px 0px rgb(17, 14, 104), 0px 0px 2.2px 0px rgb(17, 14, 104), 0px 0px 7.7px 0px rgb(17, 14, 104), 0px 0px 15.39px 0px rgb(17, 14, 104), 0px 0px 26.39px 0px rgb(17, 14, 104), 0px 0px 46.18px 0px rgb(17, 14, 104);
+  }
+  .container .main .offer {
+    padding-top: 250px;
+    background: linear-gradient(180deg, rgba(10, 9, 67, 0.5), rgb(0, 0, 0) 100%);
+  }
+  .container .main .offer .offer__video {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    -o-object-fit: cover;
+    z-index: -1;
+    object-fit: cover;
+  }
+  .container .main .offer .offer__container {
+    padding-top: 0;
+    width: 84.61%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+  }
+  .container .main .offer .offer__container .offer__buttons {
+    display: none;
+  }
+  .container .main .offer .offer__container .offer__title {
+    display: flex;
+    width: 100%;
+    font-family: "Hauora";
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    line-height: 25px;
+    text-align: left;
+    color: rgb(240, 246, 252);
+    padding-top: 25px;
+  }
+  .container .main .offer .offer__container .offer__title br {
+    display: none;
+  }
+  .container .main .offer .offer__container .offer__discription {
+    margin-top: 30px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+  }
+  .container .main .offer .offer__container .offer__discription .offer__info {
+    font-family: "Hauora";
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    line-height: 20.8px;
+    text-align: left;
+  }
+  .container .main .offer .offer__container .offer__discription .offer__info br {
+    display: none;
+  }
+  .container .main .offer .offer__container .offer__discription .offer__slogan {
+    font-family: "Hauora";
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    line-height: 20.8px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+  }
+  .container .main .offer .offer__container .offer__search {
+    padding-top: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+  .container .main .offer .offer__container .offer__search .form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    max-width: none;
+    height: auto;
+    border: none;
+    border-radius: 0;
+  }
+  .container .main .offer .offer__container .offer__search .form:hover {
+    box-shadow: none;
+  }
+  .container .main .offer .offer__container .offer__search .form .offer__search__input {
+    width: 95.8%;
+    height: 42px;
+    border-radius: 10px;
+    padding-left: 0;
+  }
+  .container .main .offer .offer__container .offer__search .form .offer__search__input[type=text] {
+    padding-left: 15px;
+  }
+  .container .main .offer .offer__container .offer__search .form .offer__search__button {
+    margin-top: 20px;
+    width: 100%;
+    height: 42px;
+    box-sizing: border-box;
+    padding: 10px 25px 10px 25px;
+    border-radius: 10px;
+    border: 1px solid rgb(3, 16, 180);
+  }
+  .container .main .offer .offer__container .offer__search .form .offer__search__button:hover {
+    box-shadow: 0px 0px 26.39px 0px rgb(3, 16, 180);
+  }
+  .container .main .offer .offer__container .offer__partners {
+    padding-top: 93px;
+    width: 100%;
+    max-width: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px 0;
+  }
+  .container .main .offer .offer__container .offer__partners img {
+    display: block;
+    margin: auto;
+  }
+  .container .main .offer .offer__container .offer__partners img:nth-child(1) {
+    width: 94px;
+    height: 40px;
+    order: 1;
+  }
+  .container .main .offer .offer__container .offer__partners img:nth-child(2) {
+    width: 100px;
+    height: 40px;
+    order: 2;
+  }
+  .container .main .offer .offer__container .offer__partners img:nth-child(3) {
+    width: 136px;
+    height: 36px;
+    order: 4;
+  }
+  .container .main .offer .offer__container .offer__partners img:nth-child(4) {
+    width: 56px;
+    height: 38px;
+    order: 3;
+  }
+  .container .main .offer .offer__container .offer__partners img:nth-child(5) {
+    width: 91px;
+    height: 40px;
+    order: 5;
+  }
+  .container .main .modules .modules__container .modules__content {
+    display: flex;
+    flex-direction: column;
+  }
+  .container .main .modules .modules__container .modules__content .modules__box {
+    max-width: 100% !important;
+  }
+  .container .main .characteristic {
+    display: flex;
+  }
+  .container .main .characteristic .characteristic__content {
+    display: flex !important;
+    flex-direction: column;
+  }
+  .container .main .earn .earn__container .earn__search {
+    display: none;
+  }
+  .container .footer {
+    background: linear-gradient(180deg, rgb(6, 5, 34), rgb(8, 7, 52));
+    padding-top: 186px;
+    padding-bottom: 82px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .footer .footer__container {
+    width: 84.61%;
+    max-width: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    color: white;
+  }
+  .container .footer .footer__container .footer__top {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .container .footer .footer__container .footer__top .footer__newsletter {
+    margin-top: 0;
+  }
+  .container .footer .footer__container .footer__menu {
+    padding-top: 62.06px;
+    padding-bottom: 0;
+    margin-left: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px 30px;
+  }
+  .container .footer .footer__container .footer__menu .footer__column {
+    display: flex;
+    flex-direction: column;
+    width: unset;
+  }
+  .container .footer .footer__container .footer__menu .footer__column .footer__column__title {
+    font-family: "Hauora";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15.6px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    padding-bottom: 12.54px;
+  }
+  .container .footer .footer__container .footer__menu .footer__column .footer__column__item {
+    margin-top: 8px;
+    font-family: "Hauora";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15.6px;
+    text-align: left;
+    color: rgb(112, 111, 146);
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -1461,3 +1461,337 @@ $width: 80%;
         padding-top: 0 !important;
     }
 }
+
+@media (max-width: 500px) {
+    * {
+        opacity: 1;
+    }
+
+    .play {
+        display: none !important;
+    }
+
+    .effect {
+        display: none;
+    }
+
+    p, h1, h2, h3, a {
+        letter-spacing: 0!important; 
+    }
+
+    body {
+        background: linear-gradient(180deg, #000000, rgb(0, 0, 0) 100%);
+    }
+
+    @mixin card() {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: rgb(7, 7, 7);
+        border-radius: 20px;
+        border: 1px solid $COLOR_DARK_GRAY;
+        padding-bottom: 1px;
+        p {
+            max-width: 322px;
+            padding: 60px 0 0 20px;
+            font-family: "Hauora";
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 20.8px;
+            text-align: left;
+            color: $COLOR_WHITE;
+            
+            span {
+                color: $COLOR_GRAY;
+            }
+        }
+    }
+
+    ::after{
+        display: none;
+    }
+
+    $width: 84.61%;
+    .container {
+        display: block;
+        margin: auto;
+        max-width: 500px;
+        .header {
+          
+            width: 100vw;
+            max-width: 100%;
+            @include center();
+            background: transparent;
+            padding-bottom: 10px;
+            transition: transform 0.3s ease-in-out;
+            position: fixed;
+            z-index: 1000;
+            &.hidden {
+                transform: translateY(-100%);
+            }
+
+            .header__container {
+                width: $width;
+                display: flex;
+                justify-content: space-between;
+                align-items: end;
+                padding-top: 26px;
+                a {                    
+                    @include center();
+                    img { 
+                        width: 137px;
+                        height: 22.94px;
+                    }
+                }
+                .header__nav {
+                    display: none;                    
+                }
+                .header__buttons {
+                    @include center();
+                    .header__buttons-search {
+                       display: none;
+                    }
+                    .header__buttons-enter {
+                        display: none;
+                        margin: 0;
+                    }
+                    .header__buttons-menu {
+                        display: flex;
+                        @include button(66px, #0b0a4e, rgba(23, 19, 147, 1));
+                    }
+                    
+                }
+            }
+        }
+        .main {           
+            .offer {
+                padding-top: 250px;
+                background: linear-gradient(180deg, rgba(10, 9, 67, 0.5), rgb(0, 0, 0) 100%);
+                .offer__video {
+                    position: absolute;
+                    top: -30px;
+                    left: 0;
+                    width: 100%;
+                    height: 50%;
+                    -o-object-fit: cover;
+                    z-index: -1;
+                    object-fit: cover;
+                }
+                .offer__container {
+                    padding-top: 0;
+                    width: $width;
+                    display: flex;
+                    align-items: start;
+                    flex-direction: column;
+                    .offer__buttons {
+                       display: none;                      
+                    }
+                    .offer__title {
+                        display: flex;
+                        width: 100%;
+                        font-family: "Hauora";
+                        font-size: 25px;
+                        font-weight: 500;
+                        letter-spacing: 0.03em;
+                        line-height: 25px;
+                        text-align: left;
+                        color: $COLOR_LIGHT_WHITE;
+                        padding-top: 25px;                       
+                        br {
+                            display: none;
+                        }
+                    }
+                    .offer__discription {
+                        margin-top: 30px;
+                        display: flex;
+                        align-items: start;
+                        flex-direction: column;
+                        .offer__info {
+                            font-family: "Hauora";
+                            font-size: 16px;
+                            font-weight: 500;
+                            letter-spacing: 0.03em;
+                            line-height: 20.8px;
+                            text-align: left;
+                            br {
+                                display: none;
+                            }
+                        }
+                        .offer__slogan {
+                            font-family: "Hauora";
+                            font-size: 16px;
+                            font-weight: 500;
+                            letter-spacing: 0.03em;
+                            line-height: 20.8px;
+                            text-align: left;
+                            color: $COLOR_WHITE;
+                        }
+                    }
+                    .offer__search {
+                        padding-top: 70px;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: start;
+                        justify-content: center;
+                        .form {                            
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: start;
+                            justify-content: center;
+                            max-width: none;
+                            height: auto;
+                            border: none;
+                            border-radius: 0;
+                            &:hover {
+                                box-shadow: none;
+                            }
+                            .offer__search__input {
+                                width: 95.8%;
+                                height: 42px;
+                                border-radius: 10px;
+                                padding-left: 0; 
+                                &[type="text"] {
+                                  padding-left: 15px;
+                                }
+                            }
+                            .offer__search__button {
+                                margin-top: 20px;
+                                width: 100%;
+                                height: 42px;
+                                box-sizing: border-box;
+                                padding: 10px 25px 10px 25px;
+                                border-radius: 10px;
+                                border: 1px solid rgba(3, 16, 180, 1);
+                                &:hover {
+                                    box-shadow: 0px 0px 26.39px 0px rgba(3, 16, 180, 1);
+                                }     
+                            } 
+                        }
+                    }
+                    .offer__partners {
+                        padding-top: 93px;
+                        width: 100%;
+                        max-width: none;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center; 
+                        align-items: center;
+                        gap: 25px 0;                     
+                        img {
+                            display: block;
+                            margin: auto;
+                            &:nth-child(1) {
+                                width: 94px;
+                                height: 40px;   
+                                order: 1;               
+                            }
+                            &:nth-child(2) {
+                                width: 100px;
+                                height: 40px;  
+                                order: 2;                      
+                            }
+                            &:nth-child(3) {
+                                width: 136px;
+                                height: 36px;  
+                                order: 4;                 
+                            }
+                            &:nth-child(4) {
+                                width: 56px;
+                                height: 38px;  
+                                order: 3;      
+                            }
+                            &:nth-child(5) {
+                                width: 91px;
+                                height: 40px; 
+                                order: 5;             
+                            }
+                        }
+                    }
+                }
+            }        
+            .modules {
+                .modules__container {
+                    .modules__content {
+                        display: flex;
+                        flex-direction: column;
+                        .modules__box {
+                            max-width: 100% !important;
+                        }
+                    }
+                }
+            }
+            .characteristic {
+                display: flex;
+                .characteristic__content {
+                    display: flex !important;
+                    flex-direction: column;
+                }
+            }
+            .earn {
+                .earn__container {
+                    .earn__search {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .footer {
+            background: linear-gradient(180deg, rgb(6, 5, 34), rgb(8, 7, 52));
+            padding-top: 186px;
+            padding-bottom: 82px;
+            width: 100%;
+            @include center();
+            .footer__container {
+                width: $width;
+                max-width: none;
+                display: flex;
+                flex-direction: column;
+                justify-content: none;
+                color: white;
+                .footer__top {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: row;
+                    .footer__newsletter {
+                        margin-top: 0;                        
+                    }
+                }
+                .footer__menu {
+                    padding-top: 62.06px;
+                    padding-bottom: 0;
+                    margin-left: 0;
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 50px  30px;
+                    .footer__column {
+                        display: flex;
+                        flex-direction: column;
+                        width: unset;
+                        .footer__column__title {
+                            font-family: "Hauora";
+                            font-size: $FONT_SIZE_12;
+                            font-weight: 400;
+                            line-height: 15.6px;
+                            text-align: left;
+                            color: $COLOR_WHITE;
+                            padding-bottom: 12.54px;
+                        }
+                    
+                        .footer__column__item {                        
+                            margin-top: 8px;
+                            font-family: "Hauora";
+                            font-size: $FONT_SIZE_12;
+                            font-weight: 400;
+                            line-height: 15.6px;
+                            text-align: left;
+                            color: $COLOR_GRAY;                
+                        }
+                    }
+                }
+               
+            }
+        } 
+    }
+}
