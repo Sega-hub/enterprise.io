@@ -400,7 +400,6 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         } 
     }
-
     const texts = document.querySelectorAll("#text");
 
     if (texts.length > 0) {
