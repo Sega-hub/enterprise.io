@@ -1793,6 +1793,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: self-start !important;
+    width: 94.87%;
   }
   .container .main .offer .offer__container .offer__buttons {
     display: none;
@@ -2029,7 +2030,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 330px;
+    padding-bottom: 100px;
   }
   .container .main .possibilities .possibilities__container {
     position: relative;
@@ -2221,19 +2222,482 @@ a {
   .container .main .possibilities .possibilities__container.line.play::after {
     height: 286px;
   }
-  .container .main .modules {
+  .container .main .client {
+    padding-top: 55px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+  }
+  .container .main .client .client__container {
+    max-width: 1120px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .container .main .client .client__container .client__buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container .main .client .client__container .client__buttons .client__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container .main .client .client__container .client__buttons .client__button:nth-child(1) {
+    width: 140px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgba(22, 23, 24, 0);
+    border: 1px solid rgb(13, 10, 103);
+    cursor: pointer;
+    font-family: "Hauora";
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    line-height: 16px;
+    text-align: center;
+    transition: 0.5s;
+    color: rgb(255, 255, 255);
+    opacity: 1;
+    transition: 0.5s ease 0.5s;
+    padding: 10px;
+    margin: 5px;
+  }
+  .container .main .client .client__container .client__buttons .client__button:nth-child(1):hover {
+    box-shadow: 0px 0px 1.1px 0px rgb(17, 14, 104), 0px 0px 2.2px 0px rgb(17, 14, 104), 0px 0px 7.7px 0px rgb(17, 14, 104), 0px 0px 15.39px 0px rgb(17, 14, 104), 0px 0px 26.39px 0px rgb(17, 14, 104), 0px 0px 46.18px 0px rgb(17, 14, 104);
+  }
+  .container .main .client .client__container .client__buttons .client__button:nth-child(1).appearance {
+    opacity: 1;
+  }
+  .container .main .client .client__container .client__buttons .client__button:nth-child(2) {
+    margin-left: 0;
+    width: 236px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgba(22, 23, 24, 0);
+    border: 1px solid rgb(13, 10, 103);
+    cursor: pointer;
+    font-family: "Hauora";
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    line-height: 16px;
+    text-align: center;
+    transition: 0.5s;
+    color: rgb(255, 255, 255);
+    opacity: 1;
+    transition: 0.5s ease 0.7s;
+    padding: 10px 10px;
+    margin: 5px;
+  }
+  .container .main .client .client__container .client__buttons .client__button:nth-child(2):hover {
+    box-shadow: 0px 0px 1.1px 0px rgb(17, 14, 104), 0px 0px 2.2px 0px rgb(17, 14, 104), 0px 0px 7.7px 0px rgb(17, 14, 104), 0px 0px 15.39px 0px rgb(17, 14, 104), 0px 0px 26.39px 0px rgb(17, 14, 104), 0px 0px 46.18px 0px rgb(17, 14, 104);
+  }
+  .container .main .client .client__container .client__buttons .client__button:nth-child(2).appearance {
+    opacity: 1;
+  }
+  .container .main .client .client__container .client__buttons .client__button:nth-child(3) {
+    margin-left: 0;
+    width: 148px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgba(22, 23, 24, 0);
+    border: 1px solid rgb(13, 10, 103);
+    cursor: pointer;
+    font-family: "Hauora";
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    line-height: 16px;
+    text-align: center;
+    transition: 0.5s;
+    color: rgb(255, 255, 255);
+    opacity: 1;
+    transition: 0.5s ease 0.9s;
+    padding: 10px 10px;
+    margin: 5px;
+  }
+  .container .main .client .client__container .client__buttons .client__button:nth-child(3):hover {
+    box-shadow: 0px 0px 1.1px 0px rgb(17, 14, 104), 0px 0px 2.2px 0px rgb(17, 14, 104), 0px 0px 7.7px 0px rgb(17, 14, 104), 0px 0px 15.39px 0px rgb(17, 14, 104), 0px 0px 26.39px 0px rgb(17, 14, 104), 0px 0px 46.18px 0px rgb(17, 14, 104);
+  }
+  .container .main .client .client__container .client__buttons .client__button:nth-child(3).appearance {
+    opacity: 1;
+  }
+  .container .main .client .client__container .client__title {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 25px;
+    opacity: 1;
+  }
+  .container .main .client .client__container .client__title br {
     display: none;
+  }
+  .container .main .client .client__container .client__title.appearance {
+    opacity: 1;
+  }
+  .container .main .client .client__container .client__img {
+    margin-top: 5px;
+  }
+  .container .main .client .client__container .client__img img {
+    width: 300px;
+    height: 300px;
+  }
+  .container .main .client .client__container .client__img img.appearance {
+    opacity: 1;
+  }
+  .container .main .client .client__container .client__img img {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .container .main .client .client__container .client__img img.hidden {
+    opacity: 1 !important;
+  }
+  .container .main .modules {
+    padding-top: 69px;
+    padding-bottom: 174px;
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .main .modules .modules__container {
+    max-width: 1120px;
+    width: 94.87%;
+  }
+  .container .main .modules .modules__container .modules__title {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 25px;
+    opacity: 1;
+  }
+  .container .main .modules .modules__container .modules__title br {
+    display: none;
+  }
+  .container .main .modules .modules__container .modules__title.appearance {
+    opacity: 1;
+  }
+  .container .main .modules .modules__container .modules__title span {
+    color: rgb(68, 63, 219);
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 25px;
+    opacity: 1;
+  }
+  .container .main .modules .modules__container .modules__title span.appearance {
+    transition: all 1s ease 0.5s;
+    opacity: 1;
+  }
+  .container .main .modules .modules__container .modules__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .main .modules .modules__container .modules__content .modules__box:nth-child(n) {
+    width: 356px;
+  }
+  .container .main .modules .modules__container .modules__content .modules__box:nth-child(n) .modules__box__picture {
+    width: 248px;
+    height: 248px;
+    opacity: 1;
+    transition: ease 1s;
+  }
+  .container .main .modules .modules__container .modules__content .modules__box:nth-child(n) .modules__box__picture.appearance {
+    opacity: 1;
+  }
+  .container .main .modules .modules__container .modules__content .modules__box:nth-child(n) .modules__box__title {
+    opacity: 1;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 18px;
+  }
+  .container .main .modules .modules__container .modules__content .modules__box:nth-child(n) .modules__box__title.appearance {
+    opacity: 1;
+  }
+  .container .main .modules .modules__container .modules__content .modules__box:nth-child(n) .modules__box__discription {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 18px;
+    color: rgb(120, 119, 146);
+    opacity: 1;
+  }
+  .container .main .modules .modules__container .modules__content .modules__box:nth-child(n) .modules__box__discription.appearance {
+    opacity: 1;
+  }
+  .container .main .modules .modules__container .modules__content .modules__more {
+    width: 356px;
+  }
+  .container .main .modules .modules__container .modules__content .modules__more .modules__box__title {
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 18px;
+    opacity: 1;
+  }
+  .container .main .modules .modules__container .modules__content .modules__more .modules__box__title.appearance {
+    opacity: 1;
+  }
+  .container .main .modules .modules__container .modules__content .modules__more .modules__box__link {
+    opacity: 1;
+    transition: ease 1s;
+  }
+  .container .main .modules .modules__container .modules__content .modules__more .modules__box__link.appearance {
+    opacity: 1;
+  }
+  .container .main .modules .modules__container .modules__content .modules__more .modules__box-button {
+    margin-top: 62px;
+    width: 108px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgba(23, 19, 147, 0.4);
+    border: 1px solid rgb(23, 19, 147);
+    cursor: pointer;
+    font-family: "Hauora";
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    line-height: 16px;
+    text-align: center;
+    transition: 0.5s;
+    color: rgb(255, 255, 255);
+  }
+  .container .main .modules .modules__container .modules__content .modules__more .modules__box-button:hover {
+    box-shadow: 0px 0px 1.1px 0px rgb(17, 14, 104), 0px 0px 2.2px 0px rgb(17, 14, 104), 0px 0px 7.7px 0px rgb(17, 14, 104), 0px 0px 15.39px 0px rgb(17, 14, 104), 0px 0px 26.39px 0px rgb(17, 14, 104), 0px 0px 46.18px 0px rgb(17, 14, 104);
+  }
+  .container .main .inplomintation {
+    padding-top: 0px;
+    position: relative;
+    background: linear-gradient(rgb(0, 0, 0), rgb(8, 7, 50), rgb(1, 1, 8));
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .main .inplomintation .inplomintation__container {
+    max-width: 1120px;
+    width: 80%;
+    position: relative;
+  }
+  .container .main .inplomintation .inplomintation__container .inplomintation__title {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 25px;
+    opacity: 1;
+  }
+  .container .main .inplomintation .inplomintation__container .inplomintation__title.appearance {
+    opacity: 1;
+  }
+  .container .main .inplomintation .inplomintation__container .inplomintation__title span {
+    color: rgb(68, 63, 219);
+  }
+  .container .main .inplomintation .inplomintation__container .inplomintation__content {
+    padding-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__code {
+    margin-top: 24px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #060606;
+    width: 100%;
+    height: 600px;
+    border-radius: 20px;
+    border: 1px solid rgb(73, 73, 73);
+    background-size: 1121px 600px;
+  }
+  .container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__code.show {
+    background-image: url("../../public/images/inplomintationBack.png");
+  }
+  .container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__code .inplomintation__code__discription {
+    padding: 80px 0 0 95px;
+    font-family: "Hauora";
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: 23.4px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    z-index: 10;
+    opacity: 1;
+    transition: 1s ease;
+  }
+  .container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__code .inplomintation__code__discription.appearance {
+    opacity: 1;
+  }
+  .container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__code .inplomintation__code__discription span {
+    opacity: 1;
+    transition: ease 0.5s;
+    color: rgb(112, 111, 146);
+  }
+  .container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__code .inplomintation__code__discription span.appearance {
+    opacity: 1;
+  }
+  .container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__code .inplomintation__code__big {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    mix-blend-mode: screen;
+    top: -125px;
+    opacity: 1;
+    transition: 1s ease;
+  }
+  .container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__code .inplomintation__code__big.appearance {
+    opacity: 1;
+  }
+  .container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__code .inplomintation__code__big img {
+    width: 559px;
+    height: 559px;
+  }
+  .container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid {
+    padding-top: 24px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 48.92%);
+    gap: 0 24px;
+  }
+  .container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__branch {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(7, 7, 7);
+    border-radius: 20px;
+    border: 1px solid rgb(73, 73, 73);
+    padding-bottom: 1px;
+    height: 666px;
+    padding-bottom: 0;
+  }
+  .container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__branch p {
+    max-width: 322px;
+    padding: 60px 0 0 20px;
+    font-family: "Hauora";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20.8px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+  }
+  .container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__branch p span {
+    color: rgb(112, 111, 146);
+  }
+  .container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__branch p {
+    opacity: 1;
+    transition: 1s ease;
+  }
+  .container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__branch p.appearance {
+    opacity: 1;
+  }
+  .container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__branch p span {
+    transition: ease 1s;
+  }
+  .container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__branch .inplomintation__img {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    mix-blend-mode: screen;
+    opacity: 1;
+    transition: 1s ease;
+  }
+  .container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__branch .inplomintation__img.appearance {
+    opacity: 1;
+  }
+  .container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__branch .inplomintation__img img {
+    width: 410px;
+    height: 410px;
+  }
+  .container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__manage {
+    height: 666px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(7, 7, 7);
+    border-radius: 20px;
+    border: 1px solid rgb(73, 73, 73);
+    padding-bottom: 1px;
+    padding-bottom: 0;
+  }
+  .container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__manage p {
+    max-width: 322px;
+    padding: 60px 0 0 20px;
+    font-family: "Hauora";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20.8px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+  }
+  .container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__manage p span {
+    color: rgb(112, 111, 146);
+  }
+  .container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__manage p {
+    opacity: 1;
+    transition: 1s ease;
+  }
+  .container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__manage p.appearance {
+    opacity: 1;
+  }
+  .container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__manage p span {
+    transition: ease 0.4s;
+  }
+  .container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__manage .inplomintation__img {
+    margin-top: 49px;
+    display: flex;
+    justify-content: center;
+    mix-blend-mode: screen;
+    opacity: 1;
+    transition: 1s ease;
+  }
+  .container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__manage .inplomintation__img.appearance {
+    opacity: 1;
+  }
+  .container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__manage .inplomintation__img img {
+    width: 470px;
+    height: 470px;
+  }
+  .container .main .inplomintation .inplomintation__container::after {
+    content: "";
+    position: absolute;
+    display: flex;
+    left: 32px;
+    width: 3px;
+    height: 0;
+    background-image: url(../../public/images/thirdLine.svg);
+    background-repeat: no-repeat;
+    background-size: 3px 473px;
+    transition: all 1s ease 0.5s;
+  }
+  .container .main .inplomintation .inplomintation__container.line.play::after {
+    height: 413px;
   }
   .container .main .characteristic {
     display: none;
   }
   .container .main .earn {
-    display: none;
-  }
-  .container .main .inplomintation {
-    display: none;
-  }
-  .container .main .client {
     display: none;
   }
   .container .footer {
