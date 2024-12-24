@@ -1696,9 +1696,6 @@ a {
   }
 }
 @media (max-width: 500px) {
-  * {
-    opacity: 1;
-  }
   .play {
     display: none !important;
   }
@@ -1788,26 +1785,14 @@ a {
   .container .header .header__container .header__buttons .header__buttons-menu:hover {
     box-shadow: 0px 0px 1.1px 0px rgb(17, 14, 104), 0px 0px 2.2px 0px rgb(17, 14, 104), 0px 0px 7.7px 0px rgb(17, 14, 104), 0px 0px 15.39px 0px rgb(17, 14, 104), 0px 0px 26.39px 0px rgb(17, 14, 104), 0px 0px 46.18px 0px rgb(17, 14, 104);
   }
-  .container .main .offer {
-    padding-top: 250px;
-    background: linear-gradient(180deg, rgba(10, 9, 67, 0.5), rgb(0, 0, 0) 100%);
-  }
   .container .main .offer .offer__video {
-    position: absolute;
-    top: -30px;
-    left: 0;
-    width: 100%;
-    height: 50%;
-    -o-object-fit: cover;
-    z-index: -1;
-    object-fit: cover;
+    height: 65%;
   }
   .container .main .offer .offer__container {
-    padding-top: 0;
-    width: 84.61%;
+    padding-top: 300px;
     display: flex;
-    align-items: start;
     flex-direction: column;
+    align-items: self-start !important;
   }
   .container .main .offer .offer__container .offer__buttons {
     display: none;
@@ -1818,20 +1803,12 @@ a {
     font-family: "Hauora";
     font-size: 25px;
     font-weight: 500;
-    letter-spacing: 0.03em;
     line-height: 25px;
     text-align: left;
     color: rgb(240, 246, 252);
-    padding-top: 25px;
   }
   .container .main .offer .offer__container .offer__title br {
     display: none;
-  }
-  .container .main .offer .offer__container .offer__discription {
-    margin-top: 30px;
-    display: flex;
-    align-items: start;
-    flex-direction: column;
   }
   .container .main .offer .offer__container .offer__discription .offer__info {
     font-family: "Hauora";
@@ -1841,115 +1818,422 @@ a {
     line-height: 20.8px;
     text-align: left;
   }
-  .container .main .offer .offer__container .offer__discription .offer__info br {
+  .container .main .offer .offer__container .offer__anchor {
+    margin-top: 70px;
+  }
+  .container .main .openspace {
+    padding-top: 179px;
+    padding-bottom: 295px;
+    position: relative;
+    background: linear-gradient(rgb(4, 3, 26), rgb(0, 0, 0));
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .main .openspace .openspace__container {
+    position: relative;
+    max-width: 1120px;
+    width: 94.87%;
+  }
+  .container .main .openspace .openspace__container .openspace__title {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 25px;
+    opacity: 1;
+  }
+  .container .main .openspace .openspace__container .openspace__title span {
+    color: rgb(68, 63, 219);
+  }
+  .container .main .openspace .openspace__container .openspace__title br {
     display: none;
   }
-  .container .main .offer .offer__container .offer__discription .offer__slogan {
+  .container .main .openspace .openspace__container .openspace__title.appearance {
+    transition: 1s;
+    opacity: 1;
+  }
+  .container .main .openspace .openspace__container .openspace__content .openspace__code {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #060606;
+    width: 100%;
+    height: 510px;
+    border-radius: 20px;
+    border: 1px solid rgb(73, 73, 73);
+    background-size: 1121px 510px;
+  }
+  .container .main .openspace .openspace__container .openspace__content .openspace__code.show {
+    background-image: url("../../public/images/openspaceBack.png");
+  }
+  .container .main .openspace .openspace__container .openspace__content .openspace__code .openspace__code__discription {
+    padding: 60px 0 0 20px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20.8px;
+    opacity: 1;
+  }
+  .container .main .openspace .openspace__container .openspace__content .openspace__code .openspace__code__discription span {
+    opacity: 1;
+  }
+  .container .main .openspace .openspace__container .openspace__content .openspace__code .openspace__code__discription span br {
+    display: none;
+  }
+  .container .main .openspace .openspace__container .openspace__content .openspace__code .openspace__code__discription.appearance {
+    transition: 1s ease;
+    opacity: 1;
+  }
+  .container .main .openspace .openspace__container .openspace__content .openspace__code .openspace__code__big {
+    opacity: 1;
+    top: 0;
+  }
+  .container .main .openspace .openspace__container .openspace__content .openspace__code .openspace__code__big img {
+    width: 350px;
+    height: 350px;
+  }
+  .container .main .openspace .openspace__container .openspace__content .openspace__grid {
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__branch {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(7, 7, 7);
+    border-radius: 20px;
+    border: 1px solid rgb(73, 73, 73);
+    padding-bottom: 1px;
+    height: 510px;
+    padding-bottom: 0;
+  }
+  .container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__branch p {
+    max-width: 322px;
+    padding: 60px 0 0 20px;
     font-family: "Hauora";
     font-size: 16px;
     font-weight: 500;
-    letter-spacing: 0.03em;
     line-height: 20.8px;
     text-align: left;
     color: rgb(255, 255, 255);
   }
-  .container .main .offer .offer__container .offer__search {
-    padding-top: 70px;
-    width: 100%;
+  .container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__branch p span {
+    color: rgb(112, 111, 146);
+  }
+  .container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__branch p {
+    opacity: 1;
+    transition: ease 0.5s;
+  }
+  .container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__branch p span {
+    opacity: 1;
+    transition: ease 1s;
+  }
+  .container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__branch p span.appearance {
+    opacity: 1;
+  }
+  .container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__branch p.appearance {
+    opacity: 1;
+  }
+  .container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__branch .openspace__img {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    mix-blend-mode: screen;
+    opacity: 1;
+    transition: ease 0.5s;
+  }
+  .container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__branch .openspace__img img {
+    width: 350px;
+    height: 350px;
+  }
+  .container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__branch .openspace__img.appearance {
+    opacity: 1;
+  }
+  .container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__manage {
+    height: 510px;
     display: flex;
     flex-direction: column;
-    align-items: start;
-    justify-content: center;
+    justify-content: space-between;
+    background-color: rgb(7, 7, 7);
+    border-radius: 20px;
+    border: 1px solid rgb(73, 73, 73);
+    padding-bottom: 1px;
+    padding-bottom: 0;
   }
-  .container .main .offer .offer__container .offer__search .form {
+  .container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__manage p {
+    max-width: 322px;
+    padding: 60px 0 0 20px;
+    font-family: "Hauora";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20.8px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+  }
+  .container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__manage p span {
+    color: rgb(112, 111, 146);
+  }
+  .container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__manage p {
+    opacity: 1;
+    transition: ease 0.3s;
+  }
+  .container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__manage p span {
+    opacity: 1;
+    transition: ease 0.4s;
+  }
+  .container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__manage p span br {
+    display: none;
+  }
+  .container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__manage p span.appearance {
+    opacity: 1;
+  }
+  .container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__manage p.appearance {
+    opacity: 1;
+  }
+  .container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__manage .openspace__img {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    mix-blend-mode: screen;
+    opacity: 1;
+    transition: ease 0.5s;
+  }
+  .container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__manage .openspace__img img {
+    width: 300px;
+    height: 300px;
+  }
+  .container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__manage .openspace__img.appearance {
+    opacity: 1;
+  }
+  .container .main .openspace .openspace__container::after {
+    content: "";
+    position: absolute;
+    display: flex;
+    left: 30px;
+    width: 793px;
+    height: 0;
+    background-image: url(../../public/images/firstLine.svg);
+    background-repeat: no-repeat;
+    background-size: 793px 271px;
+    transition: all 1s ease 0.5s;
+  }
+  .container .main .openspace .openspace__container.line.play::after {
+    height: 271px;
+  }
+  .container .main .possibilities {
+    position: relative;
+    background-color: rgb(0, 0, 0);
     width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    max-width: none;
-    height: auto;
-    border: none;
-    border-radius: 0;
-  }
-  .container .main .offer .offer__container .offer__search .form:hover {
-    box-shadow: none;
-  }
-  .container .main .offer .offer__container .offer__search .form .offer__search__input {
-    width: 95.8%;
-    height: 42px;
-    border-radius: 10px;
-    padding-left: 0;
-  }
-  .container .main .offer .offer__container .offer__search .form .offer__search__input[type=text] {
-    padding-left: 15px;
-  }
-  .container .main .offer .offer__container .offer__search .form .offer__search__button {
-    margin-top: 20px;
-    width: 100%;
-    height: 42px;
-    box-sizing: border-box;
-    padding: 10px 25px 10px 25px;
-    border-radius: 10px;
-    border: 1px solid rgb(3, 16, 180);
-  }
-  .container .main .offer .offer__container .offer__search .form .offer__search__button:hover {
-    box-shadow: 0px 0px 26.39px 0px rgb(3, 16, 180);
-  }
-  .container .main .offer .offer__container .offer__partners {
-    padding-top: 93px;
-    width: 100%;
-    max-width: none;
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 25px 0;
+    padding-bottom: 330px;
   }
-  .container .main .offer .offer__container .offer__partners img {
-    display: block;
-    margin: auto;
+  .container .main .possibilities .possibilities__container {
+    position: relative;
+    max-width: 1120px;
+    width: 94.87%;
   }
-  .container .main .offer .offer__container .offer__partners img:nth-child(1) {
-    width: 94px;
-    height: 40px;
-    order: 1;
+  .container .main .possibilities .possibilities__container .possibilities__title {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 25px;
+    opacity: 1;
   }
-  .container .main .offer .offer__container .offer__partners img:nth-child(2) {
-    width: 100px;
-    height: 40px;
-    order: 2;
+  .container .main .possibilities .possibilities__container .possibilities__title br {
+    display: none;
   }
-  .container .main .offer .offer__container .offer__partners img:nth-child(3) {
-    width: 136px;
-    height: 36px;
-    order: 4;
+  .container .main .possibilities .possibilities__container .possibilities__title.appearance {
+    opacity: 1;
   }
-  .container .main .offer .offer__container .offer__partners img:nth-child(4) {
-    width: 56px;
-    height: 38px;
-    order: 3;
+  .container .main .possibilities .possibilities__container .possibilities__title span {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 25px;
+    color: rgb(68, 63, 219);
+    transition: all 1s ease 0.5s;
   }
-  .container .main .offer .offer__container .offer__partners img:nth-child(5) {
-    width: 91px;
-    height: 40px;
-    order: 5;
+  .container .main .possibilities .possibilities__container .possibilities__title span.appearance {
+    opacity: 1;
   }
-  .container .main .modules .modules__container .modules__content {
+  .container .main .possibilities .possibilities__container .possibilities__content {
+    margin-top: 165px;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    row-gap: 20px;
   }
-  .container .main .modules .modules__container .modules__content .modules__box {
-    max-width: 100% !important;
+  .container .main .possibilities .possibilities__container .possibilities__content .possibilities__manage {
+    width: 356px;
+    margin-left: 24px;
+  }
+  .container .main .possibilities .possibilities__container .possibilities__content .possibilities__manage .possibilities__manage {
+    width: 248px;
+    height: 248px;
+    opacity: 1;
+    transition: 0.5s ease 0.5s;
+  }
+  .container .main .possibilities .possibilities__container .possibilities__content .possibilities__manage .possibilities__manage.appearance {
+    opacity: 1;
+  }
+  .container .main .possibilities .possibilities__container .possibilities__content .possibilities__manage .possibilities__manage__title {
+    margin-top: 30px;
+    font-family: "Hauora";
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: 23.4px;
+    text-align: left;
+    color: rgb(240, 246, 252);
+    opacity: 1;
+    transition: 0.5s ease 0.5s;
+  }
+  .container .main .possibilities .possibilities__container .possibilities__content .possibilities__manage .possibilities__manage__title.appearance {
+    opacity: 1;
+  }
+  .container .main .possibilities .possibilities__container .possibilities__content .possibilities__manage .possibilities__manage__discription {
+    margin-top: 30px;
+    font-family: "Hauora";
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: 23.4px;
+    text-align: left;
+    color: rgb(120, 119, 146);
+    opacity: 1;
+    transition: 0.5s ease 0.5s;
+  }
+  .container .main .possibilities .possibilities__container .possibilities__content .possibilities__manage .possibilities__manage__discription.appearance {
+    opacity: 1;
+  }
+  .container .main .possibilities .possibilities__container .possibilities__content .possibilities__analitic {
+    width: 356px;
+    margin-left: 24px;
+  }
+  .container .main .possibilities .possibilities__container .possibilities__content .possibilities__analitic .possibilities__analitic {
+    width: 248px;
+    height: 248px;
+    opacity: 1;
+    transition: 0.5s ease 1s;
+  }
+  .container .main .possibilities .possibilities__container .possibilities__content .possibilities__analitic .possibilities__analitic.appearance {
+    opacity: 1;
+  }
+  .container .main .possibilities .possibilities__container .possibilities__content .possibilities__analitic .possibilities__analitic__title {
+    margin-top: 30px;
+    font-family: "Hauora";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    text-underline-position: from-font;
+    -webkit-text-decoration-skip-ink: none;
+            text-decoration-skip-ink: none;
+    color: rgb(240, 246, 252);
+    opacity: 1;
+    transition: 0.5s ease 1s;
+  }
+  .container .main .possibilities .possibilities__container .possibilities__content .possibilities__analitic .possibilities__analitic__title.appearance {
+    opacity: 1;
+  }
+  .container .main .possibilities .possibilities__container .possibilities__content .possibilities__analitic .possibilities__analitic__discription {
+    margin-top: 30px;
+    font-family: "Hauora";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23.4px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    text-underline-position: from-font;
+    -webkit-text-decoration-skip-ink: none;
+            text-decoration-skip-ink: none;
+    color: rgb(120, 119, 146);
+    opacity: 1;
+    transition: 0.5s ease 1s;
+  }
+  .container .main .possibilities .possibilities__container .possibilities__content .possibilities__analitic .possibilities__analitic__discription.appearance {
+    opacity: 1;
+  }
+  .container .main .possibilities .possibilities__container .possibilities__content .possibilities__dev {
+    width: 356px;
+    margin-left: 24px;
+  }
+  .container .main .possibilities .possibilities__container .possibilities__content .possibilities__dev .possibilities__dev {
+    width: 248px;
+    height: 248px;
+    opacity: 1;
+    transition: 0.5s ease 1.5s;
+  }
+  .container .main .possibilities .possibilities__container .possibilities__content .possibilities__dev .possibilities__dev.appearance {
+    opacity: 1;
+  }
+  .container .main .possibilities .possibilities__container .possibilities__content .possibilities__dev .possibilities__dev__title {
+    margin-top: 30px;
+    font-family: "Hauora";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    text-underline-position: from-font;
+    -webkit-text-decoration-skip-ink: none;
+            text-decoration-skip-ink: none;
+    color: rgb(240, 246, 252);
+    opacity: 1;
+    transition: 0.5s ease 1.5s;
+  }
+  .container .main .possibilities .possibilities__container .possibilities__content .possibilities__dev .possibilities__dev__title.appearance {
+    opacity: 1;
+  }
+  .container .main .possibilities .possibilities__container .possibilities__content .possibilities__dev .possibilities__dev__discription {
+    margin-top: 30px;
+    font-family: "Hauora";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23.4px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    text-underline-position: from-font;
+    -webkit-text-decoration-skip-ink: none;
+            text-decoration-skip-ink: none;
+    color: rgb(120, 119, 146);
+    opacity: 1;
+    transition: 0.5s ease 1.5s;
+  }
+  .container .main .possibilities .possibilities__container .possibilities__content .possibilities__dev .possibilities__dev__discription.appearance {
+    opacity: 1;
+  }
+  .container .main .possibilities .possibilities__container::after {
+    content: "";
+    position: absolute;
+    display: flex;
+    left: 50%;
+    width: 5px;
+    height: 0;
+    background-image: url(../../public/images/Line10.png);
+    background-repeat: no-repeat;
+    background-size: 5px 286px;
+    transition: all 1s ease 0.5s;
+  }
+  .container .main .possibilities .possibilities__container.line.play::after {
+    height: 286px;
+  }
+  .container .main .modules {
+    display: none;
   }
   .container .main .characteristic {
-    display: flex;
+    display: none;
   }
-  .container .main .characteristic .characteristic__content {
-    display: flex !important;
-    flex-direction: column;
+  .container .main .earn {
+    display: none;
   }
-  .container .main .earn .earn__container .earn__search {
+  .container .main .inplomintation {
+    display: none;
+  }
+  .container .main .client {
     display: none;
   }
   .container .footer {

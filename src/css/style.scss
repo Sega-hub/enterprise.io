@@ -1463,10 +1463,7 @@ $width: 80%;
 }
 
 @media (max-width: 500px) {
-    * {
-        opacity: 1;
-    }
-
+  
     .play {
         display: none !important;
     }
@@ -1565,47 +1562,33 @@ $width: 80%;
         }
         .main {           
             .offer {
-                padding-top: 250px;
-                background: linear-gradient(180deg, rgba(10, 9, 67, 0.5), rgb(0, 0, 0) 100%);
                 .offer__video {
-                    position: absolute;
-                    top: -30px;
-                    left: 0;
-                    width: 100%;
-                    height: 50%;
-                    -o-object-fit: cover;
-                    z-index: -1;
-                    object-fit: cover;
+                    height: 65%;
                 }
                 .offer__container {
-                    padding-top: 0;
-                    width: $width;
+                    padding-top: 300px;
                     display: flex;
-                    align-items: start;
                     flex-direction: column;
+                    align-items: self-start !important;
                     .offer__buttons {
-                       display: none;                      
+                        display: none;
                     }
+
                     .offer__title {
                         display: flex;
                         width: 100%;
                         font-family: "Hauora";
                         font-size: 25px;
                         font-weight: 500;
-                        letter-spacing: 0.03em;
                         line-height: 25px;
                         text-align: left;
                         color: $COLOR_LIGHT_WHITE;
-                        padding-top: 25px;                       
                         br {
                             display: none;
                         }
                     }
+
                     .offer__discription {
-                        margin-top: 30px;
-                        display: flex;
-                        align-items: start;
-                        flex-direction: column;
                         .offer__info {
                             font-family: "Hauora";
                             font-size: 16px;
@@ -1613,128 +1596,411 @@ $width: 80%;
                             letter-spacing: 0.03em;
                             line-height: 20.8px;
                             text-align: left;
-                            br {
-                                display: none;
-                            }
-                        }
-                        .offer__slogan {
-                            font-family: "Hauora";
-                            font-size: 16px;
-                            font-weight: 500;
-                            letter-spacing: 0.03em;
-                            line-height: 20.8px;
-                            text-align: left;
-                            color: $COLOR_WHITE;
                         }
                     }
-                    .offer__search {
-                        padding-top: 70px;
-                        width: 100%;
-                        display: flex;
-                        flex-direction: column;
-                        align-items: start;
-                        justify-content: center;
-                        .form {                            
+
+                    .offer__anchor {
+                        margin-top: 70px;
+                    }
+                }
+            }
+           
+            .openspace {
+                padding-top: 179px;
+                padding-bottom: 295px;
+                position: relative;
+                background: linear-gradient(rgb(4, 3, 26), rgb(0,0,0));
+                width: 100%;
+                @include center();                 
+                .openspace__container {
+                    position: relative;
+                    max-width: 1120px;
+                    width: 94.87%;
+                    .openspace__title {
+                        font-size: 25px;
+                        font-weight: 500;
+                        line-height: 25px;
+                        opacity: 1;
+                        span {
+                            color: rgba(68, 63, 219, 1);
+                        }     
+                        
+                        br {
+                            display: none;
+                        }
+
+                        &.appearance {
+                            transition: 1s;
+                            opacity: 1;
+                        }
+                    }               
+                    .openspace__content {
+                        .openspace__code {                        
+                            position: relative;
+                            display: flex;
+                            flex-direction: column;
+                            background-color: #060606;
+                            width: 100%;
+                            height: 510px;
+                            border-radius: 20px;
+                            border: 1px solid $COLOR_DARK_GRAY;
+                            background-size: 1121px 510px;
+    
+                            &.show {
+                                background-image: url("../../public/images/openspaceBack.png");
+                            }
+    
+                            .openspace__code__discription {
+                                padding: 60px 0 0 20px;
+                                font-size: 16px;
+                                font-weight: 500;
+                                line-height: 20.8px;
+                                opacity: 1;
+                                span { 
+                                    opacity: 1;
+                                    br {
+                                        display: none;
+                                    }
+                                }
+    
+                                &.appearance {
+                                    transition: 1s ease;
+                                    opacity: 1;
+                                }
+                            }
+                            .openspace__code__big {
+                               opacity: 1;
+                               top: 0;
+                               img {
+                                    width: 350px;
+                                    height: 350px;
+                               }
+
+                            }                        
+                        }
+                        .openspace__grid {
+                            padding-top: 20px;
                             width: 100%;
                             display: flex;
                             flex-direction: column;
-                            align-items: start;
-                            justify-content: center;
-                            max-width: none;
-                            height: auto;
-                            border: none;
-                            border-radius: 0;
-                            &:hover {
-                                box-shadow: none;
-                            }
-                            .offer__search__input {
-                                width: 95.8%;
-                                height: 42px;
-                                border-radius: 10px;
-                                padding-left: 0; 
-                                &[type="text"] {
-                                  padding-left: 15px;
+                            row-gap: 20px;
+                            .openspace__grid__branch {
+                                @include card(); 
+                                height: 510px;                          
+                                padding-bottom: 0;
+                                p {
+                                    opacity: 1;
+                                    transition:  ease 0.5s;
+                                    span {
+                                        opacity: 1;
+                                        transition:  ease 1s;
+                                        &.appearance {
+                                            opacity: 1;
+                                        }
+                                    }
+                                    &.appearance {
+                                        opacity: 1;
+                                    }
+                                }
+                                .openspace__img {
+                                    margin-top: 24px;
+                                   display: flex;
+                                   justify-content: center;
+                                   mix-blend-mode: screen;
+                                   opacity: 1;
+                                   transition:  ease 0.5s;
+                                   img {
+                                       width: 350px;
+                                       height: 350px;
+                                   }
+                                   &.appearance {
+                                    opacity: 1;
+                                }
                                 }
                             }
-                            .offer__search__button {
-                                margin-top: 20px;
-                                width: 100%;
-                                height: 42px;
-                                box-sizing: border-box;
-                                padding: 10px 25px 10px 25px;
-                                border-radius: 10px;
-                                border: 1px solid rgba(3, 16, 180, 1);
-                                &:hover {
-                                    box-shadow: 0px 0px 26.39px 0px rgba(3, 16, 180, 1);
-                                }     
-                            } 
+                            .openspace__grid__manage {
+                                height: 510px; 
+                                @include card();                         
+                                padding-bottom: 0;
+                                p {
+                                    opacity: 1;
+                                    transition:  ease 0.3s;
+                                    
+                                    span {
+                                        br {
+                                            display: none;
+                                        }
+                                        opacity: 1;
+                                        transition:  ease 0.4s;
+                                        &.appearance {
+                                            opacity: 1;
+                                        }
+                                    }
+                                    &.appearance {
+                                        opacity: 1;
+                                    }
+                                }
+                                .openspace__img {
+                                    margin-top: 25px;
+                                    display: flex;
+                                    justify-content: center;
+                                    mix-blend-mode: screen;
+                                    opacity: 1;
+                                    transition:  ease 0.5s;
+                                    img {
+                                         width: 300px;
+                                         height: 300px;
+                                    }
+                                    &.appearance {
+                                        opacity: 1;
+                                    }
+                                }
+                            }
                         }
                     }
-                    .offer__partners {
-                        padding-top: 93px;
-                        width: 100%;
-                        max-width: none;
+                    &::after {
+                        content: "";
+                        position: absolute;
                         display: flex;
-                        flex-wrap: wrap;
-                        justify-content: center; 
-                        align-items: center;
-                        gap: 25px 0;                     
-                        img {
-                            display: block;
-                            margin: auto;
-                            &:nth-child(1) {
-                                width: 94px;
-                                height: 40px;   
-                                order: 1;               
-                            }
-                            &:nth-child(2) {
-                                width: 100px;
-                                height: 40px;  
-                                order: 2;                      
-                            }
-                            &:nth-child(3) {
-                                width: 136px;
-                                height: 36px;  
-                                order: 4;                 
-                            }
-                            &:nth-child(4) {
-                                width: 56px;
-                                height: 38px;  
-                                order: 3;      
-                            }
-                            &:nth-child(5) {
-                                width: 91px;
-                                height: 40px; 
-                                order: 5;             
-                            }
-                        }
+                        left: 30px;
+                        width: 793px;
+                        height: 0;
+                        background-image: url(../../public/images/firstLine.svg);
+                        background-repeat: no-repeat;
+                        background-size: 793px 271px; 
+                        transition: all 1s ease 0.5s;
+                    }
+                    &.line.play::after{                   
+                        height: 271px;
                     }
                 }
-            }        
-            .modules {
-                .modules__container {
-                    .modules__content {
+                
+            }
+
+            .possibilities {  
+                position: relative;
+                background-color: rgb(0,0,0);
+                width: 100%;
+                @include center();   
+                padding-bottom: 330px;              
+                .possibilities__container {
+                    position: relative;
+                    max-width: 1120px;
+                    width: 94.87%;
+                    .possibilities__title {
+                        font-size: 25px;
+                        font-weight: 500;
+                        line-height: 25px;
+                        br {
+                            display: none;
+                        }
+                        opacity: 1;
+                        &.appearance {
+                            opacity: 1;
+                        }
+                        span {
+                            font-size: 25px;
+                            font-weight: 500;
+                            line-height: 25px;
+                            color: rgb(68, 63, 219);
+                            transition: all 1s ease 0.5s;
+                            &.appearance {
+                                opacity: 1;
+                            }
+                        }                   
+                    }               
+                    .possibilities__content {
+                        margin-top: 165px;
+                        width: 100%;
                         display: flex;
                         flex-direction: column;
-                        .modules__box {
-                            max-width: 100% !important;
+                        row-gap: 20px;
+
+                        .possibilities__manage {
+                            width: 356px;
+                            margin-left: 24px;
+                            .possibilities__manage {
+                                width: 248px;
+                                height: 248px;
+                                opacity: 1;
+                                transition: 0.5s ease 0.5s;
+    
+                                &.appearance {
+                                    opacity: 1;
+                                }
+                            }
+                        
+                            .possibilities__manage__title {
+                                margin-top: 30px;
+                                font-family: "Hauora";
+                                font-size: $FONT_SIZE_18;
+                                font-weight: 500;
+                                letter-spacing: 0.02em;
+                                line-height: 23.4px;
+                                text-align: left;
+                                color: rgba(240, 246, 252, 1);
+                                opacity: 1;
+                                transition: 0.5s ease 0.5s;
+    
+                                &.appearance {
+                                    opacity: 1;
+                                }
+                            }
+                            .possibilities__manage__discription {
+                                margin-top: 30px;
+                                font-family: "Hauora";
+                                font-size: $FONT_SIZE_18;
+                                font-weight: 500;
+                                letter-spacing: 0.02em;
+                                line-height: 23.4px;
+                                text-align: left;
+                                color: rgba(120, 119, 146, 1);
+                                opacity: 1;
+                                transition: 0.5s ease 0.5s;
+    
+                                &.appearance {
+                                    opacity: 1;
+                                }
+                            }
+                        }
+    
+                        .possibilities__analitic {
+                            width: 356px;
+                            margin-left: 24px;
+                            .possibilities__analitic {
+                                width: 248px;
+                                height: 248px;
+                                opacity: 1;
+                                transition: 0.5s ease 1s;
+    
+                                &.appearance {
+                                    opacity: 1;
+                                }
+                            }
+                        
+                            .possibilities__analitic__title {
+                                margin-top: 30px;
+                                font-family: "Hauora";
+                                font-size: 18px;
+                                font-weight: 500;
+                                line-height: 18px;
+                                letter-spacing: 0.02em;
+                                text-align: left;
+                                text-underline-position: from-font;
+                                text-decoration-skip-ink: none;
+                                color: rgba(240, 246, 252, 1);
+                                opacity: 1;
+                                transition: 0.5s ease 1s;
+    
+                                &.appearance {
+                                    opacity: 1;
+                                }
+                            }
+                            .possibilities__analitic__discription {
+                                margin-top: 30px;
+                                font-family: "Hauora";
+                                font-size: 18px;
+                                font-weight: 500;
+                                line-height: 23.4px;
+                                letter-spacing: 0.02em;
+                                text-align: left;     
+                                text-underline-position: from-font;
+                                text-decoration-skip-ink: none;                                              
+                                color: rgba(120, 119, 146, 1);
+                                opacity: 1;
+                                transition: 0.5s ease 1s;
+    
+                                &.appearance {
+                                    opacity: 1;
+                                }
+                            }
+                        }
+    
+                        .possibilities__dev {
+                            width: 356px;
+                            margin-left: 24px;
+                            .possibilities__dev {
+                                width: 248px;
+                                height: 248px;
+                                opacity: 1;
+                                transition: 0.5s ease 1.5s;
+    
+                                &.appearance {
+                                    opacity: 1;
+                                }
+                            }
+                        
+                            .possibilities__dev__title {
+                                margin-top: 30px;
+                                font-family: "Hauora";
+                                font-size: 18px;
+                                font-weight: 500;
+                                line-height: 18px;
+                                letter-spacing: 0.02em;
+                                text-align: left;                                                                        
+                                text-underline-position: from-font;
+                                text-decoration-skip-ink: none;
+                                color: rgba(240, 246, 252, 1);
+                                opacity: 1;
+                                transition: 0.5s ease 1.5s;
+    
+                                &.appearance {
+                                    opacity: 1;
+                                }
+                            }
+                            .possibilities__dev__discription {
+                                margin-top: 30px;
+                                font-family: "Hauora";
+                                font-size: 18px;
+                                font-weight: 500;
+                                line-height: 23.4px;
+                                letter-spacing: 0.02em;
+                                text-align: left;
+                                text-underline-position: from-font;
+                                text-decoration-skip-ink: none;
+                                color: rgba(120, 119, 146, 1);
+                                opacity: 1;
+                                transition: 0.5s ease 1.5s;
+    
+                                &.appearance {
+                                    opacity: 1;
+                                }
+                            }
                         }
                     }
-                }
-            }
-            .characteristic {
-                display: flex;
-                .characteristic__content {
-                    display: flex !important;
-                    flex-direction: column;
-                }
-            }
-            .earn {
-                .earn__container {
-                    .earn__search {
-                        display: none;
+    
+                    &::after {
+                        content: "";
+                        position: absolute;                    
+                        display: flex;
+                        left: 50%;
+                        width: 5px;
+                        height: 0;
+                        background-image: url(../../public/images/Line10.png);
+                        background-repeat: no-repeat;
+                        background-size: 5px 286px;
+                        transition: all 1s ease 0.5s;
+                    }
+                    &.line.play::after{                   
+                        height: 286px;
                     }
                 }
+            }
+           
+            .modules {
+                display: none;
+            }
+            .characteristic {
+                display: none;
+            }
+            .earn {
+                display: none;
+            }
+            .inplomintation {
+                display: none;
+            }
+            .client {
+                display: none;
             }
         }
         .footer {
