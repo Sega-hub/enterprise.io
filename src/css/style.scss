@@ -2198,7 +2198,7 @@ $width: 80%;
                 @include center();                 
                 .inplomintation__container {
                     max-width: 1120px;
-                    width: 80%;
+                    width: 94.87%;
                     position: relative;
                     .inplomintation__title {
                         font-size: 25px;
@@ -2224,17 +2224,17 @@ $width: 80%;
                             flex-direction: column;
                             background-color: #060606;
                             width: 100%;
-                            height: 600px;
+                            height: 510px;
                             border-radius: 20px;
                             border: 1px solid $COLOR_DARK_GRAY;
-                            background-size: 1121px 600px;
+                            background-size: 1121px 510px;
     
                             &.show {
                                 background-image: url("../../public/images/inplomintationBack.png");
                             }
     
                             .inplomintation__code__discription {
-                                padding: 80px 0 0 95px;
+                                padding: 60px 0 0 20px;
                                 font-family: "Hauora";
                                 font-size: $FONT_SIZE_18;
                                 font-weight: 500;
@@ -2262,27 +2262,26 @@ $width: 80%;
                                 display: flex;
                                 justify-content: center;
                                 mix-blend-mode: screen;
-                                top: -125px;
+                                top: 0;
                                 opacity: 1;  
                                 transition: 1s ease;
                                 &.appearance {
                                     opacity: 1;
                                 }
                                 img {
-                                    width: 559px;
-                                    height: 559px;
+                                    width: 350px;
+                                    height: 350px;
                                 }
                             }                        
                         }
                         .inplomintation__grid {
-                            padding-top: 24px;
+                            row-gap: 20px;
                             width: 100%;
-                            display: grid;
-                            grid-template-columns: repeat(2, 48.92%);
-                            gap: 0 24px;
+                            display: flex;
+                            flex-direction: column;
                             .inplomintation__grid__branch {
                                 @include card(); 
-                                height: 666px;                          
+                                height: 510px;                          
                                 padding-bottom: 0;
                                 p {
                                     opacity: 1;  
@@ -2305,13 +2304,13 @@ $width: 80%;
                                         opacity: 1;
                                     }
                                    img {
-                                        width: 410px;
-                                        height: 410px;
+                                        width: 350px;
+                                        height: 350px;
                                    }
                                 }
                             }
                            .inplomintation__grid__manage {
-                                height: 666px; 
+                                height: 510px; 
                                 @include card();                         
                                 padding-bottom: 0;
                                 p {
@@ -2335,8 +2334,8 @@ $width: 80%;
                                         opacity: 1;
                                     }
                                     img {
-                                        width: 470px;
-                                        height: 470px;
+                                        width: 350px;
+                                        height: 350px;
                                     }
                                 }
                            }
