@@ -1566,6 +1566,7 @@ $width: 80%;
                     height: 65%;
                 }
                 .offer__container {
+                    padding-left: 30px;
                     padding-top: 300px;
                     display: flex;
                     flex-direction: column;
@@ -1618,6 +1619,7 @@ $width: 80%;
                     max-width: 1120px;
                     width: 94.87%;
                     .openspace__title {
+                        padding-left: 30px;
                         font-size: 25px;
                         font-weight: 500;
                         line-height: 25px;
@@ -1789,6 +1791,7 @@ $width: 80%;
                     max-width: 1120px;
                     width: 94.87%;
                     .possibilities__title {
+                        padding-left: 30px;
                         font-size: 25px;
                         font-weight: 500;
                         line-height: 25px;
@@ -1819,7 +1822,7 @@ $width: 80%;
 
                         .possibilities__manage {
                             width: 356px;
-                            margin-left: 24px;
+                            padding-left: 30px;
                             .possibilities__manage {
                                 width: 248px;
                                 height: 248px;
@@ -1852,7 +1855,7 @@ $width: 80%;
                                 font-weight: 500;
                                 line-height: 20.8px;
                                 opacity: 1;
-                                
+                                width: 80%;
                                 br {
                                     display: none;
                                 }
@@ -2072,6 +2075,7 @@ $width: 80%;
                     max-width: 1120px;
                     width: 94.87%;
                     .modules__title {
+                        padding-left: 30px;
                         font-size: 25px;
                         font-weight: 500;
                         line-height: 25px;
@@ -2099,7 +2103,9 @@ $width: 80%;
                        flex-direction: column;
                        justify-content: center;
                        align-items: center;
+                       padding-left: 30px;
                        .modules__box {
+                            
                             &:nth-child(n) {
                             width: 356px;
                             .modules__box__picture {
@@ -2182,6 +2188,7 @@ $width: 80%;
                     width: 94.87%;
                     position: relative;
                     .inplomintation__title {
+                        padding-left: 30px;
                         font-size: 25px;
                         font-weight: 500;
                         line-height: 25px;
@@ -2358,10 +2365,14 @@ $width: 80%;
                     width: 94.87%;
                     position: relative;
                     .characteristic__title {
+                        padding-left: 30px;
                         font-size: 18px;
                         font-weight: 500;
                         line-height: 23.4px;
                         opacity: 1;
+                        br {
+                            display: none;
+                        }
                         &.appearance {
                             opacity: 1;
                         }
@@ -2377,6 +2388,7 @@ $width: 80%;
                         }                       
                     }               
                     .characteristic__content {
+                        padding-left: 30px;
                         margin-top: 165px;
                         width: 100%;                        
                         display: flex;

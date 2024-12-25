@@ -1789,6 +1789,7 @@ a {
     height: 65%;
   }
   .container .main .offer .offer__container {
+    padding-left: 30px;
     padding-top: 300px;
     display: flex;
     flex-direction: column;
@@ -1838,6 +1839,7 @@ a {
     width: 94.87%;
   }
   .container .main .openspace .openspace__container .openspace__title {
+    padding-left: 30px;
     font-size: 25px;
     font-weight: 500;
     line-height: 25px;
@@ -2038,6 +2040,7 @@ a {
     width: 94.87%;
   }
   .container .main .possibilities .possibilities__container .possibilities__title {
+    padding-left: 30px;
     font-size: 25px;
     font-weight: 500;
     line-height: 25px;
@@ -2068,7 +2071,7 @@ a {
   }
   .container .main .possibilities .possibilities__container .possibilities__content .possibilities__manage {
     width: 356px;
-    margin-left: 24px;
+    padding-left: 30px;
   }
   .container .main .possibilities .possibilities__container .possibilities__content .possibilities__manage .possibilities__manage {
     width: 248px;
@@ -2099,6 +2102,7 @@ a {
     font-weight: 500;
     line-height: 20.8px;
     opacity: 1;
+    width: 80%;
   }
   .container .main .possibilities .possibilities__container .possibilities__content .possibilities__manage .possibilities__manage__discription br {
     display: none;
@@ -2362,6 +2366,7 @@ a {
     width: 94.87%;
   }
   .container .main .modules .modules__container .modules__title {
+    padding-left: 30px;
     font-size: 25px;
     font-weight: 500;
     line-height: 25px;
@@ -2389,6 +2394,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-left: 30px;
   }
   .container .main .modules .modules__container .modules__content .modules__box:nth-child(n) {
     width: 356px;
@@ -2478,6 +2484,7 @@ a {
     position: relative;
   }
   .container .main .inplomintation .inplomintation__container .inplomintation__title {
+    padding-left: 30px;
     font-size: 25px;
     font-weight: 500;
     line-height: 25px;
@@ -2693,10 +2700,14 @@ a {
     position: relative;
   }
   .container .main .characteristic .characteristic__container .characteristic__title {
+    padding-left: 30px;
     font-size: 18px;
     font-weight: 500;
     line-height: 23.4px;
     opacity: 1;
+  }
+  .container .main .characteristic .characteristic__container .characteristic__title br {
+    display: none;
   }
   .container .main .characteristic .characteristic__container .characteristic__title.appearance {
     opacity: 1;
@@ -2711,6 +2722,7 @@ a {
     display: none;
   }
   .container .main .characteristic .characteristic__container .characteristic__content {
+    padding-left: 30px;
     margin-top: 165px;
     width: 100%;
     display: flex;
