@@ -1848,17 +1848,15 @@ $width: 80%;
                                 }
                             }
                             .possibilities__manage__discription {
-                                margin-top: 30px;
-                                font-family: "Hauora";
-                                font-size: $FONT_SIZE_18;
+                                font-size: 16px;
                                 font-weight: 500;
-                                letter-spacing: 0.02em;
-                                line-height: 23.4px;
-                                text-align: left;
-                                color: rgba(120, 119, 146, 1);
+                                line-height: 20.8px;
                                 opacity: 1;
-                                transition: 0.5s ease 0.5s;
-    
+                                
+                                br {
+                                    display: none;
+                                }
+
                                 &.appearance {
                                     opacity: 1;
                                 }
@@ -1898,18 +1896,10 @@ $width: 80%;
                                 }
                             }
                             .possibilities__analitic__discription {
-                                margin-top: 30px;
-                                font-family: "Hauora";
-                                font-size: 18px;
+                                font-size: 16px;
                                 font-weight: 500;
-                                line-height: 23.4px;
-                                letter-spacing: 0.02em;
-                                text-align: left;     
-                                text-underline-position: from-font;
-                                text-decoration-skip-ink: none;                                              
-                                color: rgba(120, 119, 146, 1);
+                                line-height: 20.8px;
                                 opacity: 1;
-                                transition: 0.5s ease 1s;
     
                                 &.appearance {
                                     opacity: 1;
@@ -1950,18 +1940,10 @@ $width: 80%;
                                 }
                             }
                             .possibilities__dev__discription {
-                                margin-top: 30px;
-                                font-family: "Hauora";
-                                font-size: 18px;
+                                font-size: 16px;
                                 font-weight: 500;
-                                line-height: 23.4px;
-                                letter-spacing: 0.02em;
-                                text-align: left;
-                                text-underline-position: from-font;
-                                text-decoration-skip-ink: none;
-                                color: rgba(120, 119, 146, 1);
+                                line-height: 20.8px;
                                 opacity: 1;
-                                transition: 0.5s ease 1.5s;
     
                                 &.appearance {
                                     opacity: 1;
@@ -2142,10 +2124,9 @@ $width: 80%;
                                 }
                             }
                             .modules__box__discription {
-                                font-size: 18px;
+                                font-size: 16px;
                                 font-weight: 500;
-                                line-height: 18px;
-                                color: rgba(120, 119, 146, 1);
+                                line-height: 20.8px;
                                 opacity: 1;
     
                                 &.appearance {
@@ -2249,8 +2230,10 @@ $width: 80%;
                                     opacity: 1;
                                 }
                                 span {                                
+                                    font-size: 16px;
+                                    font-weight: 500;
+                                    line-height: 20.8px;
                                     opacity: 1;
-                                    transition:  ease 0.5s;
                                     &.appearance {
                                         opacity: 1;
                                     }
@@ -2290,6 +2273,10 @@ $width: 80%;
                                         opacity: 1;
                                     }
                                     span {
+                                        font-size: 16px;
+                                        font-weight: 500;
+                                        line-height: 20.8px;
+                                        opacity: 1;
                                         transition:  ease 1s;
                                     }
                                 }
@@ -2358,70 +2345,232 @@ $width: 80%;
                     }
                 }
             }
-            
-            .characteristic {
-                display: none;
+           
+            .characteristic {           
+                padding-bottom: 150px;
+                position: relative;
+                background-color: rgb(0,0,0);
+                background: linear-gradient(rgb(1, 1, 8), rgb(0,0,0));
+                width: 100%;
+                @include center();                 
+                .characteristic__container {
+                    max-width: 1120px;
+                    width: 94.87%;
+                    position: relative;
+                    .characteristic__title {
+                        font-size: 18px;
+                        font-weight: 500;
+                        line-height: 23.4px;
+                        opacity: 1;
+                        &.appearance {
+                            opacity: 1;
+                        }
+                        span {
+                            color: rgba(68, 63, 219, 1);
+                            font-size: 25px;
+                            font-weight: 500;
+                            line-height: 25px;
+
+                            br {
+                                display: none;
+                            }
+                        }                       
+                    }               
+                    .characteristic__content {
+                        margin-top: 165px;
+                        width: 100%;                        
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        .characteristic__box {   
+                            display: flex;
+                            flex-direction: column;                      
+                            &:nth-child(n) {
+                            width: 356px;
+                            .characteristic__box__img {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                .characteristic__box__picture {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    width: 248px;
+                                    height: 248px;
+                                    mix-blend-mode: screen;
+                                    opacity: 1;  
+                                    transition: 1s ease;
+                                    &.appearance {
+                                        opacity: 1;
+                                    }
+                                }
+                            }                            
+                        
+                            .characteristic__box__title {
+                                padding-left: 20px;
+                                height: 44px;
+                                margin-top: 30px;
+                                font-family: "Hauora";
+                                font-size: 18px;
+                                font-weight: 500;
+                                line-height: 23.4px;
+                                letter-spacing: 0.02em;
+                                text-align: left;
+                                text-underline-position: from-font;
+                                -webkit-text-decoration-skip-ink: none;
+                                text-decoration-skip-ink: none;
+                                color: rgba(240, 246, 252, 1);  
+                                opacity: 1;  
+                                transition: 1s ease;
+                                &.appearance {
+                                    opacity: 1;
+                                }
+                            }
+                            .characteristic__box__discription {
+                                padding-left: 20px;
+                                font-size: 16px;
+                                font-weight: 500;
+                                line-height: 20.8px;
+                                opacity: 1;
+                                &.appearance {
+                                    opacity: 1;
+                                }
+                            }
+                            }
+                        }
+                    }
+    
+                    &::after {
+                        margin-top: 50px;
+                        content: "";
+                        position: absolute;                    
+                        display: flex;
+                        left: 50%;
+                        width: 5px;
+                        height: 0;
+                        background-image: url(../../public/images/fourthLine.svg);
+                        background-repeat: no-repeat;
+                        background-size: 5px 286px;
+                        transition: all 1s ease 0.5s;
+                    }
+                    &.line.play::after{                   
+                        height: 286px;
+                    }
+                }
             }
+           
             .earn {
-                display: none;
+                background: linear-gradient(rgb(0, 0, 0), rgb(3, 3, 22));
+                position: relative;
+                width: 100%;
+                @include center();
+                .earn__container {
+                    max-width: 1120px;
+                    width: 80%;
+                    @include center();
+                    flex-direction: column;
+                    .earn__title {
+                        font-size: 25px;
+                        font-weight: 500;
+                        line-height: 25px;
+                        opacity: 1;
+                        &.appearance {
+                            opacity: 1;
+                        }
+                    }
+                    .earn__discripiton {
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 20.8px;
+                        opacity: 1;
+                        br {
+                            display: none;
+                        }
+                        &.appearance {
+                            opacity: 1;
+                        }
+                    }
+                    .earn__search {                    
+                        padding-top: 104px;
+                        padding-bottom: 104px;
+                        width: 100%;
+                        @include center();
+                        opacity: 1;
+                        transition: 0.5s ease 0.5s;
+    
+                        &.appearance {
+                            opacity: 1;
+                        }  
+                        .earn__invite {
+                            display: flex;
+                            flex-direction: column;
+                            label {
+                                margin-left: 13px;
+                                width: 100%;
+                                display: flex;
+                                justify-content: start;
+                                font-family: "Hauora";
+                                font-size: 16px;
+                                font-weight: 500;
+                                letter-spacing: 0.03em;
+                                line-height: 20.8px;
+                                text-align: left;
+                                color: rgb(112, 111, 146);
+                            }
+                            .earn__form {
+                                max-width: 300px;
+                                width: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                border: none;
+                               input {
+                                    max-width: 100%;
+                                    height: 42px;
+                                    border-radius: 10px;
+                                    padding: 10px 0;
+                                    font-size: 14px;
+                                    font-weight: 500;
+                                    line-height: 19.6px;
+                                    text-align: left;
+
+                                    &[type=text] {
+                                        padding-left: 15px;
+                                    }
+                                }
+                               button {
+                                    margin-top: 20px;
+                                    width: 100%;
+                                    height: 42px;
+                                    box-sizing: border-box;
+                                    padding: 10px 25px 10px 25px;
+                                    border-radius: 10px;
+                                    border: 1px solid rgb(3, 16, 180);
+                               }
+                            }
+                        } 
+                    }
+                }
             }
+           
             
             
         }
         .footer {
-            background: linear-gradient(180deg, rgb(6, 5, 34), rgb(8, 7, 52));
-            padding-top: 186px;
+            background: linear-gradient(rgb(3, 3, 22), rgb(8, 7, 51));
+            padding-top: 50px;
             padding-bottom: 82px;
             width: 100%;
             @include center();
             .footer__container {
-                width: $width;
-                max-width: none;
-                display: flex;
-                flex-direction: column;
-                justify-content: none;
-                color: white;
-                .footer__top {
-                    display: flex;
-                    justify-content: space-between;
-                    flex-direction: row;
-                    .footer__newsletter {
-                        margin-top: 0;                        
-                    }
+              display: flex;
+              flex-direction: column;     
+              justify-content: start;
+              align-items: start; 
+                a {
+                    margin-left: 0 !important;
+                    margin-top: 20px;
                 }
-                .footer__menu {
-                    padding-top: 62.06px;
-                    padding-bottom: 0;
-                    margin-left: 0;
-                    display: grid;
-                    grid-template-columns: repeat(2, 1fr);
-                    gap: 50px  30px;
-                    .footer__column {
-                        display: flex;
-                        flex-direction: column;
-                        width: unset;
-                        .footer__column__title {
-                            font-family: "Hauora";
-                            font-size: $FONT_SIZE_12;
-                            font-weight: 400;
-                            line-height: 15.6px;
-                            text-align: left;
-                            color: $COLOR_WHITE;
-                            padding-bottom: 12.54px;
-                        }
-                    
-                        .footer__column__item {                        
-                            margin-top: 8px;
-                            font-family: "Hauora";
-                            font-size: $FONT_SIZE_12;
-                            font-weight: 400;
-                            line-height: 15.6px;
-                            text-align: left;
-                            color: $COLOR_GRAY;                
-                        }
-                    }
-                }
-               
             }
         } 
     }

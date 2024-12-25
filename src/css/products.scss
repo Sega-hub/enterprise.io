@@ -762,75 +762,389 @@ $width: 80%;
                 }
             }
         }
-        .main {           
+        .main {
+            width: 100vw;
+            max-width: 100%;
+            @include center();
+            flex-direction: column;
             .products {
+                position: relative;
+                width: 100%;
+                @include center();
+                background: linear-gradient(rgb(7, 6, 46), rgb(0,0,0));
                 .products__container {
-                    display: flex;
+                    padding-top: 259px;
+                    padding-bottom: 420px;
+                    width: 80%;
+                    max-width: 1120px;
                     flex-direction: column;
-                
+    
+                    &::after {
+                        margin-top: 50px;
+                        content: "";
+                        position: absolute;                    
+                        display: flex;
+                        left: 50%;
+                        width: 5px;
+                        height: 0;
+                        background-image: url(../../public/images/fourthLine.svg);
+                        background-repeat: no-repeat;
+                        background-size: 5px 286px;
+                        transition: all 1s ease 0.5s;
+                    }
+                    &.line.play::after{                   
+                        height: 286px;
+                    }
+                    .products__head {
+                        display: grid;
+                        align-items: center;
+                        grid-template-columns: 8.5fr 3.5fr;
+                        opacity: 1;
+                        animation: mainTitle  ease 0.5s;
+                        animation-fill-mode: forwards;
+    
+                        .products__title {
+                            font-size: 25px;
+                            font-weight: 500;
+                            line-height: 25px;
+                            br {
+                                display: none;
+                            }
+                        }
+                        .products__button {
+                            @include button(110px, rgba(23, 19, 147, 0.4), rgba(23, 19, 147, 1));
+                        }                    
+                    }
                     .products__more {
+                        margin-top: 100px;                   
                         display: flex;
                         flex-direction: column;
-                    }
+                        row-gap: 20px;
+                       .products__column {
+                            &:nth-child(1) {
+                               p {
+                                    &:nth-child(1) {
+                                       opacity: 1;
+                                       animation: mainTitle  ease 1.2s;
+                                       animation-fill-mode: forwards;
+                                    }
+                                    &:nth-child(3) {
+                                        opacity: 1;
+                                        transition:  ease 0.5s;
+    
+                                        &.appearance {
+                                            opacity: 1;
+                                        }
+                                    }
+                                    &:nth-child(5) {
+                                        opacity: 1;
+                                        transition:  ease 0.5s;
+    
+                                        &.appearance {
+                                            opacity: 1;
+                                        }
+                                    }
+                               }
+                               ul {
+                                    &:nth-child(2){
+                                        opacity: 1;
+                                        animation: mainTitle  ease 1.5s;
+                                        animation-fill-mode: forwards;
+                                    }
+                                    &:nth-child(4){
+                                        opacity: 1;
+                                        transition:  ease 0.5s;
+    
+                                        &.appearance {
+                                            opacity: 1;
+                                        }
+                                    }
+                                    &:nth-child(6){
+                                        opacity: 1;
+                                        transition:  ease 0.5s;
+    
+                                        &.appearance {
+                                            opacity: 1;
+                                        }
+                                    }
+                               }
+                            }
+                            &:nth-child(2) {
+                                p {
+                                     &:nth-child(1) {
+                                        opacity: 1;
+                                        animation: mainTitle  ease 1.7s;
+                                        animation-fill-mode: forwards;
+                                     }
+                                     &:nth-child(3) {
+                                        opacity: 1;
+                                        transition:  ease 0.5s;
+    
+                                        &.appearance {
+                                            opacity: 1;
+                                        }
+                                     }
+                                     &:nth-child(5) {
+                                        opacity: 1;
+                                        transition:  ease 0.5s;
+    
+                                        &.appearance {
+                                            opacity: 1;
+                                        }
+                                     }
+                                }
+                                ul {
+                                     &:nth-child(2){
+                                         opacity: 1;
+                                         animation: mainTitle  ease 1.9s;
+                                         animation-fill-mode: forwards;
+                                     }
+                                     &:nth-child(4){
+                                        opacity: 1;
+                                        transition:  ease 0.5s;
+    
+                                        &.appearance {
+                                            opacity: 1;
+                                        }
+                                     }
+                                     &:nth-child(6){
+                                        opacity: 1;
+                                        transition:  ease 0.5s;
+    
+                                        &.appearance {
+                                            opacity: 1;
+                                        }
+                                     }
+                                }
+                            }
+                            &:nth-child(3) {
+                                p {
+                                     &:nth-child(1) {
+                                        opacity: 1;
+                                        animation: mainTitle  ease 2.1s;
+                                        animation-fill-mode: forwards;
+                                     }
+                                     &:nth-child(3) {
+                                        opacity: 1;
+                                        transition:  ease 0.5s;
+    
+                                        &.appearance {
+                                            opacity: 1;
+                                        }
+                                     }
+                                     &:nth-child(5) {
+                                        opacity: 1;
+                                        transition:  ease 0.5s;
+    
+                                        &.appearance {
+                                            opacity: 1;
+                                        }
+                                     }
+                                }
+                                ul {
+                                     &:nth-child(2){
+                                         opacity: 1;
+                                         animation: mainTitle  ease 2.3s;
+                                         animation-fill-mode: forwards;
+                                     }
+                                     &:nth-child(4){
+                                        opacity: 1;
+                                        transition:  ease 0.5s;
+    
+                                        &.appearance {
+                                            opacity: 1;
+                                        }
+                                     }
+                                     &:nth-child(6){
+                                        opacity: 1;
+                                        transition:  ease 0.5s;
+    
+                                        &.appearance {
+                                            opacity: 1;
+                                        }
+                                     }
+                                }
+                            }
+                       }
+    
+                        .products__column {
+                            .products__column__title {
+                                font-family: "Hauora";
+                                font-size: 18px;
+                                font-weight: 500;
+                                line-height: 18px;
+                                letter-spacing: 0.02em;
+                                text-align: left;
+                                text-underline-position: from-font;
+                                -webkit-text-decoration-skip-ink: none;
+                                text-decoration-skip-ink: none;
+                                color: rgb(240, 246, 252);
+                                margin-top: 50px !important;
+                            }
+                            ul {
+                                margin-top: 40px;
+                                li {
+                                    margin-top: 20px;
+                                    margin-left: 20px;
+                                    font-family: "Hauora";
+                                    font-size: 18px;
+                                    font-weight: 500;
+                                    line-height: 23.4px;
+                                    letter-spacing: 0.02em;
+                                    text-align: left;
+                                    color: rgb(120, 119, 146);
+                                }
+    
+                               
+                            }
+                        }
                     
-                   
+                        .products__column {
+                            &:nth-child(1) {
+                                .products__column__title {
+                                    &:nth-child(3) {
+                                        margin-top: 0;
+                                    }
+                                    &:nth-child(5) {
+                                        margin-top: 0;
+                                    }
+                                }
+                            }
+                        }
+    
+                        .products__column {
+                            &:nth-child(2) {
+                                .products__column__title {
+                                    &:nth-child(3) {
+                                        margin-top: 0;
+                                    }
+                                    
+                                }
+                            }
+                        }
+    
+                        .products__column {
+                            &:nth-child(3) {
+                                .products__column__title {
+                                    &:nth-child(3) {
+                                        margin-top: 0;
+                                    }
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
+            } 
+            .earn {
+                background: linear-gradient(rgb(0, 0, 0), rgb(3, 3, 22));
+                position: relative;
+                width: 100%;
+                @include center();
+                .earn__container {
+                    max-width: 1120px;
+                    width: 80%;
+                    @include center();
+                    flex-direction: column;
+                    .earn__title {
+                        font-size: 25px;
+                        font-weight: 500;
+                        line-height: 25px;
+                        opacity: 1;
+                        &.appearance {
+                            opacity: 1;
+                        }
+                    }
+                    .earn__discripiton {
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 20.8px;
+                        opacity: 1;
+                        br {
+                            display: none;
+                        }
+                        &.appearance {
+                            opacity: 1;
+                        }
+                    }
+                    .earn__search {                    
+                        padding-top: 104px;
+                        padding-bottom: 104px;
+                        width: 100%;
+                        @include center();
+                        opacity: 1;
+                        transition: 0.5s ease 0.5s;
+    
+                        &.appearance {
+                            opacity: 1;
+                        }  
+                        .earn__invite {
+                            display: flex;
+                            flex-direction: column;
+                            label {
+                                margin-left: 13px;
+                                width: 100%;
+                                display: flex;
+                                justify-content: start;
+                                font-family: "Hauora";
+                                font-size: 16px;
+                                font-weight: 500;
+                                letter-spacing: 0.03em;
+                                line-height: 20.8px;
+                                text-align: left;
+                                color: rgb(112, 111, 146);
+                            }
+                            .earn__form {
+                                max-width: 300px;
+                                width: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                border: none;
+                               input {
+                                    max-width: 100%;
+                                    height: 42px;
+                                    border-radius: 10px;
+                                    padding: 10px 0;
+                                    font-size: 14px;
+                                    font-weight: 500;
+                                    line-height: 19.6px;
+                                    text-align: left;
+
+                                    &[type=text] {
+                                        padding-left: 15px;
+                                    }
+                                }
+                               button {
+                                    margin-top: 20px;
+                                    width: 100%;
+                                    height: 42px;
+                                    box-sizing: border-box;
+                                    padding: 10px 25px 10px 25px;
+                                    border-radius: 10px;
+                                    border: 1px solid rgb(3, 16, 180);
+                               }
+                            }
+                        } 
+                    }
                 }
             }
+           
         }
         .footer {
-            background: linear-gradient(180deg, rgb(6, 5, 34), rgb(8, 7, 52));
-            padding-top: 186px;
+            background: linear-gradient(rgb(3, 3, 22), rgb(8, 7, 51));
+            padding-top: 50px;
             padding-bottom: 82px;
             width: 100%;
             @include center();
             .footer__container {
-                width: $width;
-                max-width: none;
-                display: flex;
-                flex-direction: column;
-                justify-content: none;
-                color: white;
-                .footer__top {
-                    display: flex;
-                    justify-content: space-between;
-                    flex-direction: row;
-                    .footer__newsletter {
-                        margin-top: 0;                        
-                    }
+              display: flex;
+              flex-direction: column;     
+              justify-content: start;
+              align-items: start; 
+                a {
+                    margin-left: 0 !important;
+                    margin-top: 20px;
                 }
-                .footer__menu {
-                    padding-top: 62.06px;
-                    padding-bottom: 0;
-                    margin-left: 0;
-                    display: grid;
-                    grid-template-columns: repeat(2, 1fr);
-                    gap: 50px  30px;
-                    .footer__column {
-                        display: flex;
-                        flex-direction: column;
-                        width: unset;
-                        .footer__column__title {
-                            font-family: "Hauora";
-                            font-size: $FONT_SIZE_12;
-                            font-weight: 400;
-                            line-height: 15.6px;
-                            text-align: left;
-                            color: $COLOR_WHITE;
-                            padding-bottom: 12.54px;
-                        }
-                    
-                        .footer__column__item {                        
-                            margin-top: 8px;
-                            font-family: "Hauora";
-                            font-size: $FONT_SIZE_12;
-                            font-weight: 400;
-                            line-height: 15.6px;
-                            text-align: left;
-                            color: $COLOR_GRAY;                
-                        }
-                    }
-                }
-               
             }
         } 
     }
