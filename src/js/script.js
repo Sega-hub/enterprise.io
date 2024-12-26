@@ -435,3 +435,15 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     
 })
+
+function openPopup() {
+    const popup = document.querySelector(".popup");
+    popup.style.display = "flex";
+    document.body.style.overflow = "hidden";
+}
+
+function closePopup() {
+    const popup = document.querySelector(".popup");
+    popup.style.display = "none";
+    document.body.style.overflow= "scroll";
+}

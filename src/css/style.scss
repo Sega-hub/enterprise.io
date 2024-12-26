@@ -178,7 +178,9 @@ $width: 80%;
     transition:  0.1s ease;
     pointer-events: none;
 }
-
+.popup {
+    display: none;
+}
 .container {
     display: block;
     margin: auto;
@@ -972,7 +974,7 @@ $width: 80%;
                             color: rgb(240, 246, 252);
                             opacity: 0;
                             transition:  ease 1s;
-
+                            
                             &.appearance {
                                 opacity: 1;
                             }
@@ -1508,6 +1510,95 @@ $width: 80%;
         display: none;
     }
 
+    .popup {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 10000;
+        position: absolute;
+        display: none;
+        align-items: center;
+        flex-direction: column;
+        background: linear-gradient(rgb(10, 9, 67), rgb(0, 0, 0));
+        .popup__container {
+            width:  84.6%;
+            display: flex;
+            flex-direction: column;
+            .header__container {
+                margin-top: 30px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .header__buttons {
+                    button {
+                        @include button(88px, rgb(10, 9, 64), rgb(23, 19, 147));
+                        font-size: 14px;
+                        font-weight: 500;
+                        letter-spacing: 0.03em;
+                        line-height: 16px;
+                        text-align: center;
+                        font-family: "Hauora";
+                    }
+                }
+            }
+            .popup__menu {
+                margin-top: 128px;
+                display: flex;
+                flex-direction: column;
+                .popup__menu__item {
+                    margin-top: 27px;
+                    font-family: "Hauora";
+                    font-size: 18px;
+                    font-weight: 500;
+                    letter-spacing: 0.03em;
+                    line-height: 20.8px;
+                    color: $COLOR_WHITE;
+                }
+                .popup__menu__mail {
+                    margin-top: 20px;
+                    font-family: "Hauora";
+                    font-size: 18px;
+                    font-weight: 500;
+                    letter-spacing: 0.03em;
+                    line-height: 20.8px;
+                    color: rgb(112, 111, 146);
+                }
+                .popup__menu__phone {
+                    margin-top: 10px;
+                    font-family: "Hauora";
+                    font-size: 18px;
+                    font-weight: 500;
+                    letter-spacing: 0.03em;
+                    line-height: 20.8px;
+                    color: rgb(112, 111, 146);
+                }
+                .footer__xellon {
+                    margin-top: 10px;
+                    font-family: "Hauora";
+                    font-size: 18px;
+                    font-weight: 500;
+                    letter-spacing: 0.03em;
+                    line-height: 20.8px;
+                    color: $COLOR_WHITE;
+                }
+            }
+            .popup__button {
+                margin-top: 104px;
+                button {
+                    @include button(330px, rgb(7, 4, 51), rgb(3, 16, 180));
+                    height: 42px;
+                    font-size: 14px;
+                    font-weight: 500;
+                    letter-spacing: 0.03em;
+                    line-height: 16px;
+                    text-align: center;
+                    font-family: "Hauora";
+                }
+            }
+        }
+    }
+
     $width: 84.61%;
     .container {
         display: block;
@@ -1821,7 +1912,7 @@ $width: 80%;
                         row-gap: 20px;
 
                         .possibilities__manage {
-                            width: 356px;
+                            width: 300px;
                             padding-left: 30px;
                             .possibilities__manage {
                                 width: 248px;
@@ -2103,44 +2194,42 @@ $width: 80%;
                        flex-direction: column;
                        justify-content: center;
                        align-items: center;
-                       padding-left: 30px;
-                       .modules__box {
-                            
+                       padding-left: 0 !important;
+                       .modules__box {                            
                             &:nth-child(n) {
-                            width: 356px;
-                            .modules__box__picture {
-                                width: 248px;
-                                height: 248px;
-                                opacity: 1;
-                                transition:  ease 1s;
-    
-                                &.appearance {
+                                width: 300px;
+                                .modules__box__picture {
+                                    width: 248px;
+                                    height: 248px;
                                     opacity: 1;
-                                }
-                            }
-                        
-                            .modules__box__title {
-                                opacity: 1;
-                                font-size: 18px;
-                                font-weight: 500;
-                                line-height: 18px;
-    
-                                &.appearance {
+                                    transition:  ease 1s;
+                                
+                                    &.appearance {
                                     opacity: 1;
+                                    }
                                 }
-                            }
-                            .modules__box__discription {
-                                font-size: 16px;
-                                font-weight: 500;
-                                line-height: 20.8px;
-                                opacity: 1;
-    
-                                &.appearance {
+                            
+                                .modules__box__title {
                                     opacity: 1;
+                                    font-size: 18px;
+                                    font-weight: 500;
+                                    line-height: 18px;
+                                    max-width: 80%;
+                                    &.appearance {
+                                        opacity: 1;
+                                    }
                                 }
-                            }
-                        }
-    
+                                .modules__box__discription {
+                                    font-size: 16px;
+                                    font-weight: 500;
+                                    line-height: 20.8px;
+                                    opacity: 1;
+                                    max-width: 80%;
+                                    &.appearance {
+                                        opacity: 1;
+                                    }
+                                }
+                            }   
                            
                         }
     
@@ -2388,7 +2477,7 @@ $width: 80%;
                         }                       
                     }               
                     .characteristic__content {
-                        padding-left: 30px;
+                        padding-left: 0;
                         margin-top: 165px;
                         width: 100%;                        
                         display: flex;
@@ -2399,7 +2488,7 @@ $width: 80%;
                             display: flex;
                             flex-direction: column;                      
                             &:nth-child(n) {
-                            width: 356px;
+                            width: 300px;
                             .characteristic__box__img {
                                 display: flex;
                                 justify-content: center;
@@ -2420,6 +2509,7 @@ $width: 80%;
                             }                            
                         
                             .characteristic__box__title {
+                                max-width: 80% !important;
                                 padding-left: 20px;
                                 height: 44px;
                                 margin-top: 30px;
@@ -2440,6 +2530,7 @@ $width: 80%;
                                 }
                             }
                             .characteristic__box__discription {
+                                max-width: 80% !important;
                                 padding-left: 20px;
                                 font-size: 16px;
                                 font-weight: 500;

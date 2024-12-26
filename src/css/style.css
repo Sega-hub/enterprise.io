@@ -44,6 +44,10 @@ a {
   pointer-events: none;
 }
 
+.popup {
+  display: none;
+}
+
 .container {
   display: block;
   margin: auto;
@@ -1711,6 +1715,130 @@ a {
   ::after {
     display: none;
   }
+  .popup {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10000;
+    position: absolute;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(rgb(10, 9, 67), rgb(0, 0, 0));
+  }
+  .popup .popup__container {
+    width: 84.6%;
+    display: flex;
+    flex-direction: column;
+  }
+  .popup .popup__container .header__container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .popup .popup__container .header__container .header__buttons button {
+    width: 88px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgb(10, 9, 64);
+    border: 1px solid rgb(23, 19, 147);
+    cursor: pointer;
+    font-family: "Hauora";
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    line-height: 16px;
+    text-align: center;
+    transition: 0.5s;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    line-height: 16px;
+    text-align: center;
+    font-family: "Hauora";
+  }
+  .popup .popup__container .header__container .header__buttons button:hover {
+    box-shadow: 0px 0px 1.1px 0px rgb(17, 14, 104), 0px 0px 2.2px 0px rgb(17, 14, 104), 0px 0px 7.7px 0px rgb(17, 14, 104), 0px 0px 15.39px 0px rgb(17, 14, 104), 0px 0px 26.39px 0px rgb(17, 14, 104), 0px 0px 46.18px 0px rgb(17, 14, 104);
+  }
+  .popup .popup__container .popup__menu {
+    margin-top: 128px;
+    display: flex;
+    flex-direction: column;
+  }
+  .popup .popup__container .popup__menu .popup__menu__item {
+    margin-top: 27px;
+    font-family: "Hauora";
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    line-height: 20.8px;
+    color: rgb(255, 255, 255);
+  }
+  .popup .popup__container .popup__menu .popup__menu__mail {
+    margin-top: 20px;
+    font-family: "Hauora";
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    line-height: 20.8px;
+    color: rgb(112, 111, 146);
+  }
+  .popup .popup__container .popup__menu .popup__menu__phone {
+    margin-top: 10px;
+    font-family: "Hauora";
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    line-height: 20.8px;
+    color: rgb(112, 111, 146);
+  }
+  .popup .popup__container .popup__menu .footer__xellon {
+    margin-top: 10px;
+    font-family: "Hauora";
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    line-height: 20.8px;
+    color: rgb(255, 255, 255);
+  }
+  .popup .popup__container .popup__button {
+    margin-top: 104px;
+  }
+  .popup .popup__container .popup__button button {
+    width: 330px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgb(7, 4, 51);
+    border: 1px solid rgb(3, 16, 180);
+    cursor: pointer;
+    font-family: "Hauora";
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    line-height: 16px;
+    text-align: center;
+    transition: 0.5s;
+    color: rgb(255, 255, 255);
+    height: 42px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    line-height: 16px;
+    text-align: center;
+    font-family: "Hauora";
+  }
+  .popup .popup__container .popup__button button:hover {
+    box-shadow: 0px 0px 1.1px 0px rgb(17, 14, 104), 0px 0px 2.2px 0px rgb(17, 14, 104), 0px 0px 7.7px 0px rgb(17, 14, 104), 0px 0px 15.39px 0px rgb(17, 14, 104), 0px 0px 26.39px 0px rgb(17, 14, 104), 0px 0px 46.18px 0px rgb(17, 14, 104);
+  }
   .container {
     display: block;
     margin: auto;
@@ -2070,7 +2198,7 @@ a {
     row-gap: 20px;
   }
   .container .main .possibilities .possibilities__container .possibilities__content .possibilities__manage {
-    width: 356px;
+    width: 300px;
     padding-left: 30px;
   }
   .container .main .possibilities .possibilities__container .possibilities__content .possibilities__manage .possibilities__manage {
@@ -2394,10 +2522,10 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-left: 30px;
+    padding-left: 0 !important;
   }
   .container .main .modules .modules__container .modules__content .modules__box:nth-child(n) {
-    width: 356px;
+    width: 300px;
   }
   .container .main .modules .modules__container .modules__content .modules__box:nth-child(n) .modules__box__picture {
     width: 248px;
@@ -2413,6 +2541,7 @@ a {
     font-size: 18px;
     font-weight: 500;
     line-height: 18px;
+    max-width: 80%;
   }
   .container .main .modules .modules__container .modules__content .modules__box:nth-child(n) .modules__box__title.appearance {
     opacity: 1;
@@ -2422,6 +2551,7 @@ a {
     font-weight: 500;
     line-height: 20.8px;
     opacity: 1;
+    max-width: 80%;
   }
   .container .main .modules .modules__container .modules__content .modules__box:nth-child(n) .modules__box__discription.appearance {
     opacity: 1;
@@ -2722,7 +2852,7 @@ a {
     display: none;
   }
   .container .main .characteristic .characteristic__container .characteristic__content {
-    padding-left: 30px;
+    padding-left: 0;
     margin-top: 165px;
     width: 100%;
     display: flex;
@@ -2735,7 +2865,7 @@ a {
     flex-direction: column;
   }
   .container .main .characteristic .characteristic__container .characteristic__content .characteristic__box:nth-child(n) {
-    width: 356px;
+    width: 300px;
   }
   .container .main .characteristic .characteristic__container .characteristic__content .characteristic__box:nth-child(n) .characteristic__box__img {
     display: flex;
@@ -2756,6 +2886,7 @@ a {
     opacity: 1;
   }
   .container .main .characteristic .characteristic__container .characteristic__content .characteristic__box:nth-child(n) .characteristic__box__title {
+    max-width: 80% !important;
     padding-left: 20px;
     height: 44px;
     margin-top: 30px;
@@ -2776,6 +2907,7 @@ a {
     opacity: 1;
   }
   .container .main .characteristic .characteristic__container .characteristic__content .characteristic__box:nth-child(n) .characteristic__box__discription {
+    max-width: 80% !important;
     padding-left: 20px;
     font-size: 16px;
     font-weight: 500;

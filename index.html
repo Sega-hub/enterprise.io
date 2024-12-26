@@ -8,6 +8,33 @@
 </head>
 <body>
     <div class="effect"></div>
+    <div class="popup">
+       <div class="popup__container">
+            <div class="header__container">
+                <a href="index.html"> 
+                    <img src="./public/images/logoBottom.svg" alt="logotip" class="header__logo"> 
+                </a>          
+                <div class="header__buttons" >
+                    <button class="header__buttons-menu" onclick="closePopup()">Закрыть</button>
+                </div>
+            </div>
+            <div class="popup__menu">
+                <a href="#" class="popup__menu__item">Продукты</a>
+                <a href="#" class="popup__menu__item">Цены</a>
+                <a href="#" class="popup__menu__item">Документация</a>
+                <a href="#" class="popup__menu__item">Контакты</a>
+                <a href="mailto:info@xellon.ru" class="popup__menu__mail">info@xellon.ru</a> 
+                <a href="tel:8 (800) 533 – 92 – 20" class="popup__menu__phone">8 (800) 533 – 92 – 20</a>        
+                <a class="footer__xellon" href="xellon.ru">
+                    xellon.ru
+                    <img src="./public/images/ftarrow.png" alt="arrow">
+                </a>                                 
+            </div>
+            <div class="popup__button">
+                <button class="header__buttons-menu">Презентация</button>
+            </div>
+       </div>
+    </div>
    <div class="container">
         <header class="header" >
             <div class="header__container">
@@ -22,7 +49,7 @@
                 </nav>
                 <div class="header__buttons" >
                     <button class="header__buttons-enter">Презентация</button>
-                    <button class="header__buttons-menu">Меню</button>
+                    <button class="header__buttons-menu" onclick="openPopup()">Меню</button>
                 </div>
             </div>
         </header>
