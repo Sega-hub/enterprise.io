@@ -5,6 +5,10 @@
     scroll-behavior: smooth;
 }
 
+.mob {
+    display: none;
+}
+
 body {
     background: linear-gradient(180deg, #010049 -34.45%, rgba(0, 0, 0, 1) 100%);
 }
@@ -863,6 +867,9 @@ $width: 80%;
                         }
                     }
                 }
+                .client__buttons__mob {
+                    display: none;
+                }
                 .client__title {
                     margin-top: 33px;
                     font-family: "Hauora";
@@ -1270,6 +1277,9 @@ $width: 80%;
                                 opacity: 1;
                             }
                         }
+                        .characteristic__box__img-mob {
+                            display: none;
+                        }
                     
                         .characteristic__box__title {
                             height: 44px;
@@ -1468,6 +1478,10 @@ $width: 80%;
   
     .play {
         display: none !important;
+    }
+
+    .mob {
+        display: flex !important;
     }
 
     .effect {
@@ -1713,11 +1727,11 @@ $width: 80%;
                         padding-left: 30px;
                         font-size: 25px;
                         font-weight: 500;
-                        line-height: 25px;
+                        line-height: 30px;
                         opacity: 1;
                         span {
                             color: rgba(68, 63, 219, 1);
-                        }     
+                        }                     
                         
                         br {
                             display: none;
@@ -1729,6 +1743,7 @@ $width: 80%;
                         }
                     }               
                     .openspace__content {
+                        padding-top: 40px;
                         .openspace__code {                        
                             position: relative;
                             display: flex;
@@ -1883,7 +1898,7 @@ $width: 80%;
                     width: 94.87%;
                     .possibilities__title {
                         padding-left: 30px;
-                        font-size: 25px;
+                        font-size: 18px;
                         font-weight: 500;
                         line-height: 25px;
                         br {
@@ -1894,6 +1909,7 @@ $width: 80%;
                             opacity: 1;
                         }
                         span {
+                            margin-bottom: 20px;
                             font-size: 25px;
                             font-weight: 500;
                             line-height: 25px;
@@ -1946,7 +1962,7 @@ $width: 80%;
                                 font-weight: 500;
                                 line-height: 20.8px;
                                 opacity: 1;
-                                width: 80%;
+                                width: 100%;
                                 br {
                                     display: none;
                                 }
@@ -2038,7 +2054,11 @@ $width: 80%;
                                 font-weight: 500;
                                 line-height: 20.8px;
                                 opacity: 1;
-    
+                                
+                                br {
+                                    display: none;
+                                }
+
                                 &.appearance {
                                     opacity: 1;
                                 }
@@ -2075,47 +2095,29 @@ $width: 80%;
                     @include center();
                     flex-direction: column;
                     .client__buttons {
-                        width: 100%;
+                        display: none;
+                    }
+                    .client__buttons__mob {
+                        margin-top: 80px;
                         display: flex;
-                        justify-content: center;
-                        flex-direction: column;
-                        align-items: center;
-                        .client__button {
+                        flex-direction: column;                        
+                        .mob__pocket {
                             display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            &:nth-child(1) {
-                                @include button(140px, rgba(22, 23, 24, 0), rgba(13, 10, 103, 1));      
-                                opacity: 1;
-                                transition: 0.5s ease 0.5s;
-                                padding: 10px;
-                                margin: 5px;
-                                &.appearance {
-                                    opacity: 1;
-                                }                     
-                            }
-                            &:nth-child(2) {
-                                margin-left: 0;
-                                @include button(236px, rgba(22, 23, 24, 0), rgba(13, 10, 103, 1));
-                                opacity: 1;
-                                transition: 0.5s ease 0.7s;
-                                padding: 10px 10px;
-                                margin: 5px;
-                                &.appearance {
-                                    opacity: 1;
-                                }   
-                            }
-                            &:nth-child(3) {
-                                margin-left: 0;
-                                @include button(148px, rgba(22, 23, 24, 0), rgba(13, 10, 103, 1));
-                                opacity: 1;
-                                transition: 0.5s ease 0.9s;
-                                padding: 10px 10px;
-                                margin: 5px;
-                                &.appearance {
-                                    opacity: 1;
-                                }   
-                            }
+                           .client__button {
+                                &:nth-child(1) {
+                                    @include button(140px, rgba(22, 23, 24, 0), rgba(13, 10, 103, 1));
+                                }
+                                &:nth-child(2) {
+                                    margin-left: 24px;
+                                    @include button(148px, rgba(22, 23, 24, 0), rgba(13, 10, 103, 1));
+                                }
+                           }
+                        }
+                        .client__button {
+                            @include button(312px, rgba(22, 23, 24, 0), rgba(13, 10, 103, 1));
+                            margin-top: 24px;
+                            opacity: 1;
+                            transition: 0.5s ease 0.7s;
                         }
                     }
                     .client__title {
@@ -2133,7 +2135,7 @@ $width: 80%;
                         }  
                     }
                     .client__img {
-                        margin-top: 5px;
+                        margin-top: 30px;
                         img {
                             width: 300px;
                             height: 300px;
@@ -2167,7 +2169,7 @@ $width: 80%;
                     width: 94.87%;
                     .modules__title {
                         padding-left: 30px;
-                        font-size: 25px;
+                        font-size: 16px;
                         font-weight: 500;
                         line-height: 25px;
                         br {
@@ -2224,9 +2226,12 @@ $width: 80%;
                                     font-weight: 500;
                                     line-height: 20.8px;
                                     opacity: 1;
-                                    max-width: 80%;
+                                    max-width: 100%;
                                     &.appearance {
                                         opacity: 1;
+                                    }
+                                    br {
+                                        display: none;
                                     }
                                 }
                             }   
@@ -2234,7 +2239,8 @@ $width: 80%;
                         }
     
                        .modules__more { 
-                            width: 356px;
+                            margin-top: 80px;
+                            width: 300px;
                             .modules__box__title {
                                 margin-top: 30px;
                                 font-size: 18px;
@@ -2267,7 +2273,7 @@ $width: 80%;
 
             .inplomintation {
                 padding-top: 0px;
-              
+                padding-bottom: 250px;
                 position: relative;
                 background: linear-gradient(rgb(0,0,0), rgb(8, 7, 50), rgb(1, 1, 8));
                 width: 100%;
@@ -2479,6 +2485,7 @@ $width: 80%;
                     .characteristic__content {
                         padding-left: 0;
                         margin-top: 165px;
+                        gap: 94px 20px;
                         width: 100%;                        
                         display: flex;
                         flex-direction: column;
@@ -2490,15 +2497,18 @@ $width: 80%;
                             &:nth-child(n) {
                             width: 300px;
                             .characteristic__box__img {
+                               display: none;
+                            }      
+                            
+                            .characteristic__box__img-mob {
                                 display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                .characteristic__box__picture {
+                                justify-content: left;
+                                .characteristic__box__picture-mob {
                                     display: flex;
                                     justify-content: center;
                                     align-items: center;
-                                    width: 248px;
-                                    height: 248px;
+                                    width: 130px;
+                                    height: 160px;
                                     mix-blend-mode: screen;
                                     opacity: 1;  
                                     transition: 1s ease;
@@ -2506,11 +2516,11 @@ $width: 80%;
                                         opacity: 1;
                                     }
                                 }
-                            }                            
+                            }
                         
                             .characteristic__box__title {
                                 max-width: 80% !important;
-                                padding-left: 20px;
+                                padding-left: 0px;
                                 height: 44px;
                                 margin-top: 30px;
                                 font-family: "Hauora";
@@ -2530,14 +2540,16 @@ $width: 80%;
                                 }
                             }
                             .characteristic__box__discription {
-                                max-width: 80% !important;
-                                padding-left: 20px;
+                                padding-left: 0px;
                                 font-size: 16px;
                                 font-weight: 500;
                                 line-height: 20.8px;
                                 opacity: 1;
                                 &.appearance {
                                     opacity: 1;
+                                }
+                                br {
+                                    display: none;
                                 }
                             }
                             }
@@ -2569,11 +2581,14 @@ $width: 80%;
                 width: 100%;
                 @include center();
                 .earn__container {
-                    max-width: 1120px;
-                    width: 80%;
-                    @include center();
+                    max-width: none;
+                    width: 94.87%;
+                    display: flex;
+                    align-items: start;
                     flex-direction: column;
                     .earn__title {
+                        margin-left: 30px;
+                        text-align: left;
                         font-size: 25px;
                         font-weight: 500;
                         line-height: 25px;
@@ -2583,6 +2598,8 @@ $width: 80%;
                         }
                     }
                     .earn__discripiton {
+                        margin-left: 30px;
+                        text-align: left;
                         font-size: 16px;
                         font-weight: 500;
                         line-height: 20.8px;
@@ -2645,7 +2662,6 @@ $width: 80%;
                                     margin-top: 20px;
                                     width: 100%;
                                     height: 42px;
-                                    box-sizing: border-box;
                                     padding: 10px 25px 10px 25px;
                                     border-radius: 10px;
                                     border: 1px solid rgb(3, 16, 180);
