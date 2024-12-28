@@ -600,6 +600,9 @@ $width: 80%;
                         .earn__form {
                             margin-top: 9px;
                             @include input();
+                            .earn__form__button {
+                                width: 105%;
+                            }
                         }
                     } 
                 }

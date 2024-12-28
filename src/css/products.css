@@ -510,6 +510,9 @@ a {
           text-decoration-skip-ink: none;
   color: rgb(255, 255, 255);
 }
+.container .main .earn .earn__container .earn__search .earn__invite .earn__form .earn__form__button {
+  width: 105%;
+}
 .container .footer {
   background: linear-gradient(rgb(3, 3, 22), rgb(8, 7, 51));
   padding-top: 320px;
