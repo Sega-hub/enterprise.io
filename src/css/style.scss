@@ -1464,6 +1464,9 @@ $width: 80%;
                 }
             }
         }
+        .footer__container-mob {
+            display: none;
+        }
     }     
 }
 
@@ -1974,7 +1977,7 @@ $width: 80%;
                         }
     
                         .possibilities__analitic {
-                            width: 356px;
+                            width: 300px;
                             margin-left: 24px;
                             .possibilities__analitic {
                                 width: 248px;
@@ -2010,7 +2013,7 @@ $width: 80%;
                                 font-weight: 500;
                                 line-height: 20.8px;
                                 opacity: 1;
-    
+                                max-width: 100%;
                                 &.appearance {
                                     opacity: 1;
                                 }
@@ -2018,7 +2021,7 @@ $width: 80%;
                         }
     
                         .possibilities__dev {
-                            width: 356px;
+                            width: 300px;
                             margin-left: 24px;
                             .possibilities__dev {
                                 width: 248px;
@@ -2660,7 +2663,7 @@ $width: 80%;
                                 }
                                button {
                                     margin-top: 20px;
-                                    width: 100%;
+                                    width: 105%;
                                     height: 42px;
                                     padding: 10px 25px 10px 25px;
                                     border-radius: 10px;
@@ -2682,13 +2685,96 @@ $width: 80%;
             width: 100%;
             @include center();
             .footer__container {
-              display: flex;
+              display: none;
               flex-direction: column;     
               justify-content: start;
               align-items: start; 
                 a {
                     margin-left: 0 !important;
                     margin-top: 20px;
+                }
+            }
+            .footer__container-mob {
+                display: flex;
+                flex-direction: column;
+                width: 79%;
+                .mob__top {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .mob__button {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 67px;
+                        height: 30px;
+                        border: 1px solid rgba(52, 59, 67, 1);
+                        background-color: rgb(6, 5, 37);
+
+                        font-family: "Hauora";
+                        font-size: 14px;
+                        font-weight: 500;
+                        line-height: 16px;                        
+                        color: $COLOR_WHITE;
+                        border-radius: 10px;
+                    }                    
+                }
+                .mob__bottom {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    margin-top: 60px;
+                    .mob__contacts {
+                        font-family: "Hauora";
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 23.4px;
+                        letter-spacing: 0.02em;
+                        text-align: left;
+                        text-underline-position: from-font;
+                        -webkit-text-decoration-skip-ink: none;
+                        text-decoration-skip-ink: none;
+                        color: rgb(240, 246, 252);
+                    }
+                    .mob__mail {
+                        margin-top: 20px;
+                        white-space: nowrap;
+                        font-family: "Hauora";
+                        font-size: 16px;
+                        font-weight: 500;
+                        letter-spacing: 0.03em;
+                        line-height: 20.8px;
+                        text-align: center;
+                        color: rgb(112, 111, 146);
+                    }
+                    .mob__phone {
+                        margin-top: 10px;
+                        white-space: nowrap;
+                        font-family: "Hauora";
+                        font-size: 16px;
+                        font-weight: 500;
+                        letter-spacing: 0.03em;
+                        line-height: 20.8px;
+                        text-align: center;
+                        color: rgb(112, 111, 146);
+                    }
+                    .mob__xellon {
+                        margin-top: 10px;
+                        font-family: "Hauora";
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 23.4px;
+                        letter-spacing: 0.02em;
+                        text-align: left;
+                        text-underline-position: from-font;
+                        -webkit-text-decoration-skip-ink: none;
+                        text-decoration-skip-ink: none;
+                        color: rgb(240, 246, 252);
+                        img {
+                            margin-left: 8px;
+                        }
+                    }
                 }
             }
         } 

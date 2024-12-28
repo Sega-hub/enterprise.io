@@ -1703,6 +1703,9 @@ a {
 .container .footer .footer__container a.footer__button:hover {
   box-shadow: 0px 0px 1.1px 0px rgb(17, 14, 104), 0px 0px 2.2px 0px rgb(17, 14, 104), 0px 0px 7.7px 0px rgb(17, 14, 104), 0px 0px 15.39px 0px rgb(17, 14, 104), 0px 0px 26.39px 0px rgb(17, 14, 104), 0px 0px 46.18px 0px rgb(17, 14, 104);
 }
+.container .footer .footer__container-mob {
+  display: none;
+}
 
 @media (min-width: 1700px) {
   .openspace {
@@ -2256,7 +2259,7 @@ a {
     opacity: 1;
   }
   .container .main .possibilities .possibilities__container .possibilities__content .possibilities__analitic {
-    width: 356px;
+    width: 300px;
     margin-left: 24px;
   }
   .container .main .possibilities .possibilities__container .possibilities__content .possibilities__analitic .possibilities__analitic {
@@ -2291,12 +2294,13 @@ a {
     font-weight: 500;
     line-height: 20.8px;
     opacity: 1;
+    max-width: 100%;
   }
   .container .main .possibilities .possibilities__container .possibilities__content .possibilities__analitic .possibilities__analitic__discription.appearance {
     opacity: 1;
   }
   .container .main .possibilities .possibilities__container .possibilities__content .possibilities__dev {
-    width: 356px;
+    width: 300px;
     margin-left: 24px;
   }
   .container .main .possibilities .possibilities__container .possibilities__content .possibilities__dev .possibilities__dev {
@@ -3035,7 +3039,7 @@ a {
   }
   .container .main .earn .earn__container .earn__search .earn__invite .earn__form button {
     margin-top: 20px;
-    width: 100%;
+    width: 105%;
     height: 42px;
     padding: 10px 25px 10px 25px;
     border-radius: 10px;
@@ -3051,7 +3055,7 @@ a {
     align-items: center;
   }
   .container .footer .footer__container {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: start;
     align-items: start;
@@ -3059,5 +3063,87 @@ a {
   .container .footer .footer__container a {
     margin-left: 0 !important;
     margin-top: 20px;
+  }
+  .container .footer .footer__container-mob {
+    display: flex;
+    flex-direction: column;
+    width: 79%;
+  }
+  .container .footer .footer__container-mob .mob__top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .container .footer .footer__container-mob .mob__top .mob__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 67px;
+    height: 30px;
+    border: 1px solid rgb(52, 59, 67);
+    background-color: rgb(6, 5, 37);
+    font-family: "Hauora";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+  }
+  .container .footer .footer__container-mob .mob__bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 60px;
+  }
+  .container .footer .footer__container-mob .mob__bottom .mob__contacts {
+    font-family: "Hauora";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 23.4px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    text-underline-position: from-font;
+    -webkit-text-decoration-skip-ink: none;
+    text-decoration-skip-ink: none;
+    color: rgb(240, 246, 252);
+  }
+  .container .footer .footer__container-mob .mob__bottom .mob__mail {
+    margin-top: 20px;
+    white-space: nowrap;
+    font-family: "Hauora";
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    line-height: 20.8px;
+    text-align: center;
+    color: rgb(112, 111, 146);
+  }
+  .container .footer .footer__container-mob .mob__bottom .mob__phone {
+    margin-top: 10px;
+    white-space: nowrap;
+    font-family: "Hauora";
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    line-height: 20.8px;
+    text-align: center;
+    color: rgb(112, 111, 146);
+  }
+  .container .footer .footer__container-mob .mob__bottom .mob__xellon {
+    margin-top: 10px;
+    font-family: "Hauora";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 23.4px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    text-underline-position: from-font;
+    -webkit-text-decoration-skip-ink: none;
+    text-decoration-skip-ink: none;
+    color: rgb(240, 246, 252);
+  }
+  .container .footer .footer__container-mob .mob__bottom .mob__xellon img {
+    margin-left: 8px;
   }
 }/*# sourceMappingURL=style.css.map */
