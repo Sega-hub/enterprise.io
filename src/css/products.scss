@@ -181,6 +181,10 @@ $width: 80%;
     pointer-events: none;
 }
 
+.popup {
+    display: none;
+}
+
 .container {
     display: block;
     margin: auto;
@@ -668,10 +672,7 @@ $width: 80%;
 }
 
 @media (max-width: 500px) {
-    * {
-        opacity: 1;
-    }
-
+    
     .play {
         display: none !important;
     }
@@ -714,6 +715,95 @@ $width: 80%;
 
     ::after{
         display: flex;
+    }
+
+    .popup {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 10000;
+        position: fixed;
+        display: none;
+        align-items: center;
+        flex-direction: column;
+        background: linear-gradient(rgb(10, 9, 67), rgb(0, 0, 0));
+        .popup__container {
+            width:  84.6%;
+            display: flex;
+            flex-direction: column;
+            .header__container {
+                margin-top: 30px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .header__buttons {
+                    button {
+                        @include button(88px, rgb(10, 9, 64), rgb(23, 19, 147));
+                        font-size: 14px;
+                        font-weight: 500;
+                        letter-spacing: 0.03em;
+                        line-height: 16px;
+                        text-align: center;
+                        font-family: "Hauora";
+                    }
+                }
+            }
+            .popup__menu {
+                margin-top: 128px;
+                display: flex;
+                flex-direction: column;
+                .popup__menu__item {
+                    margin-top: 27px;
+                    font-family: "Hauora";
+                    font-size: 18px;
+                    font-weight: 500;
+                    letter-spacing: 0.03em;
+                    line-height: 20.8px;
+                    color: $COLOR_WHITE;
+                }
+                .popup__menu__mail {
+                    margin-top: 20px;
+                    font-family: "Hauora";
+                    font-size: 18px;
+                    font-weight: 500;
+                    letter-spacing: 0.03em;
+                    line-height: 20.8px;
+                    color: rgb(112, 111, 146);
+                }
+                .popup__menu__phone {
+                    margin-top: 10px;
+                    font-family: "Hauora";
+                    font-size: 18px;
+                    font-weight: 500;
+                    letter-spacing: 0.03em;
+                    line-height: 20.8px;
+                    color: rgb(112, 111, 146);
+                }
+                .footer__xellon {
+                    margin-top: 10px;
+                    font-family: "Hauora";
+                    font-size: 18px;
+                    font-weight: 500;
+                    letter-spacing: 0.03em;
+                    line-height: 20.8px;
+                    color: $COLOR_WHITE;
+                }
+            }
+            .popup__button {
+                margin-top: 104px;
+                button {
+                    @include button(330px, rgb(7, 4, 51), rgb(3, 16, 180));
+                    height: 42px;
+                    font-size: 14px;
+                    font-weight: 500;
+                    letter-spacing: 0.03em;
+                    line-height: 16px;
+                    text-align: center;
+                    font-family: "Hauora";
+                }
+            }
+        }
     }
 
     $width: 84.61%;
@@ -805,8 +895,8 @@ $width: 80%;
                         display: grid;
                         align-items: center;
                         grid-template-columns: 8.5fr 3.5fr;
-                        opacity: 1;
-                        animation: mainTitle  ease 0.5s;
+                        opacity: 0;
+                        animation: mainTitle  ease 1s;
                         animation-fill-mode: forwards;
     
                         .products__title {
@@ -830,12 +920,12 @@ $width: 80%;
                             &:nth-child(1) {
                                p {
                                     &:nth-child(1) {
-                                       opacity: 1;
+                                       opacity: 0;
                                        animation: mainTitle  ease 1.2s;
                                        animation-fill-mode: forwards;
                                     }
                                     &:nth-child(3) {
-                                        opacity: 1;
+                                        opacity: 0;
                                         transition:  ease 0.5s;
     
                                         &.appearance {
@@ -843,7 +933,7 @@ $width: 80%;
                                         }
                                     }
                                     &:nth-child(5) {
-                                        opacity: 1;
+                                        opacity: 0;
                                         transition:  ease 0.5s;
     
                                         &.appearance {
@@ -853,12 +943,12 @@ $width: 80%;
                                }
                                ul {
                                     &:nth-child(2){
-                                        opacity: 1;
+                                        opacity: 0;
                                         animation: mainTitle  ease 1.5s;
                                         animation-fill-mode: forwards;
                                     }
                                     &:nth-child(4){
-                                        opacity: 1;
+                                        opacity: 0;
                                         transition:  ease 0.5s;
     
                                         &.appearance {
@@ -866,7 +956,7 @@ $width: 80%;
                                         }
                                     }
                                     &:nth-child(6){
-                                        opacity: 1;
+                                        opacity: 0;
                                         transition:  ease 0.5s;
     
                                         &.appearance {
@@ -878,12 +968,12 @@ $width: 80%;
                             &:nth-child(2) {
                                 p {
                                      &:nth-child(1) {
-                                        opacity: 1;
+                                        opacity: 0;
                                         animation: mainTitle  ease 1.7s;
                                         animation-fill-mode: forwards;
                                      }
                                      &:nth-child(3) {
-                                        opacity: 1;
+                                        opacity: 0;
                                         transition:  ease 0.5s;
     
                                         &.appearance {
@@ -891,7 +981,7 @@ $width: 80%;
                                         }
                                      }
                                      &:nth-child(5) {
-                                        opacity: 1;
+                                        opacity: 0;
                                         transition:  ease 0.5s;
     
                                         &.appearance {
@@ -901,12 +991,12 @@ $width: 80%;
                                 }
                                 ul {
                                      &:nth-child(2){
-                                         opacity: 1;
+                                         opacity:0;
                                          animation: mainTitle  ease 1.9s;
                                          animation-fill-mode: forwards;
                                      }
                                      &:nth-child(4){
-                                        opacity: 1;
+                                        opacity: 0;
                                         transition:  ease 0.5s;
     
                                         &.appearance {
@@ -914,7 +1004,7 @@ $width: 80%;
                                         }
                                      }
                                      &:nth-child(6){
-                                        opacity: 1;
+                                        opacity: 0;
                                         transition:  ease 0.5s;
     
                                         &.appearance {
@@ -926,12 +1016,12 @@ $width: 80%;
                             &:nth-child(3) {
                                 p {
                                      &:nth-child(1) {
-                                        opacity: 1;
+                                        opacity: 0;
                                         animation: mainTitle  ease 2.1s;
                                         animation-fill-mode: forwards;
                                      }
                                      &:nth-child(3) {
-                                        opacity: 1;
+                                        opacity: 0;
                                         transition:  ease 0.5s;
     
                                         &.appearance {
@@ -939,7 +1029,7 @@ $width: 80%;
                                         }
                                      }
                                      &:nth-child(5) {
-                                        opacity: 1;
+                                        opacity: 0;
                                         transition:  ease 0.5s;
     
                                         &.appearance {
@@ -949,12 +1039,12 @@ $width: 80%;
                                 }
                                 ul {
                                      &:nth-child(2){
-                                         opacity: 1;
+                                         opacity: 0;
                                          animation: mainTitle  ease 2.3s;
                                          animation-fill-mode: forwards;
                                      }
                                      &:nth-child(4){
-                                        opacity: 1;
+                                        opacity: 0;
                                         transition:  ease 0.5s;
     
                                         &.appearance {
@@ -962,7 +1052,7 @@ $width: 80%;
                                         }
                                      }
                                      &:nth-child(6){
-                                        opacity: 1;
+                                        opacity: 0;
                                         transition:  ease 0.5s;
     
                                         &.appearance {
@@ -1056,7 +1146,7 @@ $width: 80%;
                         font-size: 25px;
                         font-weight: 500;
                         line-height: 25px;
-                        opacity: 1;
+                        opacity: 0;
                         &.appearance {
                             opacity: 1;
                         }
@@ -1065,7 +1155,7 @@ $width: 80%;
                         font-size: 16px;
                         font-weight: 500;
                         line-height: 20.8px;
-                        opacity: 1;
+                        opacity: 0;
                         br {
                             display: none;
                         }
@@ -1078,7 +1168,7 @@ $width: 80%;
                         padding-bottom: 104px;
                         width: 100%;
                         @include center();
-                        opacity: 1;
+                        opacity: 0;
                         transition: 0.5s ease 0.5s;
     
                         &.appearance {

@@ -1731,7 +1731,7 @@ $width: 80%;
                         font-size: 25px;
                         font-weight: 500;
                         line-height: 30px;
-                        opacity: 1;
+                        opacity: 0;
                         span {
                             color: rgba(68, 63, 219, 1);
                         }                     
@@ -1767,9 +1767,9 @@ $width: 80%;
                                 font-size: 16px;
                                 font-weight: 500;
                                 line-height: 20.8px;
-                                opacity: 1;
+                                opacity: 0;
                                 span { 
-                                    opacity: 1;
+                                    opacity: 0;
                                     br {
                                         display: none;
                                     }
@@ -1781,7 +1781,7 @@ $width: 80%;
                                 }
                             }
                             .openspace__code__big {
-                               opacity: 1;
+                               opacity: 0;
                                top: 0;
                                img {
                                     width: 350px;
@@ -1801,10 +1801,10 @@ $width: 80%;
                                 height: 510px;                          
                                 padding-bottom: 0;
                                 p {
-                                    opacity: 1;
+                                    opacity: 0;
                                     transition:  ease 0.5s;
                                     span {
-                                        opacity: 1;
+                                        opacity: 0;
                                         transition:  ease 1s;
                                         &.appearance {
                                             opacity: 1;
@@ -1819,15 +1819,15 @@ $width: 80%;
                                    display: flex;
                                    justify-content: center;
                                    mix-blend-mode: screen;
-                                   opacity: 1;
+                                   opacity: 0;
                                    transition:  ease 0.5s;
                                    img {
                                        width: 350px;
                                        height: 350px;
                                    }
                                    &.appearance {
-                                    opacity: 1;
-                                }
+                                        opacity: 1;
+                                    }
                                 }
                             }
                             .openspace__grid__manage {
@@ -1835,14 +1835,14 @@ $width: 80%;
                                 @include card();                         
                                 padding-bottom: 0;
                                 p {
-                                    opacity: 1;
+                                    opacity: 0;
                                     transition:  ease 0.3s;
                                     
                                     span {
                                         br {
                                             display: none;
                                         }
-                                        opacity: 1;
+                                        opacity: 0;
                                         transition:  ease 0.4s;
                                         &.appearance {
                                             opacity: 1;
@@ -1857,7 +1857,7 @@ $width: 80%;
                                     display: flex;
                                     justify-content: center;
                                     mix-blend-mode: screen;
-                                    opacity: 1;
+                                    opacity: 0;
                                     transition:  ease 0.5s;
                                     img {
                                          width: 300px;
@@ -1907,7 +1907,7 @@ $width: 80%;
                         br {
                             display: none;
                         }
-                        opacity: 1;
+                        opacity: 0;
                         &.appearance {
                             opacity: 1;
                         }
@@ -1936,7 +1936,7 @@ $width: 80%;
                             .possibilities__manage {
                                 width: 248px;
                                 height: 248px;
-                                opacity: 1;
+                                opacity:0;
                                 transition: 0.5s ease 0.5s;
     
                                 &.appearance {
@@ -1953,7 +1953,7 @@ $width: 80%;
                                 line-height: 23.4px;
                                 text-align: left;
                                 color: rgba(240, 246, 252, 1);
-                                opacity: 1;
+                                opacity: 0;
                                 transition: 0.5s ease 0.5s;
     
                                 &.appearance {
@@ -1964,7 +1964,7 @@ $width: 80%;
                                 font-size: 16px;
                                 font-weight: 500;
                                 line-height: 20.8px;
-                                opacity: 1;
+                                opacity: 0;
                                 width: 100%;
                                 br {
                                     display: none;
@@ -1982,7 +1982,7 @@ $width: 80%;
                             .possibilities__analitic {
                                 width: 248px;
                                 height: 248px;
-                                opacity: 1;
+                                opacity: 0;
                                 transition: 0.5s ease 1s;
     
                                 &.appearance {
@@ -2001,7 +2001,7 @@ $width: 80%;
                                 text-underline-position: from-font;
                                 text-decoration-skip-ink: none;
                                 color: rgba(240, 246, 252, 1);
-                                opacity: 1;
+                                opacity: 0;
                                 transition: 0.5s ease 1s;
     
                                 &.appearance {
@@ -2012,7 +2012,7 @@ $width: 80%;
                                 font-size: 16px;
                                 font-weight: 500;
                                 line-height: 20.8px;
-                                opacity: 1;
+                                opacity: 0;
                                 max-width: 100%;
                                 &.appearance {
                                     opacity: 1;
@@ -2026,7 +2026,7 @@ $width: 80%;
                             .possibilities__dev {
                                 width: 248px;
                                 height: 248px;
-                                opacity: 1;
+                                opacity: 0;
                                 transition: 0.5s ease 1.5s;
     
                                 &.appearance {
@@ -2045,7 +2045,7 @@ $width: 80%;
                                 text-underline-position: from-font;
                                 text-decoration-skip-ink: none;
                                 color: rgba(240, 246, 252, 1);
-                                opacity: 1;
+                                opacity: 0;
                                 transition: 0.5s ease 1.5s;
     
                                 &.appearance {
@@ -2056,7 +2056,7 @@ $width: 80%;
                                 font-size: 16px;
                                 font-weight: 500;
                                 line-height: 20.8px;
-                                opacity: 1;
+                                opacity: 0;
                                 
                                 br {
                                     display: none;
@@ -2119,7 +2119,7 @@ $width: 80%;
                         .client__button {
                             @include button(312px, rgba(22, 23, 24, 0), rgba(13, 10, 103, 1));
                             margin-top: 24px;
-                            opacity: 1;
+                            opacity: 0;
                             transition: 0.5s ease 0.7s;
                         }
                     }
@@ -2127,7 +2127,7 @@ $width: 80%;
                         font-size: 25px;
                         font-weight: 500;
                         line-height: 25px;
-                        opacity: 1;
+                        opacity: 0;
 
                         br {
                             display: none;
@@ -2150,7 +2150,7 @@ $width: 80%;
                     }
     
                     .client__img img {
-                        opacity: 1;
+                        opacity: 0;
                         transition: opacity 0.5s ease-in-out;
                     }
                     
@@ -2178,7 +2178,7 @@ $width: 80%;
                         br {
                             display: none;
                         }
-                        opacity: 1;
+                        opacity: 0;
                         &.appearance {
                             opacity: 1;
                         }
@@ -2187,7 +2187,7 @@ $width: 80%;
                             font-size: 25px;
                             font-weight: 500;
                             line-height: 25px;
-                            opacity: 1;
+                            opacity: 0;
                             &.appearance {
                                 transition: all 1s ease 0.5s;
                                 opacity: 1;
@@ -2206,7 +2206,7 @@ $width: 80%;
                                 .modules__box__picture {
                                     width: 248px;
                                     height: 248px;
-                                    opacity: 1;
+                                    opacity: 0;
                                     transition:  ease 1s;
                                 
                                     &.appearance {
@@ -2215,7 +2215,7 @@ $width: 80%;
                                 }
                             
                                 .modules__box__title {
-                                    opacity: 1;
+                                    opacity: 0;
                                     font-size: 18px;
                                     font-weight: 500;
                                     line-height: 18px;
@@ -2228,7 +2228,7 @@ $width: 80%;
                                     font-size: 16px;
                                     font-weight: 500;
                                     line-height: 20.8px;
-                                    opacity: 1;
+                                    opacity: 0;
                                     max-width: 100%;
                                     &.appearance {
                                         opacity: 1;
@@ -2249,14 +2249,14 @@ $width: 80%;
                                 font-size: 18px;
                                 font-weight: 500;
                                 line-height: 18px;
-                                opacity: 1;
+                                opacity: 0;
                                 &.appearance {
                                     opacity: 1;
                                 }
                             }
     
                             .modules__box__link {
-                                opacity: 1;
+                                opacity: 0;
                                 transition:  ease 1s;
     
                                 &.appearance {
@@ -2290,7 +2290,7 @@ $width: 80%;
                         font-size: 25px;
                         font-weight: 500;
                         line-height: 25px;
-                        opacity: 1;
+                        opacity: 0;
                         &.appearance {
                             opacity: 1;
                         }
@@ -2329,7 +2329,7 @@ $width: 80%;
                                 text-align: left;
                                 color: $COLOR_WHITE;                                                     
                                 z-index: 10;
-                                opacity: 1;  
+                                opacity: 0;  
                                 transition: 1s ease;
                                 &.appearance {
                                     opacity: 1;
@@ -2338,7 +2338,7 @@ $width: 80%;
                                     font-size: 16px;
                                     font-weight: 500;
                                     line-height: 20.8px;
-                                    opacity: 1;
+                                    opacity: 0;
                                     &.appearance {
                                         opacity: 1;
                                     }
@@ -2351,7 +2351,7 @@ $width: 80%;
                                 justify-content: center;
                                 mix-blend-mode: screen;
                                 top: 0;
-                                opacity: 1;  
+                                opacity: 0;  
                                 transition: 1s ease;
                                 &.appearance {
                                     opacity: 1;
@@ -2372,7 +2372,7 @@ $width: 80%;
                                 height: 510px;                          
                                 padding-bottom: 0;
                                 p {
-                                    opacity: 1;  
+                                    opacity: 0;  
                                     transition: 1s ease;
                                     &.appearance {
                                         opacity: 1;
@@ -2381,7 +2381,7 @@ $width: 80%;
                                         font-size: 16px;
                                         font-weight: 500;
                                         line-height: 20.8px;
-                                        opacity: 1;
+                                        opacity: 0;
                                         transition:  ease 1s;
                                     }
                                 }
@@ -2390,7 +2390,7 @@ $width: 80%;
                                    display: flex;
                                    justify-content: center;
                                    mix-blend-mode: screen;
-                                   opacity: 1;  
+                                   opacity: 0;  
                                     transition: 1s ease;
                                     &.appearance {
                                         opacity: 1;
@@ -2406,7 +2406,7 @@ $width: 80%;
                                 @include card();                         
                                 padding-bottom: 0;
                                 p {
-                                    opacity: 1;  
+                                    opacity: 0;  
                                     transition: 1s ease;
                                     &.appearance {
                                         opacity: 1;
@@ -2420,7 +2420,7 @@ $width: 80%;
                                     display: flex;
                                     justify-content: center;
                                     mix-blend-mode: screen;
-                                    opacity: 1;  
+                                    opacity: 0;  
                                     transition: 1s ease;
                                     &.appearance {
                                         opacity: 1;
@@ -2467,7 +2467,7 @@ $width: 80%;
                         font-size: 18px;
                         font-weight: 500;
                         line-height: 23.4px;
-                        opacity: 1;
+                        opacity: 0;
                         br {
                             display: none;
                         }
@@ -2513,7 +2513,7 @@ $width: 80%;
                                     width: 130px;
                                     height: 160px;
                                     mix-blend-mode: screen;
-                                    opacity: 1;  
+                                    opacity: 0;  
                                     transition: 1s ease;
                                     &.appearance {
                                         opacity: 1;
@@ -2536,7 +2536,7 @@ $width: 80%;
                                 -webkit-text-decoration-skip-ink: none;
                                 text-decoration-skip-ink: none;
                                 color: rgba(240, 246, 252, 1);  
-                                opacity: 1;  
+                                opacity: 0;  
                                 transition: 1s ease;
                                 &.appearance {
                                     opacity: 1;
@@ -2547,7 +2547,7 @@ $width: 80%;
                                 font-size: 16px;
                                 font-weight: 500;
                                 line-height: 20.8px;
-                                opacity: 1;
+                                opacity: 0;
                                 &.appearance {
                                     opacity: 1;
                                 }
@@ -2595,7 +2595,7 @@ $width: 80%;
                         font-size: 25px;
                         font-weight: 500;
                         line-height: 25px;
-                        opacity: 1;
+                        opacity: 0;
                         &.appearance {
                             opacity: 1;
                         }
@@ -2606,7 +2606,7 @@ $width: 80%;
                         font-size: 16px;
                         font-weight: 500;
                         line-height: 20.8px;
-                        opacity: 1;
+                        opacity: 0;
                         br {
                             display: none;
                         }
@@ -2619,7 +2619,7 @@ $width: 80%;
                         padding-bottom: 104px;
                         width: 100%;
                         @include center();
-                        opacity: 1;
+                        opacity: 0;
                         transition: 0.5s ease 0.5s;
     
                         &.appearance {

@@ -1987,7 +1987,7 @@ a {
     font-size: 25px;
     font-weight: 500;
     line-height: 30px;
-    opacity: 1;
+    opacity: 0;
   }
   .container .main .openspace .openspace__container .openspace__title span {
     color: rgb(68, 63, 219);
@@ -2021,10 +2021,10 @@ a {
     font-size: 16px;
     font-weight: 500;
     line-height: 20.8px;
-    opacity: 1;
+    opacity: 0;
   }
   .container .main .openspace .openspace__container .openspace__content .openspace__code .openspace__code__discription span {
-    opacity: 1;
+    opacity: 0;
   }
   .container .main .openspace .openspace__container .openspace__content .openspace__code .openspace__code__discription span br {
     display: none;
@@ -2034,7 +2034,7 @@ a {
     opacity: 1;
   }
   .container .main .openspace .openspace__container .openspace__content .openspace__code .openspace__code__big {
-    opacity: 1;
+    opacity: 0;
     top: 0;
   }
   .container .main .openspace .openspace__container .openspace__content .openspace__code .openspace__code__big img {
@@ -2073,11 +2073,11 @@ a {
     color: rgb(112, 111, 146);
   }
   .container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__branch p {
-    opacity: 1;
+    opacity: 0;
     transition: ease 0.5s;
   }
   .container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__branch p span {
-    opacity: 1;
+    opacity: 0;
     transition: ease 1s;
   }
   .container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__branch p span.appearance {
@@ -2091,7 +2091,7 @@ a {
     display: flex;
     justify-content: center;
     mix-blend-mode: screen;
-    opacity: 1;
+    opacity: 0;
     transition: ease 0.5s;
   }
   .container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__branch .openspace__img img {
@@ -2126,11 +2126,11 @@ a {
     color: rgb(112, 111, 146);
   }
   .container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__manage p {
-    opacity: 1;
+    opacity: 0;
     transition: ease 0.3s;
   }
   .container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__manage p span {
-    opacity: 1;
+    opacity: 0;
     transition: ease 0.4s;
   }
   .container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__manage p span br {
@@ -2147,7 +2147,7 @@ a {
     display: flex;
     justify-content: center;
     mix-blend-mode: screen;
-    opacity: 1;
+    opacity: 0;
     transition: ease 0.5s;
   }
   .container .main .openspace .openspace__container .openspace__content .openspace__grid .openspace__grid__manage .openspace__img img {
@@ -2191,7 +2191,7 @@ a {
     font-size: 18px;
     font-weight: 500;
     line-height: 25px;
-    opacity: 1;
+    opacity: 0;
   }
   .container .main .possibilities .possibilities__container .possibilities__title br {
     display: none;
@@ -2224,7 +2224,7 @@ a {
   .container .main .possibilities .possibilities__container .possibilities__content .possibilities__manage .possibilities__manage {
     width: 248px;
     height: 248px;
-    opacity: 1;
+    opacity: 0;
     transition: 0.5s ease 0.5s;
   }
   .container .main .possibilities .possibilities__container .possibilities__content .possibilities__manage .possibilities__manage.appearance {
@@ -2239,7 +2239,7 @@ a {
     line-height: 23.4px;
     text-align: left;
     color: rgb(240, 246, 252);
-    opacity: 1;
+    opacity: 0;
     transition: 0.5s ease 0.5s;
   }
   .container .main .possibilities .possibilities__container .possibilities__content .possibilities__manage .possibilities__manage__title.appearance {
@@ -2249,7 +2249,7 @@ a {
     font-size: 16px;
     font-weight: 500;
     line-height: 20.8px;
-    opacity: 1;
+    opacity: 0;
     width: 100%;
   }
   .container .main .possibilities .possibilities__container .possibilities__content .possibilities__manage .possibilities__manage__discription br {
@@ -2265,7 +2265,7 @@ a {
   .container .main .possibilities .possibilities__container .possibilities__content .possibilities__analitic .possibilities__analitic {
     width: 248px;
     height: 248px;
-    opacity: 1;
+    opacity: 0;
     transition: 0.5s ease 1s;
   }
   .container .main .possibilities .possibilities__container .possibilities__content .possibilities__analitic .possibilities__analitic.appearance {
@@ -2283,7 +2283,7 @@ a {
     -webkit-text-decoration-skip-ink: none;
             text-decoration-skip-ink: none;
     color: rgb(240, 246, 252);
-    opacity: 1;
+    opacity: 0;
     transition: 0.5s ease 1s;
   }
   .container .main .possibilities .possibilities__container .possibilities__content .possibilities__analitic .possibilities__analitic__title.appearance {
@@ -2293,7 +2293,7 @@ a {
     font-size: 16px;
     font-weight: 500;
     line-height: 20.8px;
-    opacity: 1;
+    opacity: 0;
     max-width: 100%;
   }
   .container .main .possibilities .possibilities__container .possibilities__content .possibilities__analitic .possibilities__analitic__discription.appearance {
@@ -2306,7 +2306,7 @@ a {
   .container .main .possibilities .possibilities__container .possibilities__content .possibilities__dev .possibilities__dev {
     width: 248px;
     height: 248px;
-    opacity: 1;
+    opacity: 0;
     transition: 0.5s ease 1.5s;
   }
   .container .main .possibilities .possibilities__container .possibilities__content .possibilities__dev .possibilities__dev.appearance {
@@ -2324,7 +2324,7 @@ a {
     -webkit-text-decoration-skip-ink: none;
             text-decoration-skip-ink: none;
     color: rgb(240, 246, 252);
-    opacity: 1;
+    opacity: 0;
     transition: 0.5s ease 1.5s;
   }
   .container .main .possibilities .possibilities__container .possibilities__content .possibilities__dev .possibilities__dev__title.appearance {
@@ -2334,7 +2334,7 @@ a {
     font-size: 16px;
     font-weight: 500;
     line-height: 20.8px;
-    opacity: 1;
+    opacity: 0;
   }
   .container .main .possibilities .possibilities__container .possibilities__content .possibilities__dev .possibilities__dev__discription br {
     display: none;
@@ -2448,7 +2448,7 @@ a {
     transition: 0.5s;
     color: rgb(255, 255, 255);
     margin-top: 24px;
-    opacity: 1;
+    opacity: 0;
     transition: 0.5s ease 0.7s;
   }
   .container .main .client .client__container .client__buttons__mob .client__button:hover {
@@ -2458,7 +2458,7 @@ a {
     font-size: 25px;
     font-weight: 500;
     line-height: 25px;
-    opacity: 1;
+    opacity: 0;
   }
   .container .main .client .client__container .client__title br {
     display: none;
@@ -2477,7 +2477,7 @@ a {
     opacity: 1;
   }
   .container .main .client .client__container .client__img img {
-    opacity: 1;
+    opacity: 0;
     transition: opacity 0.5s ease-in-out;
   }
   .container .main .client .client__container .client__img img.hidden {
@@ -2502,7 +2502,7 @@ a {
     font-size: 16px;
     font-weight: 500;
     line-height: 25px;
-    opacity: 1;
+    opacity: 0;
   }
   .container .main .modules .modules__container .modules__title br {
     display: none;
@@ -2515,7 +2515,7 @@ a {
     font-size: 25px;
     font-weight: 500;
     line-height: 25px;
-    opacity: 1;
+    opacity: 0;
   }
   .container .main .modules .modules__container .modules__title span.appearance {
     transition: all 1s ease 0.5s;
@@ -2534,14 +2534,14 @@ a {
   .container .main .modules .modules__container .modules__content .modules__box:nth-child(n) .modules__box__picture {
     width: 248px;
     height: 248px;
-    opacity: 1;
+    opacity: 0;
     transition: ease 1s;
   }
   .container .main .modules .modules__container .modules__content .modules__box:nth-child(n) .modules__box__picture.appearance {
     opacity: 1;
   }
   .container .main .modules .modules__container .modules__content .modules__box:nth-child(n) .modules__box__title {
-    opacity: 1;
+    opacity: 0;
     font-size: 18px;
     font-weight: 500;
     line-height: 18px;
@@ -2554,7 +2554,7 @@ a {
     font-size: 16px;
     font-weight: 500;
     line-height: 20.8px;
-    opacity: 1;
+    opacity: 0;
     max-width: 100%;
   }
   .container .main .modules .modules__container .modules__content .modules__box:nth-child(n) .modules__box__discription.appearance {
@@ -2572,13 +2572,13 @@ a {
     font-size: 18px;
     font-weight: 500;
     line-height: 18px;
-    opacity: 1;
+    opacity: 0;
   }
   .container .main .modules .modules__container .modules__content .modules__more .modules__box__title.appearance {
     opacity: 1;
   }
   .container .main .modules .modules__container .modules__content .modules__more .modules__box__link {
-    opacity: 1;
+    opacity: 0;
     transition: ease 1s;
   }
   .container .main .modules .modules__container .modules__content .modules__more .modules__box__link.appearance {
@@ -2627,7 +2627,7 @@ a {
     font-size: 25px;
     font-weight: 500;
     line-height: 25px;
-    opacity: 1;
+    opacity: 0;
   }
   .container .main .inplomintation .inplomintation__container .inplomintation__title.appearance {
     opacity: 1;
@@ -2668,7 +2668,7 @@ a {
     text-align: left;
     color: rgb(255, 255, 255);
     z-index: 10;
-    opacity: 1;
+    opacity: 0;
     transition: 1s ease;
   }
   .container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__code .inplomintation__code__discription.appearance {
@@ -2678,7 +2678,7 @@ a {
     font-size: 16px;
     font-weight: 500;
     line-height: 20.8px;
-    opacity: 1;
+    opacity: 0;
     color: rgb(112, 111, 146);
   }
   .container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__code .inplomintation__code__discription span.appearance {
@@ -2690,7 +2690,7 @@ a {
     justify-content: center;
     mix-blend-mode: screen;
     top: 0;
-    opacity: 1;
+    opacity: 0;
     transition: 1s ease;
   }
   .container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__code .inplomintation__code__big.appearance {
@@ -2731,7 +2731,7 @@ a {
     color: rgb(112, 111, 146);
   }
   .container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__branch p {
-    opacity: 1;
+    opacity: 0;
     transition: 1s ease;
   }
   .container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__branch p.appearance {
@@ -2741,7 +2741,7 @@ a {
     font-size: 16px;
     font-weight: 500;
     line-height: 20.8px;
-    opacity: 1;
+    opacity: 0;
     transition: ease 1s;
   }
   .container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__branch .inplomintation__img {
@@ -2749,7 +2749,7 @@ a {
     display: flex;
     justify-content: center;
     mix-blend-mode: screen;
-    opacity: 1;
+    opacity: 0;
     transition: 1s ease;
   }
   .container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__branch .inplomintation__img.appearance {
@@ -2784,7 +2784,7 @@ a {
     color: rgb(112, 111, 146);
   }
   .container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__manage p {
-    opacity: 1;
+    opacity: 0;
     transition: 1s ease;
   }
   .container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__manage p.appearance {
@@ -2798,7 +2798,7 @@ a {
     display: flex;
     justify-content: center;
     mix-blend-mode: screen;
-    opacity: 1;
+    opacity: 0;
     transition: 1s ease;
   }
   .container .main .inplomintation .inplomintation__container .inplomintation__content .inplomintation__grid .inplomintation__grid__manage .inplomintation__img.appearance {
@@ -2843,7 +2843,7 @@ a {
     font-size: 18px;
     font-weight: 500;
     line-height: 23.4px;
-    opacity: 1;
+    opacity: 0;
   }
   .container .main .characteristic .characteristic__container .characteristic__title br {
     display: none;
@@ -2891,7 +2891,7 @@ a {
     width: 130px;
     height: 160px;
     mix-blend-mode: screen;
-    opacity: 1;
+    opacity: 0;
     transition: 1s ease;
   }
   .container .main .characteristic .characteristic__container .characteristic__content .characteristic__box:nth-child(n) .characteristic__box__img-mob .characteristic__box__picture-mob.appearance {
@@ -2912,7 +2912,7 @@ a {
     -webkit-text-decoration-skip-ink: none;
     text-decoration-skip-ink: none;
     color: rgb(240, 246, 252);
-    opacity: 1;
+    opacity: 0;
     transition: 1s ease;
   }
   .container .main .characteristic .characteristic__container .characteristic__content .characteristic__box:nth-child(n) .characteristic__box__title.appearance {
@@ -2923,7 +2923,7 @@ a {
     font-size: 16px;
     font-weight: 500;
     line-height: 20.8px;
-    opacity: 1;
+    opacity: 0;
   }
   .container .main .characteristic .characteristic__container .characteristic__content .characteristic__box:nth-child(n) .characteristic__box__discription.appearance {
     opacity: 1;
@@ -2968,7 +2968,7 @@ a {
     font-size: 25px;
     font-weight: 500;
     line-height: 25px;
-    opacity: 1;
+    opacity: 0;
   }
   .container .main .earn .earn__container .earn__title.appearance {
     opacity: 1;
@@ -2979,7 +2979,7 @@ a {
     font-size: 16px;
     font-weight: 500;
     line-height: 20.8px;
-    opacity: 1;
+    opacity: 0;
   }
   .container .main .earn .earn__container .earn__discripiton br {
     display: none;
@@ -2994,7 +2994,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 1;
+    opacity: 0;
     transition: 0.5s ease 0.5s;
   }
   .container .main .earn .earn__container .earn__search.appearance {
